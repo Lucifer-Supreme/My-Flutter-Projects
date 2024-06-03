@@ -67,6 +67,7 @@ class _NewExpenseState extends State<NewExpense> {
           expenseTitle: selectedTitle.text,
           amount: enteredAmount,
           date: selectedDate!));
+      Navigator.pop(context);
     }
   }
 
