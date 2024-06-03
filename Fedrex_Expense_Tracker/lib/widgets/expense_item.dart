@@ -16,10 +16,7 @@ class ExpenseItem extends StatelessWidget {
           decoration: BoxDecoration(
             border: Border.all(color: Colors.black),
             borderRadius: const BorderRadius.all(Radius.circular(10)),
-              gradient: const LinearGradient(
-                  colors: [Colors.yellow, Colors.white],
-                  begin: Alignment.topLeft,
-                  end: Alignment.bottomRight)),
+              ),
           padding: const EdgeInsets.all(20),
           child: Column(
             children: [

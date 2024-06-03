@@ -1,5 +1,6 @@
 //new_expense.dart
 
+import 'package:fedrex_expense_tracker/main.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
@@ -49,8 +50,8 @@ class _NewExpenseState extends State<NewExpense> {
           context: context,
           builder: (ctx) => AlertDialog(
                 title: const Text("Invalid Data"),
-                content:
-                    const Text("Make sure you enter valid data into all the feilds"),
+                content: const Text(
+                    "Make sure you enter valid data into all the feilds"),
                 actions: [
                   TextButton(
                       onPressed: () {
@@ -60,8 +61,7 @@ class _NewExpenseState extends State<NewExpense> {
                 ],
               ));
       return;
-    }
-    else {
+    } else {
       widget.onAddExpense(Expense(
           category: _selectedCategory,
           expenseTitle: selectedTitle.text,
@@ -81,7 +81,7 @@ class _NewExpenseState extends State<NewExpense> {
   @override
   Widget build(context) {
     return (Padding(
-        padding: const EdgeInsets.all(20),
+        padding: const EdgeInsets.fromLTRB(20, 70, 20, 20),
         child: Column(
           children: [
             Text(
@@ -140,6 +140,9 @@ class _NewExpenseState extends State<NewExpense> {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 DropdownButton(
+                    borderRadius: BorderRadius.all(Radius.circular(20)),
+                    elevation: 50,
+
                     value: _selectedCategory,
                     items: Category.values
                         .map(
@@ -167,7 +170,8 @@ class _NewExpenseState extends State<NewExpense> {
                 const SizedBox(
                   width: 5,
                 ),
-                ElevatedButton(onPressed: submitData, child: const Text("Save")),
+                ElevatedButton(
+                    onPressed: submitData, child: const Text("Save")),
               ],
             )
           ],
