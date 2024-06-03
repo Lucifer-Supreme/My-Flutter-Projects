@@ -24,6 +24,7 @@ class NewExpense extends StatefulWidget {
 class _NewExpenseState extends State<NewExpense> {
   var selectedTitle = TextEditingController();
   var selectedAmount = TextEditingController();
+  var selectedDescription = TextEditingController();
   final formater = DateFormat('dd-MMMM-yyyy');
   DateTime? selectedDate;
   Category _selectedCategory = Category.leisure;
@@ -66,7 +67,9 @@ class _NewExpenseState extends State<NewExpense> {
           category: _selectedCategory,
           expenseTitle: selectedTitle.text,
           amount: enteredAmount,
-          date: selectedDate!));
+          date: selectedDate!,
+          description: selectedDescription.text));
+      print(selectedDescription.toString());
       Navigator.pop(context);
     }
   }
@@ -87,7 +90,7 @@ class _NewExpenseState extends State<NewExpense> {
             Text(
               "Add New Expense",
               style:
-                  GoogleFonts.lora(fontSize: 20, fontWeight: FontWeight.bold),
+                  Theme.of(context).textTheme.titleLarge,
             ),
             const SizedBox(
               height: 20,
@@ -123,7 +126,7 @@ class _NewExpenseState extends State<NewExpense> {
                       Text(
                         selectedDate == null
                             ? 'Select Date'
-                            : formater.format(selectedDate!),
+                            : formater.format(selectedDate!),style: Theme.of(context).textTheme.titleMedium,
                       ),
                       IconButton(
                           onPressed: _presentDatePicker,
@@ -136,6 +139,9 @@ class _NewExpenseState extends State<NewExpense> {
             const SizedBox(
               height: 10,
             ),
+            TextField(maxLength: 100,
+            decoration: InputDecoration(label: Text("Description (Optional)")),
+            controller: selectedDescription,),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [

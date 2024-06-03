@@ -14,11 +14,14 @@ const categoryIcons = {
 };
 
 class Expense {
+
+
   Expense(
       {required this.category,
       required this.expenseTitle,
       required this.amount,
-      required this.date})
+      required this.date,
+      required this.description})
       : expenseID = uuid.v4();
 
   final expenseID;
@@ -26,6 +29,7 @@ class Expense {
   final amount;
   final DateTime date;
   final Category category;
+  String description;
 
   String get formatedDate{
     return formater.format(date);

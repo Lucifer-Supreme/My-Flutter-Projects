@@ -1,3 +1,5 @@
+import 'package:fedrex_expense_tracker/expense_description.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:fedrex_expense_tracker/models/expense.dart';
 
@@ -5,6 +7,10 @@ class ExpenseItem extends StatelessWidget {
   final Expense expense;
 
   const ExpenseItem(this.expense, {super.key});
+
+  void showDetails(Expense expense,BuildContext context){
+    showModalBottomSheet(context: context, builder: (ctx)=> ExpenseDescription(expense));
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -17,11 +23,12 @@ class ExpenseItem extends StatelessWidget {
             border: Border.all(color: Colors.black),
             borderRadius: const BorderRadius.all(Radius.circular(10)),
               ),
-          padding: const EdgeInsets.all(20),
+          padding: const EdgeInsets.fromLTRB(20, 5, 20, 20),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
-                expense.expenseTitle,style: const TextStyle(fontWeight: FontWeight.bold),
+              TextButton(
+                 onPressed: (){showDetails(expense,context);}, child: Text("${expense.expenseTitle}",style: const TextStyle(fontWeight: FontWeight.bold)),
               ),
               const SizedBox(
                 height: 4,
@@ -29,6 +36,8 @@ class ExpenseItem extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
+                  Text("₹${expense.amount.toStringAsFixed(0)}"),
+                  const Spacer(),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
@@ -41,8 +50,8 @@ class ExpenseItem extends StatelessWidget {
                       //Text(expense.category.toString()),
                     ],
                   ),
-                  const Spacer(),
-                  Text("₹${expense.amount.toStringAsFixed(0)}"),
+
+
                   //Text(expense.expenseID)
                 ],
               )

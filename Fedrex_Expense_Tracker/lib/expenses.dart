@@ -56,7 +56,7 @@ class _ExpensesState extends State<Expenses> {
       appBar: AppBar(
         title: Text(
           "Fedrex Budget Assistant",
-          style: GoogleFonts.lora(fontWeight: FontWeight.bold),
+          style: Theme.of(context).textTheme.titleLarge
         ),
         // backgroundColor: Colors.lightBlueAccent,
         actions: [
