@@ -28,7 +28,7 @@ class ExpenseItem extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               TextButton(
-                 onPressed: (){showDetails(expense,context);}, child: Text("${expense.expenseTitle}",style: const TextStyle(fontWeight: FontWeight.bold)),
+                 onPressed: (){showDetails(expense,context);}, child: Text("${expense.title}",style: const TextStyle(fontWeight: FontWeight.bold)),
               ),
               const SizedBox(
                 height: 4,
@@ -45,7 +45,7 @@ class ExpenseItem extends StatelessWidget {
                       const SizedBox(
                         width: 4,
                       ),
-                      Text(expense.formatedDate),
+                      Text(expense.formattedDate),
 
                       //Text(expense.category.toString()),
                     ],

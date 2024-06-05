@@ -29,7 +29,7 @@ class ExpenseDescription extends StatelessWidget {
                 Row(
                   children: [
                     Text(
-                      "Expense: ${expense.expenseTitle}",
+                      "Expense: ${expense.title}",
                       style: Theme.of(context).textTheme.titleMedium,
                     ),
                     Spacer(),
@@ -48,7 +48,7 @@ class ExpenseDescription extends StatelessWidget {
                     Icon(categoryIcons[expense.category]),
                     Spacer(),
                     Icon(Icons.calendar_month),
-                    Text(expense.formatedDate)
+                    Text(expense.formattedDate)
                   ],
                 )
               ]),

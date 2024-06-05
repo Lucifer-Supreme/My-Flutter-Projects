@@ -1,3 +1,4 @@
+
 //new_expense.dart
 
 import 'package:fedrex_expense_tracker/main.dart';
@@ -50,22 +51,22 @@ class _NewExpenseState extends State<NewExpense> {
       showDialog(
           context: context,
           builder: (ctx) => AlertDialog(
-                title: const Text("Invalid Data"),
-                content: const Text(
-                    "Make sure you enter valid data into all the feilds"),
-                actions: [
-                  TextButton(
-                      onPressed: () {
-                        Navigator.pop(ctx);
-                      },
-                      child: const Text("Ok"))
-                ],
-              ));
+            title: const Text("Invalid Data"),
+            content: const Text(
+                "Make sure you enter valid data into all the feilds"),
+            actions: [
+              TextButton(
+                  onPressed: () {
+                    Navigator.pop(ctx);
+                  },
+                  child: const Text("Ok"))
+            ],
+          ));
       return;
     } else {
       widget.onAddExpense(Expense(
           category: _selectedCategory,
-          expenseTitle: selectedTitle.text,
+          title: selectedTitle.text,
           amount: enteredAmount,
           date: selectedDate!,
           description: selectedDescription.text));
@@ -90,7 +91,7 @@ class _NewExpenseState extends State<NewExpense> {
             Text(
               "Add New Expense",
               style:
-                  Theme.of(context).textTheme.titleLarge,
+              Theme.of(context).textTheme.titleLarge,
             ),
             const SizedBox(
               height: 20,
@@ -119,29 +120,29 @@ class _NewExpenseState extends State<NewExpense> {
                 ),
                 Expanded(
                     child: Padding(
-                  padding: const EdgeInsets.only(bottom: 20),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.end,
-                    children: [
-                      Text(
-                        selectedDate == null
-                            ? 'Select Date'
-                            : formater.format(selectedDate!),style: Theme.of(context).textTheme.titleMedium,
+                      padding: const EdgeInsets.only(bottom: 20),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        children: [
+                          Text(
+                            selectedDate == null
+                                ? 'Select Date'
+                                : formater.format(selectedDate!),style: Theme.of(context).textTheme.titleMedium,
+                          ),
+                          IconButton(
+                              onPressed: _presentDatePicker,
+                              icon: const Icon(Icons.calendar_month)),
+                        ],
                       ),
-                      IconButton(
-                          onPressed: _presentDatePicker,
-                          icon: const Icon(Icons.calendar_month)),
-                    ],
-                  ),
-                ))
+                    ))
               ],
             ),
             const SizedBox(
               height: 10,
             ),
             TextField(maxLength: 100,
-            decoration: InputDecoration(label: Text("Description (Optional)")),
-            controller: selectedDescription,),
+              decoration: InputDecoration(label: Text("Description (Optional)")),
+              controller: selectedDescription,),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
@@ -153,12 +154,12 @@ class _NewExpenseState extends State<NewExpense> {
                     items: Category.values
                         .map(
                           (category) => DropdownMenuItem(
-                            value: category,
-                            child: Text(
-                              category.name.toUpperCase(),
-                            ),
-                          ),
-                        )
+                        value: category,
+                        child: Text(
+                          category.name.toUpperCase(),
+                        ),
+                      ),
+                    )
                         .toList(),
                     onChanged: (value) {
                       if (value != Null) {

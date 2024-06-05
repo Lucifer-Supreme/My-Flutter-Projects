@@ -1,37 +1,63 @@
-import 'package:uuid/uuid.dart';
 import 'package:flutter/material.dart';
+import 'package:uuid/uuid.dart';
 import 'package:intl/intl.dart';
 
+final formatter = DateFormat.yMd();
+
 const uuid = Uuid();
-final formater=DateFormat('dd-MMMM-yyyy');
-enum Category { food, travel, leisure, work}
+
+enum Category { food, travel, leisure, work }
 
 const categoryIcons = {
-  Category.food: Icons.dinner_dining,
-  Category.leisure: Icons.videogame_asset_sharp,
-  Category.travel:Icons.flight_takeoff,
-  Category.work:Icons.work
+  Category.food: Icons.lunch_dining,
+  Category.travel: Icons.flight_takeoff,
+  Category.leisure: Icons.movie,
+  Category.work: Icons.work,
 };
 
 class Expense {
+  var description;
 
+  Expense({
+    required this.title,
+    required this.amount,
+    required this.date,
+    required this.category,
+    required this.description,
+  }) : id = uuid.v4();
 
-  Expense(
-      {required this.category,
-      required this.expenseTitle,
-      required this.amount,
-      required this.date,
-      required this.description})
-      : expenseID = uuid.v4();
-
-  final expenseID;
-  final String expenseTitle;
-  final amount;
+  final String id;
+  final String title;
+  final double amount;
   final DateTime date;
   final Category category;
-  String description;
 
-  String get formatedDate{
-    return formater.format(date);
+  String get formattedDate {
+    return formatter.format(date);
+  }
+}
+
+class ExpenseBucket {
+  const ExpenseBucket({
+    required this.category,
+    required this.expenses,
+  });
+
+  ExpenseBucket.forCategory(List<Expense> allExpenses, this.category)
+      : expenses = allExpenses
+      .where((expense) => expense.category == category)
+      .toList();
+
+  final Category category;
+  final List<Expense> expenses;
+
+  double get totalExpenses {
+    double sum = 0;
+
+    for (final expense in expenses) {
+      sum += expense.amount; // sum = sum + expense.amount
+    }
+
+    return sum;
   }
 }
