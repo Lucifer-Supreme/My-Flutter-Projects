@@ -99,95 +99,97 @@ class _ScoreCardState extends State<ScoreCard> {
 
   @override
   Widget build(BuildContext context) {
-    return (SizedBox(
-      height: double.infinity,
-      width: double.infinity,
-      child: Container(
-        padding: EdgeInsets.only(right: 40, left: 40, bottom: 10, top: 100),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: [
-            SizedBox(
-              child: Text(
-                "${currentBatting == 1 ? widget.Matchdata.team1 : widget.Matchdata.team2}'s  Batting"
-                    .toUpperCase(),
-                style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
-                textAlign: TextAlign.center,
-              ),
+    var isPortrait=MediaQuery.of(context).size.height>MediaQuery.of(context).size.width;
+
+    Widget content=Container(
+      padding: EdgeInsets.only(right: 40, left: 40, bottom: 10, top: isPortrait?100:0),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        children: [
+          SizedBox(
+            child: Text(
+              "${currentBatting == 1 ? widget.Matchdata.team1 : widget.Matchdata.team2}'s  Batting"
+                  .toUpperCase(),
+              style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+              textAlign: TextAlign.center,
             ),
-            SizedBox(
-                height: 100,
-                width: 300,
-                child: Container(
-                  padding: EdgeInsets.all(30),
-                  decoration: BoxDecoration(
-                      color: Color.fromARGB(200, 255, 255, 255),
-                      border: Border.all(color: Colors.black),
-                      borderRadius: BorderRadius.all(Radius.circular(20)),
-                      boxShadow: [
-                        BoxShadow(color: Colors.black, blurRadius: 25)
-                      ]),
-                  child: SingleChildScrollView(
-                    scrollDirection: Axis.horizontal,
-                    child: Row(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      ///////////
-                      ///////////
-                      ///////////
-                      ///////////
-                      children: (currentBatting == 1
-                              ? widget.Matchdata.scoreTeam1
-                              : widget.Matchdata.scoreTeam2)
-                          .asMap()
-                          .entries
-                          .map(
-                            (entry) => Row(
-                              children: [
-                                Container(
-                                  decoration: BoxDecoration(
-                                    color: entry.value.toString() == "Wicket"
-                                        ? Colors.red
-                                        : entry.value.toString() == "Dot Ball"
-                                            ? Colors.lime
-                                            : entry.value.toString() ==
-                                                    "No Ball"
-                                                ? Colors.grey
-                                                : Colors.green,
-                                    shape: BoxShape.circle,
-                                    border: Border.all(color: Colors.black),
-                                    //boxShadow: [BoxShadow(color: Colors.black38,blurRadius: 5,spreadRadius: 2)]
-                                  ),
-                                  child: SizedBox(
-                                    height: 30,
-                                    width: 30,
-                                    child: FittedBox(
-                                      fit: BoxFit.scaleDown,
-                                      child: Text(
-                                        entry.value.toString(),
-                                        style: const TextStyle(
-                                            fontWeight: FontWeight.bold),
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                                SizedBox(
-                                  width: 10,
-                                )
-                              ],
+          ),
+          SizedBox(
+              height: 100,
+              width: double.infinity,
+              child: Container(
+                padding: EdgeInsets.all(30),
+                decoration: BoxDecoration(
+                    color: Color.fromARGB(200, 255, 255, 255),
+                    border: Border.all(color: Colors.black),
+                    borderRadius: BorderRadius.all(Radius.circular(20)),
+                    boxShadow: [
+                      BoxShadow(color: Colors.black, blurRadius: 25)
+                    ]),
+                child: SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    ///////////
+                    ///////////
+                    ///////////
+                    ///////////
+                    children: (currentBatting == 1
+                        ? widget.Matchdata.scoreTeam1
+                        : widget.Matchdata.scoreTeam2)
+                        .asMap()
+                        .entries
+                        .map(
+                          (entry) => Row(
+                        children: [
+                          Container(
+                            decoration: BoxDecoration(
+                              color: entry.value.toString() == "Wicket"
+                                  ? Colors.red
+                                  : entry.value.toString() == "Dot Ball"
+                                  ? Colors.lime
+                                  : entry.value.toString() ==
+                                  "No Ball"
+                                  ? Colors.grey
+                                  : Colors.green,
+                              shape: BoxShape.circle,
+                              border: Border.all(color: Colors.black),
+                              //boxShadow: [BoxShadow(color: Colors.black38,blurRadius: 5,spreadRadius: 2)]
                             ),
+                            child: SizedBox(
+                              height: 30,
+                              width: 30,
+                              child: FittedBox(
+                                fit: BoxFit.scaleDown,
+                                child: Text(
+                                  entry.value.toString(),
+                                  style: const TextStyle(
+                                      fontWeight: FontWeight.bold),
+                                ),
+                              ),
+                            ),
+                          ),
+                          SizedBox(
+                            width: 10,
                           )
-                          .toList(),
-                      /////////////
-                      /////////////
-                      /////////////
-                      /////////////
-                    ),
+                        ],
+                      ),
+                    )
+                        .toList(),
+                    /////////////
+                    /////////////
+                    /////////////
+                    /////////////
                   ),
-                )),
-            const SizedBox(
-              height: 20,
-            ),
-            Row(
+                ),
+              )
+          ),
+          const SizedBox(
+            height: 20,
+          ),
+          Container(
+            decoration: BoxDecoration(color: Color.fromARGB(170, 255, 255, 255)),
+            child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 Column(
@@ -201,8 +203,8 @@ class _ScoreCardState extends State<ScoreCard> {
                   children: [
                     Text("Total Runs:"),
                     Text((currentBatting == 1
-                            ? widget.Matchdata.totalTeam1
-                            : widget.Matchdata.totalTeam2)
+                        ? widget.Matchdata.totalTeam1
+                        : widget.Matchdata.totalTeam2)
                         .toString()),
                   ],
                 ),
@@ -214,88 +216,101 @@ class _ScoreCardState extends State<ScoreCard> {
                 ),
               ],
             ),
-            SizedBox(
-              height: 20,
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [
-                //Buttons(value: 1, scoreAdd: scoreAdd(Score: 1)),
+          ),
+          SizedBox(
+            height: 20,
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              //Buttons(value: 1, scoreAdd: scoreAdd(Score: 1)),
 
-                ElevatedButton(
-                  onPressed: () {
-                    scoreAdd(Score: 1);
-                  },
-                  child: Text("1"),
-                ),
-                ElevatedButton(
-                  onPressed: () {
-                    scoreAdd(Score: 2);
-                  },
-                  child: Text("2"),
-                ),
-                ElevatedButton(
-                  onPressed: () {
-                    scoreAdd(Score: 3);
-                  },
-                  child: Text("3"),
-                ),
-                ElevatedButton(
-                  onPressed: () {
-                    scoreAdd(Score: 4);
-                  },
-                  child: Text("4"),
-                ),
-              ],
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [
-                ElevatedButton(
-                  onPressed: () {
-                    scoreAdd(Score: 6);
-                  },
-                  child: Text("6"),
-                ),
-                ElevatedButton(
-                  onPressed: () {
-                    scoreAdd(Score: "No Ball");
-                  },
-                  child: Text("No ball"),
-                ),
-                ElevatedButton(
-                  onPressed: () {
-                    scoreAdd(Score: "Wicket");
-                  },
-                  child: Text("Wicket"),
-                ),
-              ],
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [
-                ElevatedButton(
-                  onPressed: () {
-                    scoreAdd(Score: "Dot Ball");
-                  },
-                  child: Text("Dot Ball"),
-                ),
-                ElevatedButton(
-                  onPressed: allOut,
-                  child: Text("All out"),
-                ),
-              ],
-            ),
-            TextButton.icon(
-              onPressed: () {
-                widget.restart(widget.Matchdata);
-              },
-              icon: Icon(Icons.replay_sharp),
-              label: Text("Re-Match"),
-            )
-          ],
-        ),
+              ElevatedButton(
+                onPressed: () {
+                  scoreAdd(Score: 1);
+                },
+                child: Text("1"),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  scoreAdd(Score: 2);
+                },
+                child: Text("2"),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  scoreAdd(Score: 3);
+                },
+                child: Text("3"),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  scoreAdd(Score: 4);
+                },
+                child: Text("4"),
+              ),
+            ],
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              ElevatedButton(
+                onPressed: () {
+                  scoreAdd(Score: 6);
+                },
+                child: Text("6"),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  scoreAdd(Score: "No Ball");
+                },
+                child: Text("No ball"),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  scoreAdd(Score: "Wicket");
+                },
+                child: Text("Wicket"),
+              ),
+            ],
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              ElevatedButton(
+                onPressed: () {
+                  scoreAdd(Score: "Dot Ball");
+                },
+                child: Text("Dot Ball"),
+              ),
+              ElevatedButton(
+                onPressed: allOut,
+                child: Text("All out"),
+              ),
+            ],
+          ),
+          ElevatedButton.icon(
+            onPressed: () {
+              widget.restart(widget.Matchdata);
+            },
+            icon: Icon(Icons.start),
+            label: Text("Re-Match"),
+          )
+        ],
       ),
-    ));
+    );
+
+//////////////////////////////////////////////////////////////////////////////////
+
+    if (!isPortrait){
+      content = SingleChildScrollView(child:content);
+    }
+
+    return (SizedBox(
+      height: double.infinity,
+      width: double.infinity,
+      child: content
+    )
+    );
   }
 }

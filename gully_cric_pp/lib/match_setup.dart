@@ -30,32 +30,29 @@ class _MatchSetup extends State<MatchSetup> {
 
   @override
   Widget build(BuildContext context) {
+    var isPortrait=MediaQuery.of(context).size.height>MediaQuery.of(context).size.width;
     return SizedBox(
       height: double.infinity,
       width: double.infinity,
       child: Container(
         padding:
-            const EdgeInsets.only(left: 30, right: 30, top: 150, bottom: 50),
+            EdgeInsets.only(left: 30, right: 30, top: isPortrait?150:0, bottom: 50),
         child: SingleChildScrollView(
           child: (Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               Container(
-                  decoration: BoxDecoration(
-                      boxShadow: [BoxShadow(color: Colors.black, blurRadius: 25)],
-                      borderRadius: BorderRadius.circular(100)),
+                  decoration: BoxDecoration(boxShadow: [
+                    BoxShadow(color: Colors.black, blurRadius: 25)
+                  ], borderRadius: BorderRadius.circular(100)),
                   child: CircleAvatar(
-                    radius: 70,
-                    child: ClipOval(
-
-                      child: FittedBox(
-                        fit: BoxFit.cover,
-                        child: Image.asset("assets/wp9220264-modified.png"),
-                      ),
-                    )
-
-
-                  )),
+                      radius: 70,
+                      child: ClipOval(
+                        child: FittedBox(
+                          fit: BoxFit.cover,
+                          child: Image.asset("assets/wp9220264-modified.png"),
+                        ),
+                      ))),
               SizedBox(
                 height: 30,
               ),
@@ -66,6 +63,8 @@ class _MatchSetup extends State<MatchSetup> {
                   controller: _team1Controller,
                   readOnly: false,
                   decoration: const InputDecoration(
+                      fillColor: Color.fromARGB(130, 255, 255, 255),
+                      filled: true,
                       border: OutlineInputBorder(),
                       label: Text("Team 1 (First Batting)")),
                 ),
@@ -80,6 +79,8 @@ class _MatchSetup extends State<MatchSetup> {
                   controller: _team2Controller,
                   readOnly: false,
                   decoration: const InputDecoration(
+                      fillColor: Color.fromARGB(130, 255, 255, 255),
+                      filled: true,
                       border: OutlineInputBorder(),
                       label: Text("Team 2 (Second Batting)")),
                 ),
@@ -95,12 +96,14 @@ class _MatchSetup extends State<MatchSetup> {
                   keyboardType: TextInputType.number,
                   readOnly: false,
                   decoration: const InputDecoration(
+                      fillColor: Color.fromARGB(130, 255, 255, 255),
+                      filled: true,
                       border: OutlineInputBorder(),
                       label: Text("Number of Overs (default 1 over)")),
                 ),
               ),
               const SizedBox(height: 50),
-              TextButton.icon(
+              ElevatedButton.icon(
                   onPressed: beginMatch,
                   icon: const Icon(Icons.start_sharp),
                   label: const Text("Begin !"))
