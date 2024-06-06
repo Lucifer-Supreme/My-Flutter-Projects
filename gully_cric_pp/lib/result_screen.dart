@@ -23,7 +23,7 @@ class ResultScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             matchData.totalTeam1 == matchData.totalTeam2
-                ? Text(
+                ? const Text(
                     "It's a Tie",
                     textAlign: TextAlign.center,
                     style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold),
@@ -36,11 +36,11 @@ class ResultScreen extends StatelessWidget {
 
             Container(
               padding:
-                  EdgeInsets.only(top: 10, right: 30, left: 30, bottom: 20),
+                  const EdgeInsets.only(top: 10, right: 30, left: 30, bottom: 20),
               decoration: BoxDecoration(
-                  color: Color.fromARGB(150, 255, 255, 255),
+                  color: const Color.fromARGB(150, 255, 255, 255),
                   border: Border.all(color: Colors.black),
-                  borderRadius: BorderRadius.all(Radius.circular(20)),
+                  borderRadius: const BorderRadius.all(Radius.circular(20)),
                   ),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -70,8 +70,8 @@ class ResultScreen extends StatelessWidget {
               onPressed: () {
                 restart(matchData);
               },
-              icon: Icon(Icons.start_outlined),
-              label: Text("Re-Match"),
+              icon: const Icon(Icons.restart_alt),
+              label: const Text("Re-Match"),
             )
           ],
         )),

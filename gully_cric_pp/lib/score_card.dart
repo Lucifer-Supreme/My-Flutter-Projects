@@ -110,7 +110,7 @@ class _ScoreCardState extends State<ScoreCard> {
             child: Text(
               "${currentBatting == 1 ? widget.Matchdata.team1 : widget.Matchdata.team2}'s  Batting"
                   .toUpperCase(),
-              style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+              style: const TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
               textAlign: TextAlign.center,
             ),
           ),
@@ -118,12 +118,12 @@ class _ScoreCardState extends State<ScoreCard> {
               height: 100,
               width: double.infinity,
               child: Container(
-                padding: EdgeInsets.all(30),
+                padding: const EdgeInsets.all(30),
                 decoration: BoxDecoration(
-                    color: Color.fromARGB(200, 255, 255, 255),
+                    color: const Color.fromARGB(200, 255, 255, 255),
                     border: Border.all(color: Colors.black),
-                    borderRadius: BorderRadius.all(Radius.circular(20)),
-                    boxShadow: [
+                    borderRadius: const BorderRadius.all(Radius.circular(20)),
+                    boxShadow: const [
                       BoxShadow(color: Colors.black, blurRadius: 25)
                     ]),
                 child: SingleChildScrollView(
@@ -169,7 +169,7 @@ class _ScoreCardState extends State<ScoreCard> {
                               ),
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 10,
                           )
                         ],
@@ -188,20 +188,20 @@ class _ScoreCardState extends State<ScoreCard> {
             height: 20,
           ),
           Container(
-            decoration: BoxDecoration(color: Color.fromARGB(170, 255, 255, 255)),
+            decoration: const BoxDecoration(color: Color.fromARGB(170, 255, 255, 255)),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 Column(
                   children: [
-                    Text("Target:"),
+                    const Text("Target:"),
                     Text((currentBatting == 1 ? 0 : widget.Matchdata.totalTeam1)
                         .toString()),
                   ],
                 ),
                 Column(
                   children: [
-                    Text("Total Runs:"),
+                    const Text("Total Runs:"),
                     Text((currentBatting == 1
                         ? widget.Matchdata.totalTeam1
                         : widget.Matchdata.totalTeam2)
@@ -210,14 +210,14 @@ class _ScoreCardState extends State<ScoreCard> {
                 ),
                 Column(
                   children: [
-                    Text("Balls left:"),
+                    const Text("Balls left:"),
                     Text((((widget.Matchdata.overs) * 6) - counter).toString()),
                   ],
                 ),
               ],
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
           Row(
@@ -229,25 +229,25 @@ class _ScoreCardState extends State<ScoreCard> {
                 onPressed: () {
                   scoreAdd(Score: 1);
                 },
-                child: Text("1"),
+                child: const Text("1"),
               ),
               ElevatedButton(
                 onPressed: () {
                   scoreAdd(Score: 2);
                 },
-                child: Text("2"),
+                child: const Text("2"),
               ),
               ElevatedButton(
                 onPressed: () {
                   scoreAdd(Score: 3);
                 },
-                child: Text("3"),
+                child: const Text("3"),
               ),
               ElevatedButton(
                 onPressed: () {
                   scoreAdd(Score: 4);
                 },
-                child: Text("4"),
+                child: const Text("4"),
               ),
             ],
           ),
@@ -258,19 +258,19 @@ class _ScoreCardState extends State<ScoreCard> {
                 onPressed: () {
                   scoreAdd(Score: 6);
                 },
-                child: Text("6"),
+                child: const Text("6"),
               ),
               ElevatedButton(
                 onPressed: () {
                   scoreAdd(Score: "No Ball");
                 },
-                child: Text("No ball"),
+                child: const Text("No ball"),
               ),
               ElevatedButton(
                 onPressed: () {
                   scoreAdd(Score: "Wicket");
                 },
-                child: Text("Wicket"),
+                child: const Text("Wicket"),
               ),
             ],
           ),
@@ -281,11 +281,11 @@ class _ScoreCardState extends State<ScoreCard> {
                 onPressed: () {
                   scoreAdd(Score: "Dot Ball");
                 },
-                child: Text("Dot Ball"),
+                child: const Text("Dot Ball"),
               ),
               ElevatedButton(
                 onPressed: allOut,
-                child: Text("All out"),
+                child: const Text("All out"),
               ),
             ],
           ),
@@ -293,8 +293,8 @@ class _ScoreCardState extends State<ScoreCard> {
             onPressed: () {
               widget.restart(widget.Matchdata);
             },
-            icon: Icon(Icons.start),
-            label: Text("Re-Match"),
+            icon: const Icon(Icons.restart_alt),
+            label: const Text("Re-Match"),
           )
         ],
       ),

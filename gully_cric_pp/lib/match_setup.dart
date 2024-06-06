@@ -36,24 +36,24 @@ class _MatchSetup extends State<MatchSetup> {
       width: double.infinity,
       child: Container(
         padding:
-            EdgeInsets.only(left: 30, right: 30, top: isPortrait?150:0, bottom: 50),
+            EdgeInsets.only(left: 30, right: 30, top: isPortrait?100:0, bottom: 50),
         child: SingleChildScrollView(
           child: (Column(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               Container(
-                  decoration: BoxDecoration(boxShadow: [
+                  decoration: BoxDecoration(boxShadow: const [
                     BoxShadow(color: Colors.black, blurRadius: 25)
                   ], borderRadius: BorderRadius.circular(100)),
                   child: CircleAvatar(
-                      radius: 70,
+                      radius: isPortrait?100:70,
                       child: ClipOval(
                         child: FittedBox(
                           fit: BoxFit.cover,
                           child: Image.asset("assets/wp9220264-modified.png"),
                         ),
                       ))),
-              SizedBox(
+              const SizedBox(
                 height: 30,
               ),
               SizedBox(
@@ -102,7 +102,7 @@ class _MatchSetup extends State<MatchSetup> {
                       label: Text("Number of Overs (default 1 over)")),
                 ),
               ),
-              const SizedBox(height: 50),
+              SizedBox(height: isPortrait?50:0),
               ElevatedButton.icon(
                   onPressed: beginMatch,
                   icon: const Icon(Icons.start_sharp),
