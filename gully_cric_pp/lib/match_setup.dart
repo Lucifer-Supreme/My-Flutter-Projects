@@ -30,13 +30,14 @@ class _MatchSetup extends State<MatchSetup> {
 
   @override
   Widget build(BuildContext context) {
-    var isPortrait=MediaQuery.of(context).size.height>MediaQuery.of(context).size.width;
+    var isPortrait =
+        MediaQuery.of(context).size.height > MediaQuery.of(context).size.width;
     return SizedBox(
       height: double.infinity,
       width: double.infinity,
       child: Container(
-        padding:
-            EdgeInsets.only(left: 30, right: 30, top: isPortrait?100:0, bottom: 50),
+        padding: EdgeInsets.only(
+            left: 30, right: 30, top: isPortrait ? 100 : 0, bottom: 50),
         child: SingleChildScrollView(
           child: (Column(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -46,7 +47,7 @@ class _MatchSetup extends State<MatchSetup> {
                     BoxShadow(color: Colors.black, blurRadius: 25)
                   ], borderRadius: BorderRadius.circular(100)),
                   child: CircleAvatar(
-                      radius: isPortrait?100:70,
+                      radius: isPortrait ? 100 : 70,
                       child: ClipOval(
                         child: FittedBox(
                           fit: BoxFit.cover,
@@ -102,11 +103,14 @@ class _MatchSetup extends State<MatchSetup> {
                       label: Text("Number of Overs (default 1 over)")),
                 ),
               ),
-              SizedBox(height: isPortrait?50:0),
+              SizedBox(height: isPortrait ? 50 : 0),
               ElevatedButton.icon(
                   onPressed: beginMatch,
                   icon: const Icon(Icons.start_sharp),
-                  label: const Text("Begin !"))
+                  label: const Text("Begin !"),
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: const Color.fromARGB(200, 255, 255, 255),
+                  ))
             ],
           )),
         ),

@@ -8,12 +8,13 @@ class Homepage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var isPortrait=MediaQuery.of(context).size.height>MediaQuery.of(context).size.width;
+    var isPortrait =
+        MediaQuery.of(context).size.height > MediaQuery.of(context).size.width;
     return Center(
       child: SingleChildScrollView(
         child: SizedBox(
           child: Container(
-            margin: EdgeInsets.only(top: isPortrait?50:0),
+            margin: EdgeInsets.only(top: isPortrait ? 50 : 0),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
@@ -24,30 +25,33 @@ class Homepage extends StatelessWidget {
                   color: Colors.black,
                 ),
                 SizedBox(
-                  height: isPortrait?50:0,
+                  height: isPortrait ? 50 : 0,
                 ),
                 SizedBox(
                   width: double.infinity,
                   child: Container(
-                    decoration: const BoxDecoration(boxShadow: [BoxShadow(color: Colors.white54)]),
+                    decoration: const BoxDecoration(
+                        boxShadow: [BoxShadow(color: Colors.white54)]),
                     child: Text(
                       "Gully Cricket Score Card",
-                      style: GoogleFonts.lora(fontWeight: FontWeight.bold,fontSize: 30),
+                      style: GoogleFonts.lora(
+                          fontWeight: FontWeight.bold, fontSize: 30),
                       textAlign: TextAlign.center,
                     ),
                   ),
                 ),
                 SizedBox(
-                  height: isPortrait?35:0,
+                  height: isPortrait ? 35 : 0,
                 ),
                 ElevatedButton.icon(
-                  onPressed: () {
-                    screenChange();
-                  },
-
-                  icon: const Icon(Icons.arrow_circle_right),
-                  label: const Text("Start Match!"),
-                ),
+                    onPressed: () {
+                      screenChange();
+                    },
+                    icon: const Icon(Icons.arrow_circle_right),
+                    label: const Text("Start Match!"),
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: const Color.fromARGB(200, 255, 255, 255),
+                    )),
               ],
             ),
           ),
