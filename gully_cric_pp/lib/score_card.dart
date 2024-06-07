@@ -98,8 +98,11 @@ class _ScoreCardState extends State<ScoreCard> {
     });
   }
 
+
   @override
   Widget build(BuildContext context) {
+    MainAxisAlignment mainAxisAlignment = MainAxisAlignment.start;
+    
     var isPortrait =
         MediaQuery.of(context).size.height > MediaQuery.of(context).size.width;
 
@@ -134,8 +137,9 @@ class _ScoreCardState extends State<ScoreCard> {
                     ]),
                 child: SingleChildScrollView(
                   scrollDirection: Axis.horizontal,
+
                   child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.center,
                     ///////////
                     ///////////
                     ///////////
@@ -227,7 +231,7 @@ class _ScoreCardState extends State<ScoreCard> {
             height: 20,
           ),
           Row(
-            mainAxisAlignment: MainAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               //Buttons(value: 1, scoreAdd: scoreAdd(Score: 1)),
 
