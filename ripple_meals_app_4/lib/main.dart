@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 import 'package:google_fonts/google_fonts.dart';
-import 'package:ripple_meals_app_4/screens/categories.dart';
+import 'package:ripple_meals_app_4/screens/categories_screen.dart';
+
 
 final theme = ThemeData(
   useMaterial3: true,
@@ -9,7 +10,7 @@ final theme = ThemeData(
     brightness: Brightness.dark,
     seedColor: const Color.fromARGB(255, 131, 57, 0),
   ),
-  textTheme: GoogleFonts.latoTextTheme(),
+  textTheme: TextTheme(titleLarge: GoogleFonts.lora(color: Colors.black,fontWeight: FontWeight.bold),titleMedium: GoogleFonts.lora(color: Colors.white),),
 );
 
 void main() {
