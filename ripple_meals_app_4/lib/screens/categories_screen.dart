@@ -5,9 +5,12 @@ import 'package:ripple_meals_app_4/screens/meals_screen.dart';
 import 'package:ripple_meals_app_4/widgets/category_grid_item.dart';
 
 import '../models/category.dart';
+import '../models/meal.dart';
 
 class CategoriesScreen extends StatelessWidget {
-  const CategoriesScreen({super.key});
+  CategoriesScreen({super.key,required this.onToggleFavorite});
+
+  void Function(Meal meal) onToggleFavorite;
 
   void _selectcategory(BuildContext context, Category category) {
     final filteredMeals = dummyMeals
@@ -17,16 +20,13 @@ class CategoriesScreen extends StatelessWidget {
         context,
         MaterialPageRoute(
           builder: (context) =>
-              MealsScreen(title: category.title, mealsList: filteredMeals, category: category,),
+              MealsScreen(title: category.title, mealsList: filteredMeals, categoryColor: category.color, onToggleFavorite: onToggleFavorite,),
         ));
   }
 
   @override
   Widget build(context) {
     return (Scaffold(
-      appBar: AppBar(
-        title: const Text("Pick Category"),
-      ),
       body: GridView(
         padding: const EdgeInsets.all(10),
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(

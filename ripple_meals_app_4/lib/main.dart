@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:google_fonts/google_fonts.dart';
 import 'package:ripple_meals_app_4/screens/categories_screen.dart';
+import 'package:ripple_meals_app_4/screens/tabs_screen.dart';
 
 
 final theme = ThemeData(
@@ -24,7 +25,7 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         theme: theme,
-        home: CategoriesScreen()
+        home: TabsScreen()
     );
   }
 }

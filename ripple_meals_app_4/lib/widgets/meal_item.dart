@@ -6,12 +6,12 @@ import 'package:ripple_meals_app_4/screens/meal_item_detail_screen.dart';
 import 'package:ripple_meals_app_4/widgets/meal_item_metadata.dart';
 import 'package:transparent_image/transparent_image.dart';
 
-import '../models/category.dart';
-
 class MealItem extends StatelessWidget {
   final Meal meal;
 
-  final Category category;
+  final Color categoryColor;
+
+  void Function(Meal meal) onToggleFavorite;
 
   String get complexityText {
     return meal.complexity.name[0].toUpperCase() +
@@ -23,7 +23,7 @@ class MealItem extends StatelessWidget {
         meal.affordability.name.substring(1);
   }
 
-  const MealItem({super.key, required this.meal, required this.category});
+  MealItem({super.key, required this.meal, required this.categoryColor,required this.onToggleFavorite});
 
   Widget build(context) {
     return Card(
@@ -31,7 +31,7 @@ class MealItem extends StatelessWidget {
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
       clipBehavior: Clip.hardEdge, //****
       elevation: 15,
-      shadowColor: category.color,
+      shadowColor: categoryColor,
       child: InkWell(
         onTap: () {
           Navigator.push(
@@ -39,7 +39,7 @@ class MealItem extends StatelessWidget {
               MaterialPageRoute(
                   builder: (context) => MealItemDetailScreen(
                         meal: meal,
-                        categoryColor: category.color,
+                        categoryColor: categoryColor, onToggleFavorite: onToggleFavorite,
                       )));
         },
         child: Stack(
