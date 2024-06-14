@@ -15,7 +15,9 @@ class MealsScreen extends StatelessWidget {
 
   void Function(Meal meal) onToggleFavorite;
 
-  MealsScreen({this.title, required this.mealsList,required this.categoryColor,required this.onToggleFavorite, super.key});
+  final List<Meal> favoriteMeals;
+
+  MealsScreen({this.title,required this.favoriteMeals, required this.mealsList,required this.categoryColor,required this.onToggleFavorite, super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -30,7 +32,7 @@ class MealsScreen extends StatelessWidget {
     else{
       content= ListView.builder(
         itemCount: mealsList.length,
-          itemBuilder: (ctx, index) => MealItem(meal: mealsList[index], categoryColor: categoryColor, onToggleFavorite: onToggleFavorite));
+          itemBuilder: (ctx, index) => MealItem(meal: mealsList[index], categoryColor: categoryColor, onToggleFavorite: onToggleFavorite, favoriteMeals: favoriteMeals,));
     }
 
     if (title==null){

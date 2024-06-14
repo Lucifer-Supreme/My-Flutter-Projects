@@ -29,6 +29,8 @@ class _TabsScreenState extends State<TabsScreen> {
     else{
       _favoriteMeals.add(meal);
     }
+    setState(() {
+    });
   }
 
   void _selectPage(int index){
@@ -38,11 +40,11 @@ class _TabsScreenState extends State<TabsScreen> {
   }
 
   Widget build(context){
-    Widget activePage=CategoriesScreen(onToggleFavorite: _toggleMealFavoriteStatus,);
+    Widget activePage=CategoriesScreen(onToggleFavorite: _toggleMealFavoriteStatus, favoriteMeals: _favoriteMeals,);
     var activePageTitle = "Pick Category";
 
     if(_selectedPageIndex==1){
-      activePage=MealsScreen(mealsList: _favoriteMeals,categoryColor: Colors.orange, onToggleFavorite: _toggleMealFavoriteStatus);
+      activePage=MealsScreen(mealsList: _favoriteMeals,categoryColor: Colors.orange, onToggleFavorite: _toggleMealFavoriteStatus, favoriteMeals: _favoriteMeals,);
       activePageTitle = "Favorites";
     }
     return(

@@ -13,6 +13,8 @@ class MealItem extends StatelessWidget {
 
   void Function(Meal meal) onToggleFavorite;
 
+  final List<Meal> favoriteMeals;
+
   String get complexityText {
     return meal.complexity.name[0].toUpperCase() +
         meal.complexity.name.substring(1);
@@ -23,7 +25,7 @@ class MealItem extends StatelessWidget {
         meal.affordability.name.substring(1);
   }
 
-  MealItem({super.key, required this.meal, required this.categoryColor,required this.onToggleFavorite});
+  MealItem({super.key, required this.meal, required this.categoryColor,required this.onToggleFavorite,required this.favoriteMeals});
 
   Widget build(context) {
     return Card(
@@ -39,7 +41,7 @@ class MealItem extends StatelessWidget {
               MaterialPageRoute(
                   builder: (context) => MealItemDetailScreen(
                         meal: meal,
-                        categoryColor: categoryColor, onToggleFavorite: onToggleFavorite,
+                        categoryColor: categoryColor, onToggleFavorite: onToggleFavorite, favoriteMeals: favoriteMeals,
                       )));
         },
         child: Stack(

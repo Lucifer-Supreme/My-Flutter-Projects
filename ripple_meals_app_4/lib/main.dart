@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-
 import 'package:google_fonts/google_fonts.dart';
-import 'package:ripple_meals_app_4/screens/categories_screen.dart';
 import 'package:ripple_meals_app_4/screens/tabs_screen.dart';
 
 
