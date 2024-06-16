@@ -28,15 +28,15 @@ class StateMealItemDetails extends State<MealItemDetailScreen> {
     ScaffoldMessenger.of(context).showSnackBar(SnackBar(
         duration: const Duration(seconds: 2),
         content: added
-            ? const Text(
+            ? Text(
                 "Meal Added to favorites...",
                 style:
-                    TextStyle(color: Colors.green, fontWeight: FontWeight.bold),
+                    Theme.of(context).textTheme.labelMedium!.copyWith(color: Colors.green)
               )
-            : const Text(
+            :Text(
                 "Meal Removed from favorites...",
                 style:
-                    TextStyle(color: Colors.red, fontWeight: FontWeight.bold),
+                Theme.of(context).textTheme.labelMedium!.copyWith(color: Colors.red)
               )));
   }
 
