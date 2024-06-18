@@ -8,7 +8,8 @@ import '../models/category.dart';
 import '../models/meal.dart';
 
 class CategoriesScreen extends StatelessWidget {
-  CategoriesScreen({super.key,required this.favoriteMeals,required this.onToggleFavorite});
+  CategoriesScreen(
+      {super.key, required this.favoriteMeals, required this.onToggleFavorite});
 
   void Function(Meal meal) onToggleFavorite;
 
@@ -21,8 +22,13 @@ class CategoriesScreen extends StatelessWidget {
     Navigator.push(
         context,
         MaterialPageRoute(
-          builder: (context) =>
-              MealsScreen(title: category.title, mealsList: filteredMeals, categoryColor: category.color, onToggleFavorite: onToggleFavorite, favoriteMeals: favoriteMeals,),
+          builder: (context) => MealsScreen(
+            title: category.title,
+            mealsList: filteredMeals,
+            categoryColor: category.color,
+            onToggleFavorite: onToggleFavorite,
+            favoriteMeals: favoriteMeals,
+          ),
         ));
   }
 
@@ -40,7 +46,9 @@ class CategoriesScreen extends StatelessWidget {
           for (final category in availableCategories)
             CategoryGridItem(
               category: category,
-              selectedCategory: () {_selectcategory(context, category);},
+              selectedCategory: () {
+                _selectcategory(context, category);
+              },
             )
         ],
       ),

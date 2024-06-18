@@ -17,7 +17,12 @@ class MealsScreen extends StatelessWidget {
 
   final List<Meal> favoriteMeals;
 
-  MealsScreen({this.title,required this.favoriteMeals, required this.mealsList,required this.categoryColor,required this.onToggleFavorite, super.key});
+  MealsScreen({this.title,
+    required this.favoriteMeals,
+    required this.mealsList,
+    required this.categoryColor,
+    required this.onToggleFavorite,
+    super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -2,7 +2,10 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:ripple_meals_app_4/providers/favorites.provider.dart';
 import 'package:ripple_meals_app_4/data/dummy_data.dart';
+import 'package:ripple_meals_app_4/providers/meals_provider.dart';
 import 'package:ripple_meals_app_4/screens/categories_screen.dart';
 import 'package:ripple_meals_app_4/screens/filter_screen.dart';
 import 'package:ripple_meals_app_4/screens/meals_screen.dart';
@@ -10,16 +13,16 @@ import 'package:ripple_meals_app_4/widgets/main_drawer.dart';
 
 import '../models/meal.dart';
 
-class TabsScreen extends StatefulWidget {
+class TabsScreen extends ConsumerStatefulWidget {
   const TabsScreen({super.key});
 
   @override
-  State<TabsScreen> createState() {
+  ConsumerState<TabsScreen> createState() {
     return _TabsScreenState();
   }
 }
 
-class _TabsScreenState extends State<TabsScreen> {
+class _TabsScreenState extends ConsumerState<TabsScreen> {
   int _selectedPageIndex = 0;
   final List<Meal> _favoriteMeals = [];
 
@@ -60,6 +63,7 @@ class _TabsScreenState extends State<TabsScreen> {
   }
 
   Widget build(context) {
+    final meals =ref.watch(mealsProvider);
     Widget activePage = CategoriesScreen(
       onToggleFavorite: _toggleMealFavoriteStatus,
       favoriteMeals: _favoriteMeals,
@@ -67,6 +71,7 @@ class _TabsScreenState extends State<TabsScreen> {
     var activePageTitle = "Pick Category";
 
     if (_selectedPageIndex == 1) {
+      final favoriteMeals = ref.watch(favoriteMealsProvider);
       activePage = MealsScreen(
         mealsList: _favoriteMeals,
         categoryColor: Colors.orange,
