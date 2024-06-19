@@ -28,16 +28,16 @@ class StateMealItemDetails extends State<MealItemDetailScreen> {
     ScaffoldMessenger.of(context).showSnackBar(SnackBar(
         duration: const Duration(seconds: 2),
         content: added
-            ? Text(
-                "Meal Added to favorites...",
-                style:
-                    Theme.of(context).textTheme.labelMedium!.copyWith(color: Colors.green)
-              )
-            :Text(
-                "Meal Removed from favorites...",
-                style:
-                Theme.of(context).textTheme.labelMedium!.copyWith(color: Colors.red)
-              )));
+            ? Text("Meal Added to favorites...",
+                style: Theme.of(context)
+                    .textTheme
+                    .labelMedium!
+                    .copyWith(color: Colors.green))
+            : Text("Meal Removed from favorites...",
+                style: Theme.of(context)
+                    .textTheme
+                    .labelMedium!
+                    .copyWith(color: Colors.red))));
   }
 
   @override
@@ -55,11 +55,18 @@ class StateMealItemDetails extends State<MealItemDetailScreen> {
         child: (Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Image.network(
-              widget.meal.imageUrl,
-              height: 200,
-              width: double.infinity,
-              fit: BoxFit.cover,
+            Hero(
+              tag: widget.meal.id,
+              child: ClipRect(
+                child: Container(
+                  height: 200,
+                  width: double.infinity,
+                  child: Image.network(
+                    widget.meal.imageUrl,
+                    fit: BoxFit.cover,
+                  ),
+                ),
+              ),
             ),
             Container(
               padding: EdgeInsets.symmetric(horizontal: 20),
@@ -101,16 +108,19 @@ class StateMealItemDetails extends State<MealItemDetailScreen> {
           favoriteToggleMessage(!isExisting);
           setState(() {});
         },
-        child: isExisting
-            ? Icon(
-                Icons.star,
-                color: Colors.red,
-              )
-            : Icon(
-                Icons.star,
-                color: Colors.white,
-              ),
         tooltip: "Mark as Favorite",
+        child: AnimatedSwitcher(
+          duration: Duration(milliseconds: 500),
+          transitionBuilder: (child, animation) => RotationTransition(
+            turns: Tween(begin: 0.6, end: 1.0).animate(animation),
+            child: child,
+          ),
+          child: Icon(
+            Icons.star,
+            color: isExisting ? Colors.red : Colors.white,
+            key: ValueKey(isExisting),
+          ),
+        ),
       ),
     );
   }
