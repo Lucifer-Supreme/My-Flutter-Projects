@@ -1,16 +1,19 @@
 
 //new_expense.dart
 
+import 'dart:convert';
+
 import 'package:fedrex_expense_tracker/main.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
 import 'package:fedrex_expense_tracker/models/expense.dart';
+import 'package:http/http.dart'as http;
 
 class NewExpense extends StatefulWidget {
-  const NewExpense({required this.onAddExpense, super.key});
+  const NewExpense({super.key});
 
-  final void Function(Expense expense) onAddExpense;
+
   @override
   State<NewExpense> createState() {
     return _NewExpenseState();
@@ -42,7 +45,7 @@ class _NewExpenseState extends State<NewExpense> {
     });
   }
 
-  void submitData() {
+  void submitData() async {
     final enteredAmount = double.tryParse(selectedAmount.text);
     final bool amountInvalid = enteredAmount == null || enteredAmount <= 0;
     if (selectedTitle.text.trim().isEmpty ||
@@ -64,13 +67,27 @@ class _NewExpenseState extends State<NewExpense> {
           ));
       return;
     } else {
-      widget.onAddExpense(Expense(
-          category: _selectedCategory,
-          title: selectedTitle.text,
-          amount: enteredAmount,
-          date: selectedDate!,
-          description: selectedDescription.text));
-      print(selectedDescription.toString());
+      print ("ok");
+
+      final url = Uri.https("flutter-firebase-testing-c0d66-default-rtdb.firebaseio.com",'Expense-List.json');
+      final response = await http.post(url,headers: {
+        "Content-Type":"application/json"
+      },
+          body: json.encode({
+            'category': _selectedCategory.name,
+            'title': selectedTitle.text,
+            'amount': enteredAmount,
+            'date': selectedDate!.toString(),
+            'description': selectedDescription.text
+          }));
+
+      print(response.body);
+      print(response.statusCode);
+
+      if(!context.mounted){
+        return;
+      }
+
       Navigator.pop(context);
     }
   }
@@ -291,7 +308,7 @@ class _NewExpenseState extends State<NewExpense> {
                         onPressed: () {
                           Navigator.pop(context);
                         },
-                        child: const Text("Cancel")),
+                        child: Text("Cancel",style: TextStyle(color: Colors.black),)),
                     const SizedBox(
                       width: 5,
                     ),

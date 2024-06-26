@@ -9,20 +9,20 @@ var kDarkColorScheme = ColorScheme.fromSeed(brightness: Brightness.dark,seedColo
 void main() {
 
   runApp(MaterialApp(
-    darkTheme: ThemeData.dark().copyWith(
-      colorScheme: kDarkColorScheme,
-      appBarTheme: AppBarTheme(backgroundColor: Colors.deepPurple),
-      cardTheme: CardTheme(color: Colors.white30),
-        textTheme: TextTheme(
-          bodyLarge: TextStyle(color: Colors.white), // Set default text color
-          bodyMedium: TextStyle(color: Colors.white70),
-            titleLarge: GoogleFonts.playfairDisplay(
-            fontSize: 20,
-            fontWeight: FontWeight.bold,
-            color: Colors.white),
-            titleMedium: GoogleFonts.bebasNeue(color: Colors.white30)
+      darkTheme: ThemeData.dark().copyWith(
+          colorScheme: kDarkColorScheme,
+          appBarTheme: AppBarTheme(backgroundColor: Colors.deepPurple),
+          cardTheme: CardTheme(color: Colors.white30),
+          textTheme: TextTheme(
+              bodyLarge: TextStyle(color: Colors.white), // Set default text color
+              bodyMedium: TextStyle(color: Colors.white70),
+              titleLarge: GoogleFonts.playfairDisplay(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white),
+              titleMedium: GoogleFonts.bebasNeue(color: Colors.white30)
 
-    )),
+          )),
       theme: ThemeData().copyWith(
           appBarTheme: AppBarTheme(
               backgroundColor: kColorScheme.inversePrimary,
