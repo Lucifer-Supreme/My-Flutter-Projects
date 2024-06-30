@@ -17,33 +17,42 @@ class NewItemScreen extends StatefulWidget {
 class _NewItemScreenState extends State<NewItemScreen> {
   final _finalKey = GlobalKey<FormState>();
   var _enteredName = "";
-  var _enteredQuantity=1;
+  var _enteredQuantity = 1;
   var _selectedCategory = categories[availableCategories.other];
+  var isSending = false;
 
   void _saveItem() async {
-    if(_finalKey.currentState!.validate()){
+    if (_finalKey.currentState!.validate()) {
       _finalKey.currentState!.save();
-      final url = Uri.https("flutter-firebase-testing-c0d66-default-rtdb.firebaseio.com",'shopping-list.json');
-      final response = await http.post(url,headers: {
-        "Content-Type":"application/json"
-      },
-      body: json.encode({
-        'name':_enteredName,
-        'quantity':_enteredQuantity,
-        'category':_selectedCategory?.categoryName,
-      }));
+      setState(() {
+        isSending = true;
+      });
+      final url = Uri.https(
+          "flutter-firebase-testing-c0d66-default-rtdb.firebaseio.com",
+          'shopping-list.json');
+      final response = await http.post(url,
+          headers: {"Content-Type": "application/json"},
+          body: json.encode({
+            'name': _enteredName,
+            'quantity': _enteredQuantity,
+            'category': _selectedCategory?.categoryName,
+          }));
 
       print(response.body);
       print(response.statusCode);
 
-      if(!context.mounted){
+      final Map<String, dynamic> resData = json.decode(response.body);
+
+      if (!context.mounted) {
         return;
       }
 
-      Navigator.pop(context);
-
+      Navigator.of(context).pop(GroceryItem(
+          id: resData['name'],
+          name: _enteredName,
+          quantity: _enteredQuantity,
+          category: _selectedCategory!));
     }
-
   }
 
   Widget build(context) {
@@ -74,11 +83,13 @@ class _NewItemScreenState extends State<NewItemScreen> {
                     return null;
                   }
                 },
-                onSaved: (value){
+                onSaved: (value) {
                   _enteredName = value!;
                 },
               ),
-              SizedBox(height: 10,),
+              SizedBox(
+                height: 10,
+              ),
               Row(
                 children: [
                   SizedBox(
@@ -100,7 +111,7 @@ class _NewItemScreenState extends State<NewItemScreen> {
                             return null;
                           }
                         },
-                        onSaved: (value){
+                        onSaved: (value) {
                           _enteredQuantity = int.parse(value!);
                         },
                       ),
@@ -111,7 +122,7 @@ class _NewItemScreenState extends State<NewItemScreen> {
                   ),
                   Expanded(
                     child: DropdownButtonFormField(
-                      value: _selectedCategory,
+                        value: _selectedCategory,
                         decoration: InputDecoration(
                             border: OutlineInputBorder(),
                             label: Text("Select Category")),
@@ -132,7 +143,7 @@ class _NewItemScreenState extends State<NewItemScreen> {
                             )
                         ],
                         onChanged: (value) {
-                        _selectedCategory = value;
+                          _selectedCategory = value;
                         }),
                   ),
                 ],
@@ -143,10 +154,22 @@ class _NewItemScreenState extends State<NewItemScreen> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
-                  TextButton(onPressed: () {
-                    _finalKey.currentState!.reset();
-                  }, child: Text("Reset")),
-                  ElevatedButton(onPressed: _saveItem, child: Text("Submit"))
+                  TextButton(
+                      onPressed: isSending
+                          ? null
+                          : () {
+                              _finalKey.currentState!.reset();
+                            },
+                      child: Text("Reset")),
+                  ElevatedButton(
+                      onPressed: isSending ? null : _saveItem,
+                      child: isSending
+                          ? SizedBox(
+                              height: 15,
+                              width: 15,
+                              child: CircularProgressIndicator(),
+                            )
+                          : Text("Submit"))
                 ],
               )
             ],

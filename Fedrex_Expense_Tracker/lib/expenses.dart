@@ -1,11 +1,9 @@
 import 'dart:convert';
-import 'dart:ffi';
 import 'package:fedrex_expense_tracker/widgets/charts/chart.dart';
 import 'package:fedrex_expense_tracker/widgets/new_expense.dart';
 import 'package:flutter/material.dart';
 import 'widgets/expenses_list.dart';
 import 'models/expense.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:http/http.dart' as http;
 
 extension CategoryExtension on Category {

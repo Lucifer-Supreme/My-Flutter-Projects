@@ -22,7 +22,7 @@ class GroceryListItem extends StatelessWidget {
     return Container(
       height: 50,
       child: Dismissible(
-        background: Container(color: Theme.of(context).colorScheme.onError,),
+        //background: Container(color: Theme.of(context).colorScheme.onError,),
         onDismissed: (direction){removeItem(item);},
         key: ValueKey(item),
         child: (ListTile(

@@ -1,8 +1,5 @@
 import 'dart:convert';
-import 'dart:ffi';
-
 import 'package:cartpal_shopping_list_app/data/categories_map.dart';
-import 'package:cartpal_shopping_list_app/models/category.dart';
 import 'package:cartpal_shopping_list_app/models/grocery_item.dart';
 import 'package:cartpal_shopping_list_app/screens/new_item_screen.dart';
 import 'package:cartpal_shopping_list_app/widgets/grocery_list_item.dart';
@@ -18,6 +15,9 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   List<GroceryItem> _groceryItems = [];
+  var isLoading = true;
+  //late Future<List<GroceryItem>> _loadedItems;
+  var _error = null;
 
   @override
   void initState() {
@@ -26,61 +26,101 @@ class _HomeScreenState extends State<HomeScreen> {
     _loadItems();
   }
 
-  void _loadItems() async {
+  Future<List<GroceryItem>> _loadItems() async {
     final url = Uri.https("flutter-firebase-testing-c0d66-default-rtdb.firebaseio.com",'shopping-list.json');
 
-    final response = await http.get(url);
-    print(response.body);
 
-    final Map<String,dynamic>listData = json.decode(response.body);
-    final List<GroceryItem> _loadedItems = [];
-    for(final item in listData.entries){
-      final categoryHere = categories.entries.firstWhere((catItem)=>catItem.value.categoryName==item.value["category"]).value;
-      _loadedItems.add(GroceryItem(id: item.key, name: item.value['name'], quantity: item.value['quantity'], category: categoryHere));
-    }
 
-    setState(() {
-      _groceryItems = _loadedItems;
-    });
+
+      final response = await http.get(url);
+      print(response.body);
+      if(response.statusCode>=400){
+        _error = "Some error occured, Please try again later";
+      }
+
+      if (response.body == 'null')//firebase returns a string null when no body is found, this is different for every backend so check the debug console
+          {
+        isLoading = false;
+        setState(() {
+        });
+        return [];
+      }
+
+      final Map<String,dynamic>listData = json.decode(response.body);
+      final List<GroceryItem> loadedItems = [];
+      for(final item in listData.entries){
+        final categoryHere = categories.entries.firstWhere((catItem)=>catItem.value.categoryName==item.value["category"]).value;
+        loadedItems.add(GroceryItem(id: item.key, name: item.value['name'], quantity: item.value['quantity'], category: categoryHere));
+      }
+
+      setState(() {
+        _groceryItems = loadedItems.reversed.toList();
+        isLoading = false;
+      });
+      return loadedItems;
+
+
+
 
   }
 
   void switchScreen(BuildContext context) async {
-    await Navigator.push(
+    final newItem = await Navigator.push(
       context,
       MaterialPageRoute(
         builder: (context) => NewItemScreen(),
       ),
     );
 
-    _loadItems();
+    //_loadItems();
+    if(newItem==null){
+      return;
+    }
 
     setState(() {
+      _groceryItems.add(newItem);
     });
   }
 
-  void removeItem(GroceryItem) {
-    _groceryItems.remove(GroceryItem);
+  void removeItem(GroceryItem item) async{
+    final index = _groceryItems.indexOf(item);
+
+    setState(() {
+      _groceryItems.remove(item);
+    });
     ScaffoldMessenger.of(context).showSnackBar(SnackBar(
         content: Text("Item Removed", style: TextStyle(color: Colors.red)),
     ));
-    setState(() {
-    });
+    final url = Uri.https("flutter-firebase-testing-c0d66-default-rtdb.firebaseio.com",'shopping-list/${item.id}.json');
+
+    final response = await http.delete(url);
+
+    if(response.statusCode>=400){
+      setState(() {
+        _groceryItems.insert(index,item);
+
+        ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Some Error Occured",style: TextStyle(color: Colors.red),)));
+      });
+    }
+
   }
 
   Widget build(context) {
-    final content;
 
-    if (_groceryItems.isEmpty) {
-      content = Expanded(
-        child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-          Text(
-            "Your Grocery List is Empty!",
-            style: Theme.of(context).textTheme.bodyMedium,
-          )
-        ]),
-      );
-    } else {
+    var content = Expanded(
+    child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+      Text(
+        "No Items in your list",
+        style: Theme.of(context).textTheme.bodyMedium,
+      )
+    ]),
+    );;
+
+    if(isLoading){
+      content= Expanded(child: Center(child: CircularProgressIndicator(),));
+    }
+
+   if (_groceryItems.isNotEmpty) {
       content = Expanded(
         child: ListView.builder(
           itemCount: _groceryItems.length,
@@ -93,6 +133,18 @@ class _HomeScreenState extends State<HomeScreen> {
       );
     }
 
+
+   if (_error != null){
+     content= Expanded(
+       child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+         Text(
+           _error,
+           style: Theme.of(context).textTheme.bodyMedium,
+         )
+       ]),
+     );
+   }
+
     return (Scaffold(
       appBar: AppBar(
         title: Text("CartPal Shopping List"),
@@ -103,7 +155,9 @@ class _HomeScreenState extends State<HomeScreen> {
           trailing: Text("Quantity"),
         ),
         content
-      ]),
+
+      ]
+        ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           switchScreen(context);
