@@ -4,7 +4,6 @@ import 'package:case_master_pp/screens/case_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:transparent_image/transparent_image.dart';
 
-import '../models/case.dart';
 
 class CategoryGridItem extends StatelessWidget {
   final caseCategory category;
@@ -31,7 +30,7 @@ class CategoryGridItem extends StatelessWidget {
         child: Stack(children: [
           FadeInImage(
             placeholder: MemoryImage(kTransparentImage),
-            image: AssetImage('assets/image/cybersecurity.jpg'),
+            image: AssetImage(category.imageURL),
             fit: BoxFit.cover,
             height: 200,
             width: double.infinity,
