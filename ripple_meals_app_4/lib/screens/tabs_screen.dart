@@ -11,7 +11,7 @@ import 'package:ripple_meals_app_4/screens/filter_screen.dart';
 import 'package:ripple_meals_app_4/screens/meals_screen.dart';
 import 'package:ripple_meals_app_4/widgets/main_drawer.dart';
 
-import '../models/meal.dart';
+import '../models/casestudy.dart';
 
 class TabsScreen extends ConsumerStatefulWidget {
   const TabsScreen({super.key});
@@ -24,15 +24,15 @@ class TabsScreen extends ConsumerStatefulWidget {
 
 class _TabsScreenState extends ConsumerState<TabsScreen> {
   int _selectedPageIndex = 0;
-  final List<Meal> _favoriteMeals = [];
+  final List<CaseStudy> _bookmarked = [];
 
-  void _toggleMealFavoriteStatus(Meal meal) {
-    final bool isExisting = _favoriteMeals.contains(meal);
+  void _toggleMealFavoriteStatus(CaseStudy casestudy) {
+    final bool isExisting = _bookmarked.contains(casestudy);
 
     if (isExisting) {
-      _favoriteMeals.remove(meal);
+      _bookmarked.remove(casestudy);
     } else {
-      _favoriteMeals.add(meal);
+      _bookmarked.add(casestudy);
     }
     setState(() {});
   }
@@ -46,39 +46,40 @@ class _TabsScreenState extends ConsumerState<TabsScreen> {
   void _setScreen(String identifier) {
     if (identifier == 'filters') {
       Navigator.push(
-          context, MaterialPageRoute(builder: (context) => FilterScreen(favoriteMeals: _favoriteMeals, onToggleFavorite: _toggleMealFavoriteStatus)));
+          context, MaterialPageRoute(builder: (context) => FilterScreen(favoriteMeals: _bookmarked, onToggleFavorite: _toggleMealFavoriteStatus)));
     } else {
       Navigator.push(
           context,
           MaterialPageRoute(
               builder: (context) => MealsScreen(
-                    favoriteMeals: _favoriteMeals,
-                    mealsList: dummyMeals,
+                    favoriteMeals: _bookmarked,
+                    mealsList: dummyCases,
                     categoryColor: Colors.orange,
                     onToggleFavorite: _toggleMealFavoriteStatus,
-                    title: "All Meals",
+                    title: "Cases Studies",
                   )));
     }
     setState(() {});
   }
 
+  @override
   Widget build(context) {
     final meals =ref.watch(mealsProvider);
     Widget activePage = CategoriesScreen(
       onToggleFavorite: _toggleMealFavoriteStatus,
-      favoriteMeals: _favoriteMeals,
+      favoriteMeals: _bookmarked,
     );
-    var activePageTitle = "Pick Category";
+    var activePageTitle = "Case Category";
 
     if (_selectedPageIndex == 1) {
       final favoriteMeals = ref.watch(favoriteMealsProvider);
       activePage = MealsScreen(
-        mealsList: _favoriteMeals,
+        mealsList: _bookmarked,
         categoryColor: Colors.orange,
         onToggleFavorite: _toggleMealFavoriteStatus,
-        favoriteMeals: _favoriteMeals,
+        favoriteMeals: _bookmarked,
       );
-      activePageTitle = "Favorites";
+      activePageTitle = "Bookmarked";
     }
     return (Scaffold(
       appBar: AppBar(
@@ -91,7 +92,7 @@ class _TabsScreenState extends ConsumerState<TabsScreen> {
         items: const [
           BottomNavigationBarItem(
               icon: Icon(Icons.category), label: "Categories"),
-          BottomNavigationBarItem(icon: Icon(Icons.star), label: "Favorites")
+          BottomNavigationBarItem(icon: Icon(Icons.star), label: "Bookmarked")
         ],
       ),
       drawer: MainDrawer(

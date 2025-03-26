@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ripple_meals_app_4/data/dummy_data.dart';
-import 'package:ripple_meals_app_4/models/meal.dart';
+import 'package:ripple_meals_app_4/models/casestudy.dart';
 import 'package:ripple_meals_app_4/screens/meals_screen.dart';
 
 enum Filter {
@@ -11,9 +11,9 @@ enum Filter {
 }
 
 class FilterScreen extends StatefulWidget {
-  List<Meal> favoriteMeals;
+  List<CaseStudy> favoriteMeals;
 
-  void Function(Meal meal) onToggleFavorite;
+  void Function(CaseStudy casestudy) onToggleFavorite;
 
   FilterScreen(
       {super.key, required this.favoriteMeals, required this.onToggleFavorite});
@@ -24,26 +24,46 @@ class FilterScreen extends StatefulWidget {
 }
 
 class FilterScreenState extends State<FilterScreen> {
-  bool _gluttenFreeFilterSet = false;
-  bool _veganFilterSet = false;
-  bool _vegetarianFilterSet = false;
-  bool _lactoseFilterSet = false;
+  bool _legalCaseFilterSet = false;
+  bool _ethicalCaseFilterSet = false;
+  bool _businessCaseFilterSet = false;
+  bool _societalImpactCaseFilterSet = false;
+  bool _scientificCaseFilterSet = false;
+  bool _culturalCaseFilterSet = false;
+  bool _crisisCaseFilterSet = false;
 
   void filtersSet(
-      bool glutenFree, bool vegan, bool vegetarian, bool lactoseFree) {
-    List<Meal> filteredMeals = dummyMeals;
-    if (glutenFree) {
-      filteredMeals = filteredMeals.where((meal) => meal.isGlutenFree).toList();
+      bool legalCase,
+      bool ethicalCase,
+      bool businessCase,
+      bool societalImpactCase,
+      bool scientificCase,
+      bool culturalCase,
+      bool crisisCase) {
+    List<CaseStudy> filteredMeals = dummyCases;
+    if (businessCase) {
+      filteredMeals = filteredMeals.where((casestudy) => casestudy.isBusinessCase).toList();
     }
-    if (vegan) {
-      filteredMeals = filteredMeals.where((meal) => meal.isVegan).toList();
+    if (ethicalCase) {
+      filteredMeals = filteredMeals.where((casestudy) => casestudy.isEthicalCase).toList();
     }
-    if (vegetarian) {
-      filteredMeals = filteredMeals.where((meal) => meal.isVegetarian).toList();
+    if (legalCase) {
+      filteredMeals = filteredMeals.where((casestudy) => casestudy.isLegalCase).toList();
     }
-    if (lactoseFree) {
+    if (scientificCase) {
       filteredMeals =
-          filteredMeals.where((meal) => meal.isLactoseFree).toList();
+          filteredMeals.where((casestudy) => casestudy.isScientificCase).toList();
+    }
+    if (societalImpactCase) {
+      filteredMeals = filteredMeals.where((casestudy) => casestudy.isSocietalImpactCase).toList();
+    }
+    if (crisisCase) {
+      filteredMeals =
+          filteredMeals.where((casestudy) => casestudy.isCrisisCase).toList();
+    }
+    if (culturalCase) {
+      filteredMeals =
+          filteredMeals.where((casestudy) => casestudy.isCulturalCase).toList();
     }
     Navigator.push(
         context,
@@ -65,69 +85,120 @@ class FilterScreenState extends State<FilterScreen> {
         child: Column(
           children: [
             SwitchListTile(
-              value: _gluttenFreeFilterSet,
+              value: _legalCaseFilterSet,
               onChanged: (isChecked) {
                 setState(() {
-                  _gluttenFreeFilterSet = isChecked;
+                  _legalCaseFilterSet = isChecked;
                 });
               },
               title: Text(
-                "Glutten-Free",
+                "Legal Case",
                 style: Theme.of(context).textTheme.titleMedium,
               ),
               subtitle: Text(
-                "Only Includes Glutten Free Meals",
+                "Laws, regulations, or legal disputes.",
                 style: Theme.of(context).textTheme.labelMedium,
               ),
               activeColor: Theme.of(context).colorScheme.tertiary,
               contentPadding: const EdgeInsets.symmetric(horizontal: 10),
             ),
             SwitchListTile(
-              value: _veganFilterSet,
+              value: _ethicalCaseFilterSet,
               onChanged: (isChecked) {
-                _veganFilterSet = isChecked;
+                _ethicalCaseFilterSet = isChecked;
                 setState(() {});
               },
               title: Text(
-                "Vegan-Only",
+                "Ethical Case",
                 style: Theme.of(context).textTheme.titleMedium,
               ),
               subtitle: Text(
-                "Only Includes Vegan Meals",
+                "Moral, philosophical, or social dilemmas.",
                 style: Theme.of(context).textTheme.labelMedium,
               ),
               activeColor: Theme.of(context).colorScheme.tertiary,
               contentPadding: const EdgeInsets.symmetric(horizontal: 10),
             ),
             SwitchListTile(
-              value: _vegetarianFilterSet,
+              value: _businessCaseFilterSet,
               onChanged: (isChecked) {
-                _vegetarianFilterSet = isChecked;
+                _businessCaseFilterSet = isChecked;
                 setState(() {});
               },
               title: Text(
-                "Vegetarian-Only",
+                "Business Case",
                 style: Theme.of(context).textTheme.titleMedium,
               ),
               subtitle: Text(
-                "Only Includes Vegetarian Meals",
+                "Corporate, financial, or strategic issues.",
                 style: Theme.of(context).textTheme.labelMedium,
               ),
               activeColor: Theme.of(context).colorScheme.tertiary,
               contentPadding: const EdgeInsets.symmetric(horizontal: 10),
             ),
             SwitchListTile(
-              value: _lactoseFilterSet,
+              value: _societalImpactCaseFilterSet,
               onChanged: (isChecked) {
-                _lactoseFilterSet = isChecked;
+                _societalImpactCaseFilterSet = isChecked;
                 setState(() {});
               },
               title: Text(
-                "Lactose-Free",
+                "Social Impact Case",
                 style: Theme.of(context).textTheme.titleMedium,
               ),
               subtitle: Text(
-                "Only Includes Lactose Free Meals",
+                "Large-scale effects on society, environment, or health.",
+                style: Theme.of(context).textTheme.labelMedium,
+              ),
+              activeColor: Theme.of(context).colorScheme.tertiary,
+              contentPadding: const EdgeInsets.symmetric(horizontal: 10),
+            ),
+            SwitchListTile(
+              value: _scientificCaseFilterSet,
+              onChanged: (isChecked) {
+                _scientificCaseFilterSet = isChecked;
+                setState(() {});
+              },
+              title: Text(
+                "Scientific Case",
+                style: Theme.of(context).textTheme.titleMedium,
+              ),
+              subtitle: Text(
+                "Scientific discoveries, medical ethics, or research.",
+                style: Theme.of(context).textTheme.labelMedium,
+              ),
+              activeColor: Theme.of(context).colorScheme.tertiary,
+              contentPadding: const EdgeInsets.symmetric(horizontal: 10),
+            ),
+            SwitchListTile(
+              value: _culturalCaseFilterSet,
+              onChanged: (isChecked) {
+                _culturalCaseFilterSet = isChecked;
+                setState(() {});
+              },
+              title: Text(
+                "Cultural Case",
+                style: Theme.of(context).textTheme.titleMedium,
+              ),
+              subtitle: Text(
+                "Arts, media, traditions, or global movements.",
+                style: Theme.of(context).textTheme.labelMedium,
+              ),
+              activeColor: Theme.of(context).colorScheme.tertiary,
+              contentPadding: const EdgeInsets.symmetric(horizontal: 10),
+            ),
+            SwitchListTile(
+              value: _crisisCaseFilterSet,
+              onChanged: (isChecked) {
+                _crisisCaseFilterSet = isChecked;
+                setState(() {});
+              },
+              title: Text(
+                "Crisis Case",
+                style: Theme.of(context).textTheme.titleMedium,
+              ),
+              subtitle: Text(
+                "Major disasters, scandals, or emergencies.",
                 style: Theme.of(context).textTheme.labelMedium,
               ),
               activeColor: Theme.of(context).colorScheme.tertiary,
@@ -138,8 +209,10 @@ class FilterScreenState extends State<FilterScreen> {
               children: [
                 ElevatedButton(
                     onPressed: () {
-                      filtersSet(_gluttenFreeFilterSet, _veganFilterSet,
-                          _vegetarianFilterSet, _lactoseFilterSet);
+                      filtersSet(_legalCaseFilterSet, _ethicalCaseFilterSet,
+                          _businessCaseFilterSet, _societalImpactCaseFilterSet,
+                          _scientificCaseFilterSet, _culturalCaseFilterSet,
+                          _crisisCaseFilterSet);
                     },
                     child: Text("Apply")),
                 ElevatedButton(

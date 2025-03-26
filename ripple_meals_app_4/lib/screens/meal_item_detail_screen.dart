@@ -1,21 +1,21 @@
 import 'dart:ui';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:ripple_meals_app_4/models/meal.dart';
+import 'package:ripple_meals_app_4/models/casestudy.dart';
 
 class MealItemDetailScreen extends StatefulWidget {
   MealItemDetailScreen(
       {super.key,
       required this.favoriteMeals,
-      required this.meal,
+      required this.caseStudy,
       required this.categoryColor,
       required this.onToggleFavorite});
 
   Color categoryColor;
-  Meal meal;
+  CaseStudy caseStudy;
   int counter = 0;
-  final void Function(Meal) onToggleFavorite;
-  final List<Meal> favoriteMeals;
+  final void Function(CaseStudy) onToggleFavorite;
+  final List<CaseStudy> favoriteMeals;
 
   State<MealItemDetailScreen> createState() {
     return StateMealItemDetails();
@@ -28,12 +28,12 @@ class StateMealItemDetails extends State<MealItemDetailScreen> {
     ScaffoldMessenger.of(context).showSnackBar(SnackBar(
         duration: const Duration(seconds: 2),
         content: added
-            ? Text("Meal Added to favorites...",
+            ? Text("Case Bookmarked...",
                 style: Theme.of(context)
                     .textTheme
                     .labelMedium!
                     .copyWith(color: Colors.green))
-            : Text("Meal Removed from favorites...",
+            : Text("Bookmark Removed...",
                 style: Theme.of(context)
                     .textTheme
                     .labelMedium!
@@ -42,12 +42,12 @@ class StateMealItemDetails extends State<MealItemDetailScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final bool isExisting = widget.favoriteMeals.contains(widget.meal);
+    final bool isExisting = widget.favoriteMeals.contains(widget.caseStudy);
 
     return Scaffold(
       appBar: AppBar(
           title: Text(
-            widget.meal.title,
+            widget.caseStudy.title,
             style: Theme.of(context).textTheme.titleLarge,
           ),
           backgroundColor: widget.categoryColor),
@@ -56,13 +56,13 @@ class StateMealItemDetails extends State<MealItemDetailScreen> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Hero(
-              tag: widget.meal.id,
+              tag: widget.caseStudy.id,
               child: ClipRect(
                 child: Container(
                   height: 200,
                   width: double.infinity,
                   child: Image.network(
-                    widget.meal.imageUrl,
+                    widget.caseStudy.imageUrl,
                     fit: BoxFit.cover,
                   ),
                 ),
@@ -77,24 +77,24 @@ class StateMealItemDetails extends State<MealItemDetailScreen> {
                     height: 10,
                   ),
                   Text(
-                    "Ingredients- ",
+                    "Keywords- ",
                     textAlign: TextAlign.start,
                     style: Theme.of(context).textTheme.titleMedium!.copyWith(
                         color: Theme.of(context).colorScheme.tertiary,
                         fontWeight: FontWeight.bold),
                   ),
-                  for (final ingredient in widget.meal.ingredients)
+                  for (final ingredient in widget.caseStudy.keywords)
                     Text(ingredient),
                   const SizedBox(
                     height: 10,
                   ),
                   Text(
-                    "Steps- ",
+                    "Case Details- ",
                     style: Theme.of(context).textTheme.titleMedium!.copyWith(
                         color: Theme.of(context).colorScheme.tertiary,
                         fontWeight: FontWeight.bold),
                   ),
-                  for (final steps in widget.meal.steps) Text("${steps}\n"),
+                  for (final steps in widget.caseStudy.caseStudy) Text("${steps}\n"),
                 ],
               ),
             )
@@ -104,7 +104,7 @@ class StateMealItemDetails extends State<MealItemDetailScreen> {
       floatingActionButton: FloatingActionButton(
         backgroundColor: Color.fromARGB(150, 0, 0, 0),
         onPressed: () {
-          widget.onToggleFavorite(widget.meal);
+          widget.onToggleFavorite(widget.caseStudy);
           favoriteToggleMessage(!isExisting);
           setState(() {});
         },

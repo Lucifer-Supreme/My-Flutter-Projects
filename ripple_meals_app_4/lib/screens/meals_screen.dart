@@ -3,18 +3,18 @@ import 'package:flutter/material.dart';
 
 import 'package:ripple_meals_app_4/widgets/meal_item.dart';
 
-import '../models/meal.dart';
+import '../models/casestudy.dart';
 
 class MealsScreen extends StatefulWidget {
   final String? title;
 
-  final List<Meal> mealsList;
+  final List<CaseStudy> mealsList;
 
   final Color categoryColor;
 
-  void Function(Meal meal) onToggleFavorite;
+  void Function(CaseStudy casestudy) onToggleFavorite;
 
-  final List<Meal> favoriteMeals;
+  final List<CaseStudy> favoriteMeals;
 
   MealsScreen(
       {this.title,
@@ -59,7 +59,7 @@ class _MealsScreenState extends State<MealsScreen>
       content = ListView.builder(
           itemCount: widget.mealsList.length,
           itemBuilder: (ctx, index) => MealItem(
-                meal: widget.mealsList[index],
+                casestudy: widget.mealsList[index],
                 categoryColor: widget.categoryColor,
                 onToggleFavorite: widget.onToggleFavorite,
                 favoriteMeals: widget.favoriteMeals,

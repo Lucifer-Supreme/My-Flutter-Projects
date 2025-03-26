@@ -27,22 +27,22 @@ class MainDrawer extends StatelessWidget {
                 child: Row(
                   children: [
                     Icon(
-                      Icons.fastfood,
+                      Icons.menu_book,
                       size: 48,
                       color: Theme.of(context).colorScheme.onSurface,
                     ),
                     SizedBox(width: 20),
                     Text(
-                      "Cooking Up...",
+                      "Studying...",
                       style: Theme.of(context).textTheme.titleMedium,
                     )
                   ],
                 )),
           ),
           ListTile(
-            leading: Icon(Icons.dinner_dining),
+            leading: const Icon(Icons.description),
             title: Text(
-              "Meals",
+              "Cases",
               style: Theme.of(context)
                   .textTheme
                   .titleMedium!
@@ -50,7 +50,7 @@ class MainDrawer extends StatelessWidget {
 
             ),
             onTap: (){
-              onSelectScreen('meals');
+              onSelectScreen('All Cases');
             },
           ),
           ListTile(

@@ -1,23 +1,23 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:ripple_meals_app_4/models/meal.dart';
+import 'package:ripple_meals_app_4/models/casestudy.dart';
 import 'package:ripple_meals_app_4/screens/meal_item_detail_screen.dart';
 import 'package:ripple_meals_app_4/widgets/meal_item_metadata.dart';
 import 'package:transparent_image/transparent_image.dart';
 
 class MealItem extends StatefulWidget {
-  final Meal meal;
+  final CaseStudy casestudy;
 
   final Color categoryColor;
 
-  void Function(Meal meal) onToggleFavorite;
+  void Function(CaseStudy casestudy) onToggleFavorite;
 
-  final List<Meal> favoriteMeals;
+  final List<CaseStudy> favoriteMeals;
 
   MealItem(
       {super.key,
-      required this.meal,
+      required this.casestudy,
       required this.categoryColor,
       required this.onToggleFavorite,
       required this.favoriteMeals});
@@ -28,13 +28,13 @@ class MealItem extends StatefulWidget {
 
 class _MealItemState extends State<MealItem> {
   String get complexityText {
-    return widget.meal.complexity.name[0].toUpperCase() +
-        widget.meal.complexity.name.substring(1);
+    return widget.casestudy.complexity.name[0].toUpperCase() +
+        widget.casestudy.complexity.name.substring(1);
   }
 
   String get affordableText {
-    return widget.meal.affordability.name[0].toUpperCase() +
-        widget.meal.affordability.name.substring(1);
+    return widget.casestudy.severity.name[0].toUpperCase() +
+        widget.casestudy.severity.name.substring(1);
   }
 
   void favoriteToggleMessage(bool added) {
@@ -42,12 +42,12 @@ class _MealItemState extends State<MealItem> {
     ScaffoldMessenger.of(context).showSnackBar(SnackBar(
         duration: const Duration(seconds: 2),
         content: added
-            ? Text("Meal Added to favorites...",
+            ? Text("Case Bookmarked...",
                 style: Theme.of(context)
                     .textTheme
                     .labelMedium!
                     .copyWith(color: Colors.green))
-            : Text("Meal Removed from favorites...",
+            : Text("Bookmark Removed...",
                 style: Theme.of(context)
                     .textTheme
                     .labelMedium!
@@ -55,7 +55,7 @@ class _MealItemState extends State<MealItem> {
   }
 
   Widget build(context) {
-    bool isExisting = widget.favoriteMeals.contains(widget.meal);
+    bool isExisting = widget.favoriteMeals.contains(widget.casestudy);
 
     return Card(
       margin: EdgeInsets.all(10),
@@ -69,14 +69,14 @@ class _MealItemState extends State<MealItem> {
               context,
               MaterialPageRoute(
                   builder: (context) => MealItemDetailScreen(
-                        meal: widget.meal,
+                        caseStudy: widget.casestudy,
                         categoryColor: widget.categoryColor,
                         onToggleFavorite: widget.onToggleFavorite,
                         favoriteMeals: widget.favoriteMeals,
                       )));
         },
         child: Hero(
-          tag: widget.meal.id,
+          tag: widget.casestudy.id,
           child: ClipRect(
             child: Container(
               height: 200,
@@ -85,7 +85,7 @@ class _MealItemState extends State<MealItem> {
                 children: [
                   FadeInImage(
                     placeholder: MemoryImage(kTransparentImage),
-                    image: NetworkImage(widget.meal.imageUrl),
+                    image: NetworkImage(widget.casestudy.imageUrl),
                     fit: BoxFit.cover,
                     height: 200,
                     width: double.infinity,
@@ -95,7 +95,7 @@ class _MealItemState extends State<MealItem> {
                     top: 0,
                     child: TextButton(
                       onPressed: () {
-                        widget.onToggleFavorite(widget.meal);
+                        widget.onToggleFavorite(widget.casestudy);
                         favoriteToggleMessage(!isExisting);
                         setState(() {});
                       },
@@ -120,14 +120,14 @@ class _MealItemState extends State<MealItem> {
                     child: Column(
                       children: [
                         SizedBox(
-                          width: double.infinity,
+                          width: double.maxFinite,
                           child: Container(
                             padding: const EdgeInsets.fromLTRB(0, 0, 0, 5),
                             color: Colors.black38,
                             child: Column(
                               children: [
                                 Text(
-                                  widget.meal.title,
+                                  widget.casestudy.title,
                                   style: GoogleFonts.lora(
                                     color: Colors.white,
                                     fontWeight: FontWeight.bold,
@@ -143,7 +143,7 @@ class _MealItemState extends State<MealItem> {
                                   children: [
                                     MealItemMetadata(
                                       icon: Icons.timer,
-                                      label: "${widget.meal.duration} min",
+                                      label: "${widget.casestudy.duration} min",
                                     ),
                                     const SizedBox(
                                       width: 20,
