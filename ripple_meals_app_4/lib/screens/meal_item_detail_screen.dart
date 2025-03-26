@@ -3,6 +3,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:ripple_meals_app_4/models/casestudy.dart';
 
+import '../widgets/meal_item_metadata.dart';
+
 class MealItemDetailScreen extends StatefulWidget {
   MealItemDetailScreen(
       {super.key,
@@ -76,6 +78,29 @@ class StateMealItemDetails extends State<MealItemDetailScreen> {
                   const SizedBox(
                     height: 10,
                   ),
+                  Column(
+                    children: [
+                      MealItemMetadata(
+                        icon: Icons.calendar_month,
+                        label: "Duration - ${widget.caseStudy.duration} Year",
+                      ),
+                      const SizedBox(
+                        width: 5,
+                      ),
+                      MealItemMetadata(
+                        icon: Icons.psychology,
+                        label: "Complexity - ${widget.caseStudy.complexity.name}",
+                      ),
+                      const SizedBox(
+                        width: 5,
+                      ),
+                      MealItemMetadata(
+                        icon: Icons.warning,
+                        label: "Severity - ${widget.caseStudy.severity.name}",
+                      ),
+                    ],
+                  ),
+                  SizedBox(height: 10,),
                   Text(
                     "Keywords- ",
                     textAlign: TextAlign.start,

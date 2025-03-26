@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+//import 'package:flutter/rendering.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:ripple_meals_app_4/screens/tabs_screen.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -14,6 +15,7 @@ final theme = ThemeData(
 );
 
 void main() {
+  //debugPaintSizeEnabled = true;
   runApp(const ProviderScope(child: App()));
 }
 

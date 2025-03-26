@@ -12,7 +12,7 @@ class MealItemMetadata extends StatelessWidget{
       children: [
         Icon(icon,size: 17,color: Colors.white,),
         const SizedBox(width: 5,),
-        Text(label, style: const TextStyle(color: Colors.white,fontWeight: FontWeight.bold),)
+        FittedBox(fit: BoxFit.scaleDown,child: Text(label, style: const TextStyle(color: Colors.white,fontWeight: FontWeight.bold,fontSize: 13),))
       ],
     )
     );

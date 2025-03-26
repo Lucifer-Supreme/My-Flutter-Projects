@@ -2,14 +2,15 @@ import 'package:flutter/material.dart';
 
 enum Complexity {
   simple,
-  challenging,
+  moderate,
   hard,
 }
 
 enum Severity {
   low,
-  moderate,
+  medium,
   high,
+  critical
 }
 
 class CaseStudy {
@@ -38,7 +39,7 @@ class CaseStudy {
   final String imageUrl;
   final List<String> keywords;
   final List<String> caseStudy;
-  final int duration;
+  final double duration;
   final Complexity complexity;
   final Severity severity;
 

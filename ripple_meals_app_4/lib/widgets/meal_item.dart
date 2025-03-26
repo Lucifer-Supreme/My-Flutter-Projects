@@ -67,13 +67,26 @@ class _MealItemState extends State<MealItem> {
         onTap: () {
           Navigator.push(
               context,
-              MaterialPageRoute(
-                  builder: (context) => MealItemDetailScreen(
-                        caseStudy: widget.casestudy,
-                        categoryColor: widget.categoryColor,
-                        onToggleFavorite: widget.onToggleFavorite,
-                        favoriteMeals: widget.favoriteMeals,
-                      )));
+            PageRouteBuilder(
+              transitionDuration: const Duration(milliseconds: 400), // Adjust speed
+              pageBuilder: (context, animation, secondaryAnimation) => MealItemDetailScreen(
+                caseStudy: widget.casestudy,
+                categoryColor: widget.categoryColor,
+                onToggleFavorite: widget.onToggleFavorite,
+                favoriteMeals: widget.favoriteMeals,
+              ),
+              transitionsBuilder: (context, animation, secondaryAnimation, child) {
+                const begin = Offset(1.0, 0.0); // Start from the right
+                const end = Offset.zero; // End at normal position
+                const curve = Curves.easeInOut; // Smooth animation
+
+                var tween = Tween(begin: begin, end: end).chain(CurveTween(curve: curve));
+                var offsetAnimation = animation.drive(tween);
+
+                return SlideTransition(position: offsetAnimation, child: child);
+              },
+            ),
+          );
         },
         child: Hero(
           tag: widget.casestudy.id,
@@ -142,21 +155,21 @@ class _MealItemState extends State<MealItem> {
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
                                     MealItemMetadata(
-                                      icon: Icons.timer,
-                                      label: "${widget.casestudy.duration} min",
+                                      icon: Icons.calendar_month,
+                                      label: "${widget.casestudy.duration} years",
                                     ),
                                     const SizedBox(
                                       width: 20,
                                     ),
                                     MealItemMetadata(
-                                      icon: Icons.dinner_dining,
+                                      icon: Icons.psychology,
                                       label: complexityText,
                                     ),
                                     SizedBox(
                                       width: 20,
                                     ),
                                     MealItemMetadata(
-                                      icon: Icons.attach_money_sharp,
+                                      icon: Icons.warning,
                                       label: affordableText,
                                     ),
                                   ],
