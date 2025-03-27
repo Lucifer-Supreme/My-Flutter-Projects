@@ -94,4 +94,15 @@ class CaseStudy {
       isSocietalImpactCase: json['isSocietalImpactCase'],
     );
   }
+
+  // Override equality operator and hashCode based on unique id
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+          other is CaseStudy &&
+              runtimeType == other.runtimeType &&
+              id == other.id;
+
+  @override
+  int get hashCode => id.hashCode;
 }

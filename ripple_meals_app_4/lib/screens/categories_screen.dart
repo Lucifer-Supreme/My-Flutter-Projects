@@ -52,7 +52,7 @@ class _CategoriesScreenState extends State<CategoriesScreen>
             mealsList: filteredMeals,
             categoryColor: category.color,
             onToggleFavorite: widget.onToggleFavorite,
-            favoriteMeals: widget.favoriteMeals,
+            favoriteCase: widget.favoriteMeals,
           ),
         ));
   }

@@ -16,6 +16,7 @@ dependencies:
   transparent_image: ^2.0.1
   flutter_riverpod: ^2.5.1  # Add flutter_riverpod instead of riverpod
   shared_preferences: ^2.5.2
+  url_launcher: ^6.1.7
 
 dev_dependencies:
   flutter_test:

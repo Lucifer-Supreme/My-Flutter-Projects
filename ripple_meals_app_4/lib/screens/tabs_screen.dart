@@ -1,6 +1,3 @@
-//tabs screen
-
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:ripple_meals_app_4/providers/favorites.provider.dart';
@@ -17,24 +14,18 @@ class TabsScreen extends ConsumerStatefulWidget {
   const TabsScreen({super.key});
 
   @override
-  ConsumerState<TabsScreen> createState() {
-    return _TabsScreenState();
-  }
+  ConsumerState<TabsScreen> createState() => _TabsScreenState();
 }
 
 class _TabsScreenState extends ConsumerState<TabsScreen> {
   int _selectedPageIndex = 0;
-  final List<CaseStudy> _bookmarked = [];
 
-  void _toggleMealFavoriteStatus(CaseStudy casestudy) {
-    final bool isExisting = _bookmarked.contains(casestudy);
+  // Remove local _bookmarked list. We'll rely on favoritesCaseProvider.
 
-    if (isExisting) {
-      _bookmarked.remove(casestudy);
-    } else {
-      _bookmarked.add(casestudy);
-    }
-    setState(() {});
+  // Toggle favorite using provider
+  void _toggleCaseFavoriteStatus(CaseStudy caseStudy) {
+    // Use the provider notifier to toggle the case favorite status.
+    ref.read(favoritesCaseProvider.notifier).toggleCaseFavorite(caseStudy);
   }
 
   void _selectPage(int index) {
@@ -45,43 +36,56 @@ class _TabsScreenState extends ConsumerState<TabsScreen> {
 
   void _setScreen(String identifier) {
     if (identifier == 'filters') {
+      // Pass the current favorites from provider
+      final favorites = ref.read(favoritesCaseProvider);
       Navigator.push(
-          context, MaterialPageRoute(builder: (context) => FilterScreen(favoriteMeals: _bookmarked, onToggleFavorite: _toggleMealFavoriteStatus)));
+        context,
+        MaterialPageRoute(
+          builder: (context) => FilterScreen(
+            favoriteMeals: favorites, // Adjust parameter naming if needed
+            onToggleFavorite: _toggleCaseFavoriteStatus,
+          ),
+        ),
+      );
     } else {
+      final favorites = ref.read(favoritesCaseProvider);
       Navigator.push(
-          context,
-          MaterialPageRoute(
-              builder: (context) => MealsScreen(
-                    favoriteMeals: _bookmarked,
-                    mealsList: dummyCases,
-                    categoryColor: Colors.orange,
-                    onToggleFavorite: _toggleMealFavoriteStatus,
-                    title: "Cases Studies",
-                  )));
+        context,
+        MaterialPageRoute(
+          builder: (context) => MealsScreen(
+            favoriteCase: favorites,
+            mealsList: dummyCases,
+            categoryColor: Colors.orange,
+            onToggleFavorite: _toggleCaseFavoriteStatus,
+            title: "Case Studies",
+          ),
+        ),
+      );
     }
     setState(() {});
   }
 
   @override
   Widget build(context) {
-    final meals =ref.watch(mealsProvider);
+    // Listen to the provider state
+    final favorites = ref.watch(favoritesCaseProvider);
+    final meals = ref.watch(mealsProvider);
     Widget activePage = CategoriesScreen(
-      onToggleFavorite: _toggleMealFavoriteStatus,
-      favoriteMeals: _bookmarked,
+      onToggleFavorite: _toggleCaseFavoriteStatus,
+      favoriteMeals: favorites, // Use provider state
     );
     var activePageTitle = "Case Category";
 
     if (_selectedPageIndex == 1) {
-      final favoriteMeals = ref.watch(favoriteMealsProvider);
       activePage = MealsScreen(
-        mealsList: _bookmarked,
+        mealsList: favorites, // Show favorites using provider
         categoryColor: Colors.orange,
-        onToggleFavorite: _toggleMealFavoriteStatus,
-        favoriteMeals: _bookmarked,
+        onToggleFavorite: _toggleCaseFavoriteStatus,
+        favoriteCase: favorites,
       );
       activePageTitle = "Bookmarked";
     }
-    return (Scaffold(
+    return Scaffold(
       appBar: AppBar(
         title: Text(activePageTitle),
       ),
@@ -91,13 +95,18 @@ class _TabsScreenState extends ConsumerState<TabsScreen> {
         currentIndex: _selectedPageIndex,
         items: const [
           BottomNavigationBarItem(
-              icon: Icon(Icons.category), label: "Categories"),
-          BottomNavigationBarItem(icon: Icon(Icons.star), label: "Bookmarked")
+            icon: Icon(Icons.category),
+            label: "Categories",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.star),
+            label: "Bookmarked",
+          )
         ],
       ),
       drawer: MainDrawer(
         onSelectScreen: _setScreen,
       ),
-    ));
+    );
   }
 }

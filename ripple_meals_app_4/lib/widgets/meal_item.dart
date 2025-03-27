@@ -1,10 +1,13 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:ripple_meals_app_4/models/casestudy.dart';
 import 'package:ripple_meals_app_4/screens/meal_item_detail_screen.dart';
 import 'package:ripple_meals_app_4/widgets/meal_item_metadata.dart';
 import 'package:transparent_image/transparent_image.dart';
+
+import '../providers/favorites.provider.dart';
 
 class MealItem extends StatefulWidget {
   final CaseStudy casestudy;
@@ -106,26 +109,35 @@ class _MealItemState extends State<MealItem> {
                   Positioned(
                     right: 0,
                     top: 0,
-                    child: TextButton(
-                      onPressed: () {
-                        widget.onToggleFavorite(widget.casestudy);
-                        favoriteToggleMessage(!isExisting);
-                        setState(() {});
+                    child: Consumer(
+                      builder: (context, ref, child) {
+                        final favorites = ref.watch(favoritesCaseProvider);
+                        final isExisting = favorites.any((cs) => cs.id == widget.casestudy.id);
+                        return TextButton(
+                          onPressed: () {
+                            widget.onToggleFavorite(widget.casestudy);
+                            // Pass the new status (after toggle) to the message
+                            // Since the provider state won't update until after this callback finishes,
+                            // you might want to invert isExisting.
+                            favoriteToggleMessage(!isExisting);
+                          },
+                          child: AnimatedSwitcher(
+                            duration: const Duration(milliseconds: 500),
+                            transitionBuilder: (child, animation) => RotationTransition(
+                              turns: Tween<double>(begin: 0.7, end: 0).animate(animation),
+                              child: child,
+                            ),
+                            child: Icon(
+                              Icons.star,
+                              color: isExisting ? Colors.red : Colors.white,
+                              key: ValueKey(isExisting),
+                            ),
+                          ),
+                        );
                       },
-                      child: AnimatedSwitcher(
-                        duration: Duration(milliseconds: 500),
-                        transitionBuilder: (child, animation) => RotationTransition(
-                          turns: Tween<double>(begin: 0.7, end: 0).animate(animation),
-                          child: child,
-                        ),
-                        child: Icon(
-                          Icons.star,
-                          color: isExisting ? Colors.red : Colors.white,
-                          key: ValueKey(isExisting),
-                        ),
-                      ),
                     ),
                   ),
+
                   Positioned(
                     right: 0,
                     left: 0,

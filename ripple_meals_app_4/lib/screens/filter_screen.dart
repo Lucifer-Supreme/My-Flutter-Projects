@@ -63,7 +63,7 @@ class FilterScreenState extends State<FilterScreen> {
         context,
         MaterialPageRoute(
             builder: (context) => MealsScreen(
-                favoriteMeals: widget.favoriteMeals,
+                favoriteCase: widget.favoriteMeals,
                 mealsList: filteredMeals,
                 categoryColor: Colors.orange,
                 title: "Available Cases",

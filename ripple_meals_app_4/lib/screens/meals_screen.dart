@@ -14,11 +14,11 @@ class MealsScreen extends StatefulWidget {
 
   void Function(CaseStudy casestudy) onToggleFavorite;
 
-  final List<CaseStudy> favoriteMeals;
+  final List<CaseStudy> favoriteCase;
 
   MealsScreen(
       {this.title,
-      required this.favoriteMeals,
+      required this.favoriteCase,
       required this.mealsList,
       required this.categoryColor,
       required this.onToggleFavorite,
@@ -50,7 +50,7 @@ class _MealsScreenState extends State<MealsScreen>
   Widget build(BuildContext context) {
     var content;
     if (widget.mealsList.isEmpty) {
-      content = Center(
+      content = const Center(
           child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [Text("Nothing Here...")],
@@ -62,7 +62,7 @@ class _MealsScreenState extends State<MealsScreen>
                 casestudy: widget.mealsList[index],
                 categoryColor: widget.categoryColor,
                 onToggleFavorite: widget.onToggleFavorite,
-                favoriteMeals: widget.favoriteMeals,
+                favoriteMeals: widget.favoriteCase,
               ));
     }
 

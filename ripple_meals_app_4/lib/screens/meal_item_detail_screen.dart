@@ -1,8 +1,12 @@
 import 'dart:ui';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:ripple_meals_app_4/models/casestudy.dart';
+import 'package:url_launcher/url_launcher.dart';
 
+import '../providers/favorites.provider.dart';
 import '../widgets/meal_item_metadata.dart';
 
 class MealItemDetailScreen extends StatefulWidget {
@@ -19,12 +23,22 @@ class MealItemDetailScreen extends StatefulWidget {
   final void Function(CaseStudy) onToggleFavorite;
   final List<CaseStudy> favoriteMeals;
 
+
+
   State<MealItemDetailScreen> createState() {
     return StateMealItemDetails();
   }
 }
 
 class StateMealItemDetails extends State<MealItemDetailScreen> {
+
+  Future<void> _launchUrl() async {
+    final uri = Uri.parse('https://chatgpt.com');
+    if (!await launchUrl(uri, mode: LaunchMode.externalApplication)) {
+      throw 'Could not launch $uri';
+    }
+  }
+
   void favoriteToggleMessage(bool added) {
     ScaffoldMessenger.of(context).clearSnackBars();
     ScaffoldMessenger.of(context).showSnackBar(SnackBar(
@@ -71,7 +85,7 @@ class StateMealItemDetails extends State<MealItemDetailScreen> {
               ),
             ),
             Container(
-              padding: EdgeInsets.symmetric(horizontal: 20),
+              padding: const EdgeInsets.symmetric(horizontal: 20),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -89,7 +103,8 @@ class StateMealItemDetails extends State<MealItemDetailScreen> {
                       ),
                       MealItemMetadata(
                         icon: Icons.psychology,
-                        label: "Complexity - ${widget.caseStudy.complexity.name}",
+                        label:
+                            "Complexity - ${widget.caseStudy.complexity.name}",
                       ),
                       const SizedBox(
                         width: 5,
@@ -100,7 +115,9 @@ class StateMealItemDetails extends State<MealItemDetailScreen> {
                       ),
                     ],
                   ),
-                  SizedBox(height: 10,),
+                  const SizedBox(
+                    height: 10,
+                  ),
                   Text(
                     "Keywords- ",
                     textAlign: TextAlign.start,
@@ -119,33 +136,71 @@ class StateMealItemDetails extends State<MealItemDetailScreen> {
                         color: Theme.of(context).colorScheme.tertiary,
                         fontWeight: FontWeight.bold),
                   ),
-                  for (final steps in widget.caseStudy.caseStudy) Text("${steps}\n"),
+                  for (final steps in widget.caseStudy.caseStudy)
+                    Text("${steps}\n"),
+
+                  const SizedBox(height: 5,),
+
+                  Row(
+                    children: [
+                      const Icon(Icons.question_answer),
+                      const SizedBox(
+                        width: 10,
+                      ),
+                      RichText(
+                          text: TextSpan(children: [
+                        TextSpan(
+                          text: 'Ask ChatGPT',
+                          style: const TextStyle(
+                              color: Colors.blue, fontStyle: FontStyle.italic),
+                          recognizer: TapGestureRecognizer()..onTap = _launchUrl,
+                        )
+                      ]
+                          )
+                      ),
+                    ],
+                  ),
+                  const SizedBox(
+                    height: 20,
+                  )
                 ],
               ),
             )
           ],
         )),
       ),
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: Color.fromARGB(150, 0, 0, 0),
-        onPressed: () {
-          widget.onToggleFavorite(widget.caseStudy);
-          favoriteToggleMessage(!isExisting);
-          setState(() {});
+      floatingActionButton: Consumer(
+        builder: (context, ref, child) {
+          // Watch the provider directly
+          final favorites = ref.watch(favoritesCaseProvider);
+          final isExisting =
+              favorites.any((cs) => cs.id == widget.caseStudy.id);
+
+          return FloatingActionButton(
+            backgroundColor: const Color.fromARGB(150, 0, 0, 0),
+            onPressed: () {
+              // Use the provider to toggle the favorite status
+              ref
+                  .read(favoritesCaseProvider.notifier)
+                  .toggleCaseFavorite(widget.caseStudy);
+              // Invert the current state for the message, since the change happens asynchronously
+              favoriteToggleMessage(!isExisting);
+            },
+            tooltip: "Mark as Favorite",
+            child: AnimatedSwitcher(
+              duration: const Duration(milliseconds: 500),
+              transitionBuilder: (child, animation) => RotationTransition(
+                turns: Tween(begin: 0.6, end: 1.0).animate(animation),
+                child: child,
+              ),
+              child: Icon(
+                Icons.star,
+                color: isExisting ? Colors.red : Colors.white,
+                key: ValueKey(isExisting),
+              ),
+            ),
+          );
         },
-        tooltip: "Mark as Favorite",
-        child: AnimatedSwitcher(
-          duration: Duration(milliseconds: 500),
-          transitionBuilder: (child, animation) => RotationTransition(
-            turns: Tween(begin: 0.6, end: 1.0).animate(animation),
-            child: child,
-          ),
-          child: Icon(
-            Icons.star,
-            color: isExisting ? Colors.red : Colors.white,
-            key: ValueKey(isExisting),
-          ),
-        ),
       ),
     );
   }
