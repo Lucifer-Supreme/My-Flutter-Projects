@@ -1123,5 +1123,743 @@ isCrisisCase: true,
     isCrisisCase: false,
   ),
 
+  const CaseStudy(
+    id: 'c31',
+    categories: [
+
+      'BS',
+      'HM',
+      'LE'
+    ],
+    title: 'The OxyContin and Purdue Pharma Scandal',
+    imageUrl: 'https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fcom.ft.imagepublish.upp-prod-eu.s3.amazonaws.com%2Fcf3a6636-5ee2-11e9-9300-0becfc937c37?source=next-article&fit=scale-down&quality=highest&width=700&dpr=1',
+    keywords: [
+      'Opioid Crisis',
+      'Corporate Misconduct',
+      'Pharmaceutical Industry',
+      'Public Health',
+      'Legal Consequences',
+    ],
+    caseStudy: [
+      'The **OxyContin and Purdue Pharma Scandal** is one of the most infamous cases of **corporate misconduct in the pharmaceutical industry**, linked directly to the devastating **opioid epidemic** in the United States.',
+      'Purdue Pharma, owned by the **Sackler family**, aggressively marketed **OxyContin**, a powerful painkiller, as a non-addictive solution for chronic pain after its release in **1996**.',
+      'Internal company documents later revealed that Purdue **misled doctors and patients** about the risks of addiction, despite knowing that OxyContin was highly addictive and being widely abused.',
+      'The aggressive **marketing campaigns and bonuses** for doctors who prescribed the drug led to widespread overprescription, causing a massive rise in **opioid addiction and overdose deaths**.',
+      'By the early **2000s**, OxyContin had become a major factor in the opioid crisis, with thousands dying annually from overdoses.',
+      'In **2007**, Purdue Pharma executives **pleaded guilty** to misleading regulators, doctors, and patients, resulting in a **\$600 million fine**, one of the largest pharmaceutical settlements at the time.',
+      'However, opioid-related deaths continued to surge, leading to **thousands of lawsuits** against Purdue and the Sackler family.',
+      'In **2019**, Purdue Pharma filed for **bankruptcy** as part of a multi-billion-dollar settlement agreement with state and local governments.',
+      'Despite the legal action, many critics argue that the **Sackler family avoided full accountability**, as they managed to retain billions in wealth while victims of the crisis were left suffering.',
+      'The case is now regarded as a stark example of **corporate greed, regulatory failure, and the devastating effects of misleading pharmaceutical marketing**.',
+    ],
+    duration: 23, // 1996 - 2019
+    complexity: Complexity.hard,
+    severity: Severity.critical,
+
+    isLegalCase: true,
+    isEthicalCase: true,
+    isBusinessCase: true,
+    isSocietalImpactCase: true,
+    isScientificCase: false,
+    isCulturalCase: false,
+    isCrisisCase: true,
+  ),
+
+  const CaseStudy(
+    id: 'c32',
+    categories: [
+      'LE',
+      'TI',
+    ],
+    title: 'The Stuxnet Cyberweapon Attack',
+    imageUrl: 'https://s.yimg.com/ny/api/res/1.2/fPoqjCXq.MJ0uazdz.ezPg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD02NDY-/https://s.yimg.com/os/creatr-uploaded-images/2019-08/1bef9bd0-cb54-11e9-afbb-41ba524c604d',
+    keywords: [
+      'Cyber Warfare',
+      'Industrial Sabotage',
+      'Malware',
+      'Nuclear Security',
+      'Espionage',
+    ],
+    caseStudy: [
+      'Stuxnet was a highly sophisticated computer worm first discovered in 2010 but believed to have been in development since at least 2005.',
+      'It specifically targeted Siemens industrial control systems, particularly those used in Iran’s Natanz nuclear facility.',
+      'Unlike traditional malware, Stuxnet was designed to cause physical damage by manipulating industrial machinery, making it one of the first known cyber weapons.',
+      'The worm spread globally but remained dormant on most computers unless specific conditions were met, ensuring it only activated in its intended target environment.',
+      'Experts believe Stuxnet was a joint effort by the U.S. and Israeli intelligence agencies to slow down Iran’s nuclear program without resorting to direct military action.',
+      'The attack successfully damaged Iranian centrifuges, delaying uranium enrichment efforts, but also opened discussions on the dangers of cyber warfare in modern geopolitics.',
+      'After its discovery, Stuxnet’s code was analyzed and adapted by various hacker groups, raising concerns about similar cyber threats in the future.',
+    ],
+    duration: 5, // 2005 - 2010
+    complexity: Complexity.hard,
+    severity: Severity.critical,
+
+    isLegalCase: false,
+    isEthicalCase: false,
+    isBusinessCase: false,
+    isSocietalImpactCase: true,
+    isScientificCase: false,
+    isCulturalCase: false,
+    isCrisisCase: true,
+  ),
+
+  const CaseStudy(
+    id: 'c33',
+    categories: [
+      'BS',
+      'ES',
+      'HM',
+      'HC'
+    ],
+    title: 'The Bhopal Gas Tragedy',
+    imageUrl: 'https://sageuniversity.edu.in/assets/images/blog/the-aftermath-of-bhopal-gas-tragedy-and-its-laws.png',
+    keywords: [
+      'Industrial Disaster',
+      'Environmental Catastrophe',
+      'Corporate Negligence',
+      'Toxic Gas Leak',
+      'Public Health Crisis',
+    ],
+    caseStudy: [
+      'On the night of December 2-3, 1984, the Union Carbide pesticide plant in Bhopal, India, leaked 40 tons of methyl isocyanate (MIC) gas into the surrounding areas.',
+      'The highly toxic gas spread rapidly, exposing over 500,000 people in the densely populated city. Thousands died within hours, and many suffered severe respiratory, neurological, and reproductive disorders.',
+      'Union Carbide’s lack of proper safety measures, including malfunctioning alarms and under-maintained safety systems, contributed to the disaster’s scale.',
+      'The Indian government estimated the immediate death toll to be around 3,000, but later reports suggested that over 15,000 people died due to long-term health complications.',
+      'The aftermath of the disaster included lawsuits against Union Carbide, leading to a controversial settlement of \$470 million, which many victims and activists deemed inadequate.',
+      'The site remained contaminated for decades, with toxic waste leaching into groundwater, affecting generations of local residents.',
+      'The Bhopal disaster remains one of the world’s worst industrial accidents, prompting global discussions on corporate responsibility and stricter environmental safety regulations.',
+    ],
+    duration: 1, // 1984 - 1985 (Immediate crisis period)
+    complexity: Complexity.hard,
+    severity: Severity.critical,
+
+    isLegalCase: true,
+    isEthicalCase: true,
+    isBusinessCase: true,
+    isSocietalImpactCase: true,
+    isScientificCase: false,
+    isCulturalCase: false,
+    isCrisisCase: true,
+  ),
+
+
+  const CaseStudy(
+    id: 'c34',
+    categories: [
+      'LE',
+      'PHB',
+    ],
+    title: 'The McMartin Preschool Trial',
+    imageUrl: 'https://static01.nyt.com/images/2014/03/06/multimedia/retro-mcmartin-preschool/retro-mcmartin-preschool-superJumbo.jpg',
+    keywords: [
+      'False Allegations',
+      'Mass Hysteria',
+      'Legal Misconduct',
+      'Child Abuse Scandal',
+      'Psychology of Memory',
+    ],
+    caseStudy: [
+      'The McMartin Preschool Trial, which began in 1983 and lasted until 1990, was one of the longest and most expensive criminal trials in U.S. history, involving allegations of child abuse and satanic rituals at a California daycare.',
+      'The case started when a mother accused a teacher at the McMartin Preschool of sexually abusing her child. The allegations quickly escalated, with over 360 children interviewed and many making bizarre claims, including underground tunnels and satanic rituals.',
+      'Investigators and therapists used leading and suggestive questioning techniques, which many experts later argued led to false memories and fabricated testimonies from the children.',
+      'The trial lasted for seven years, costing the government over \$15 million, but no convictions were ever secured due to lack of credible evidence. The defendants were eventually acquitted, and the case became a cautionary example of mass hysteria and flawed investigative methods.',
+      'The McMartin case contributed to discussions about the reliability of children’s testimonies, the dangers of moral panic, and the importance of proper forensic interviewing techniques.',
+      'Despite the acquittals, the accused suffered lifelong reputational and financial damage, and the case left a lasting impact on legal and psychological fields regarding child abuse investigations.',
+    ],
+    duration: 7, // 1983 - 1990
+    complexity: Complexity.hard,
+    severity: Severity.high,
+
+    isLegalCase: true,
+    isEthicalCase: true,
+    isBusinessCase: false,
+    isSocietalImpactCase: true,
+    isScientificCase: false,
+    isCulturalCase: true,
+    isCrisisCase: false,
+  ),
+
+  const CaseStudy(
+    id: 'c35',
+    categories: [
+      'LE',
+      'PHB',
+      'HC',
+    ],
+    title: 'The Salem Witch Trials',
+    imageUrl: 'https://th-thumbnailer.cdn-si-edu.com/FpLi24Hbyb2LHtmgf-5okCoGohw=/fit-in/1600x0/filters:focal(1280x914:1281x915)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/40/e6/40e69d4a-6016-4815-ba7a-01fce1bb2e5d/examination_of_a_witch_-_tompkins_matteson.jpeg',
+    keywords: [
+      'Mass Hysteria',
+      'Witchcraft',
+      'Religious Persecution',
+      'Colonial America',
+      'Legal Injustice',
+    ],
+    caseStudy: [
+      'The Salem Witch Trials were a series of hearings and prosecutions of people accused of witchcraft in colonial Massachusetts between February 1692 and May 1693.',
+      'The trials began when young girls in Salem Village claimed to be possessed by the devil and accused several local women of practicing witchcraft. This led to a wave of paranoia, and accusations spread rapidly throughout the community.',
+      'The trials relied on spectral evidence—claims that the accused appeared in dreams or visions to harm victims—despite its dubious reliability. This fueled widespread panic and created a system where mere accusations could result in execution.',
+      'Over 200 people were accused, and 30 were found guilty. Nineteen were hanged, one was pressed to death with heavy stones, and several others died in jail while awaiting trial.',
+      'The trials ended when the governor of Massachusetts, whose own wife was accused, intervened and halted the proceedings. Years later, the state admitted the trials were a mistake, and in 1711, it offered restitution to the families of the accused.',
+      'The Salem Witch Trials have since been studied as an example of mass hysteria, the dangers of unchecked religious extremism, and the flaws of a legal system driven by fear rather than evidence.',
+      'The trials also played a significant role in shaping modern American legal standards, particularly regarding due process and the presumption of innocence.',
+    ],
+    duration: 1, // 1692 - 1693
+    complexity: Complexity.moderate,
+    severity: Severity.high,
+
+    isLegalCase: true,
+    isEthicalCase: true,
+    isBusinessCase: false,
+    isSocietalImpactCase: true,
+    isScientificCase: false,
+    isCulturalCase: true,
+    isCrisisCase: false,
+  ),
+
+  const CaseStudy(
+    id: 'c36',
+    categories: [
+      'EL',
+      'LE',
+      'PHB',
+    ],
+    title: 'The Brown v. Board of Education Case',
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXd7h7UNDhyEr0I7M7OTCOcKLuu_yJLOaXsw&s',
+    keywords: [
+      'Racial Segregation',
+      'Education Reform',
+      'Civil Rights Movement',
+      'Equal Opportunities',
+      'Supreme Court',
+    ],
+    caseStudy: [
+    'Brown v. Board of Education was a landmark 1954 U.S. Supreme Court case that declared racial segregation in public schools unconstitutional.',
+    'The case was brought by Oliver Brown, who sued the Board of Education of Topeka, Kansas, after his daughter was denied entry to an all-white school near their home. His case was joined with several others representing Black families across the country.',
+    'At the time, segregation in schools was justified under the doctrine of "separate but equal," established by the 1896 Plessy v. Ferguson case. However, in practice, segregated Black schools were underfunded and lacked proper resources compared to their white counterparts.',
+    'The legal team, led by Thurgood Marshall of the NAACP, argued that segregation violated the Equal Protection Clause of the 14th Amendment. They provided psychological studies, such as the "Doll Test," which demonstrated the negative effects of segregation on Black children\'s self-esteem and development.',
+  'In a unanimous 9-0 decision, the Supreme Court ruled that "separate educational facilities are inherently unequal," overturning Plessy v. Ferguson and setting the stage for nationwide desegregation.',
+    'This decision marked a turning point in the Civil Rights Movement, sparking nationwide resistance and eventual progress toward educational equality. However, many Southern states resisted desegregation, leading to further legal battles and federal interventions in the years that followed.',
+    'Brown v. Board of Education remains a cornerstone case in education reform and civil rights, highlighting the role of the legal system in shaping social progress.',
+    ],
+  duration: 3, // 1951 - 1954
+  complexity: Complexity.hard,
+  severity: Severity.high,
+
+  isLegalCase: true,
+  isEthicalCase: true,
+  isBusinessCase: false,
+  isSocietalImpactCase: true,
+  isScientificCase: false,
+  isCulturalCase: true,
+    isCrisisCase: false,
+  ),
+
+  const CaseStudy(
+    id: 'c37',
+    categories: [
+      'EL',
+      'BS',
+      'FE',
+    ],
+    title: 'The College Admissions Scandal (Operation Varsity Blues)',
+    imageUrl: 'https://occ-0-8407-90.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABQFxcVmPTsi8JtAY-YLuJmXeviQOeSppT6shCU_2_XdM1-uhkM84j-A2hXcaKA6XNE9Hr9AKq2UNBQ368gS2vzwNOHcgxmUGeRpf7Okz85PQ6p62UgQNbMSe4RT0zufUXHjAeA.jpg?r=415',
+    keywords: [
+      'College Admissions',
+      'Bribery',
+      'Educational Fraud',
+      'Ivy League',
+      'Wealth Privilege',
+    ],
+    caseStudy: [
+      'The College Admissions Scandal, also known as "Operation Varsity Blues," was a massive fraud scheme uncovered by the FBI in 2019, exposing how wealthy families used bribery and fraud to secure spots for their children in elite universities.',
+      'The scheme, orchestrated by Rick Singer, involved cheating on standardized tests, fabricating athletic credentials, and bribing college officials to designate students as recruited athletes, even if they had never played the sport.',
+      'More than 50 individuals, including Hollywood celebrities (like Lori Loughlin and Felicity Huffman), CEOs, and coaches from prestigious universities (such as Stanford, Yale, and USC), were implicated in the scandal.',
+      'Parents paid anywhere from \$15,000 to \$500,000 to manipulate admissions processes, either by rigging SAT/ACT exams or bribing university staff.',
+      'The scandal exposed deep inequalities in the U.S. higher education system, showing how wealth and influence could override merit-based admissions.',
+      'The legal consequences were swift—many parents, coaches, and college officials were arrested and sentenced to prison, fines, or community service. Rick Singer, the mastermind behind the operation, pleaded guilty to multiple charges, including fraud and money laundering.',
+      'The case led to widespread discussions about fairness in education, prompting universities to tighten admissions policies and reconsider how athletics and donations influence student acceptance.',
+      'Operation Varsity Blues highlighted the broader systemic issues in higher education, reinforcing the belief that access to top universities is often dictated by wealth and privilege rather than academic merit.',
+    ],
+    duration: 8, // 2011 - 2019
+    complexity: Complexity.moderate,
+    severity: Severity.high,
+
+    isLegalCase: true,
+    isEthicalCase: true,
+    isBusinessCase: false,
+    isSocietalImpactCase: true,
+    isScientificCase: false,
+    isCulturalCase: false,
+    isCrisisCase: false,
+  ),
+
+  const CaseStudy(
+    id: 'c38',
+    categories: [
+      'EL',
+      'LE',
+      'PG',
+    ],
+    title: 'No Child Left Behind Act: Success or Failure?',
+    imageUrl: 'https://cdn.theatlantic.com/thumbor/xH8T4zoDv0LVlEN4xL5SDNUB4Y0=/0x131:2048x1283/960x540/media/img/mt/2015/12/essa/original.jpg',
+    keywords: [
+      'Education Policy',
+      'Standardized Testing',
+      'Public Schools',
+      'Achievement Gap',
+      'Accountability',
+    ],
+    caseStudy: [
+      'The No Child Left Behind (NCLB) Act was a major U.S. education reform law signed into effect by President George W. Bush in 2002. Its goal was to improve educational outcomes by holding schools accountable for student performance.',
+      'The act required states to develop standardized tests in reading and math, with schools receiving funding based on student test results. Schools that failed to meet performance benchmarks faced consequences, such as reduced funding, staff restructuring, or even closure.',
+      'Supporters argued that NCLB increased focus on academic achievement, improved transparency, and helped identify struggling schools in need of intervention. They believed that accountability measures forced schools to address educational disparities, particularly among low-income and minority students.',
+      'However, critics argued that the policy led to "teaching to the test," narrowing the curriculum and placing excessive pressure on students and teachers. Many educators felt that the rigid standards failed to account for diverse learning needs and that funding cuts disproportionately affected underprivileged schools.',
+      'Over time, widespread dissatisfaction with NCLB grew, as schools struggled to meet unrealistic proficiency goals. Many states sought waivers from the law’s requirements, arguing that its rigid testing benchmarks did not reflect true learning progress.',
+      'By 2015, the law was officially replaced by the Every Student Succeeds Act (ESSA), which gave states more control over education policies while maintaining accountability for student performance.',
+      'The No Child Left Behind Act remains a controversial chapter in U.S. education history, illustrating the challenges of balancing accountability with meaningful educational reform. It sparked nationwide debates about standardized testing, school funding, and the role of federal oversight in education.',
+    ],
+    duration: 13, // 2002 - 2015
+    complexity: Complexity.hard,
+    severity: Severity.medium,
+
+    isLegalCase: true,
+    isEthicalCase: true,
+    isBusinessCase: false,
+    isSocietalImpactCase: true,
+    isScientificCase: false,
+    isCulturalCase: false,
+    isCrisisCase: false,
+  ),
+
+  const CaseStudy(
+    id: 'c39',
+    categories: [
+      'EL',
+      'PG',
+    ],
+    title: 'The Common Core State Standards Initiative',
+    imageUrl: 'https://miro.medium.com/v2/resize:fit:1200/1*v1V0ZtXxnSXW6UaJx04eXA.jpeg',
+    keywords: [
+      'Education Reform',
+      'Standardized Curriculum',
+      'Common Core',
+      'Policy Controversy',
+      'State Adoption',
+    ],
+    caseStudy: [
+      'Launched in 2010, the Common Core State Standards Initiative aimed to provide a unified set of educational benchmarks for K–12 students across the United States. Developed through a state-led effort, it was designed to raise academic standards and better prepare students for college and careers.',
+      'The initiative sparked intense debates over federal versus state control in education, with critics arguing that the standards encroached on local autonomy and led to a “one-size-fits-all” approach in teaching. Supporters, however, claimed that Common Core would reduce disparities in student achievement and improve educational outcomes nationwide.',
+      'Controversies quickly emerged regarding the implementation process. Teachers, parents, and policymakers raised concerns about the increased emphasis on standardized testing, which many believed led to "teaching to the test" and reduced creativity in the classroom.',
+      'Several states experienced legal challenges and political pushback; some even opted to repeal or revise the standards in response to public outcry. Despite the controversies, many states continue to use modified versions of the Common Core, highlighting its lasting impact on U.S. education.',
+      'The Common Core case study remains a significant example of how education policy can become a flashpoint for broader political, ethical, and societal debates about the purpose and quality of public education in America.',
+    ],
+    duration: 11, // 2010 - 2021 (ongoing impact)
+    complexity: Complexity.moderate,
+    severity: Severity.medium,
+
+    isLegalCase: true,    // due to legal challenges and policy debates
+    isEthicalCase: true,  // because it raised ethical issues around educational equity
+    isBusinessCase: false,
+    isSocietalImpactCase: true,
+    isScientificCase: false,
+    isCulturalCase: true, // significant cultural and political debates
+    isCrisisCase: false,
+  ),
+
+  const CaseStudy(
+    id: 'c40',
+    categories: [
+      'ES',
+      'HM'
+      'PG',
+    ],
+    title: 'The Fukushima Daiichi Nuclear Disaster',
+    imageUrl: 'https://bpb-us-e1.wpmucdn.com/sites.suffolk.edu/dist/1/951/files/2015/10/FukushimaMeltdown101113.jpeg',
+    keywords: [
+      'Nuclear Disaster',
+      'Earthquake',
+      'Tsunami',
+      'Radiation Release',
+      'Environmental Impact',
+    ],
+    caseStudy: [
+      'On March 11, 2011, a 9.0 magnitude earthquake struck off the coast of Japan, triggering a massive tsunami that overwhelmed the Fukushima Daiichi Nuclear Power Plant’s seawall. The plant’s cooling systems failed, leading to meltdowns in three reactors and a significant release of radioactive material.',
+      'The disaster forced the evacuation of over 150,000 residents and created long-term environmental contamination, with radioactive isotopes seeping into the ocean and soil. The crisis raised serious questions about the safety protocols of nuclear power plants in earthquake-prone regions.',
+      'In the aftermath, the Japanese government and international regulatory bodies conducted extensive reviews of nuclear safety standards. The disaster not only impacted local communities but also reshaped global energy policies and accelerated debates over the future of nuclear energy.',
+      'Legal battles ensued over compensation for affected residents, and the incident spurred significant investment in renewable energy sources worldwide. Despite extensive cleanup efforts, the Fukushima site remains hazardous, serving as a stark reminder of the potential consequences of nuclear energy mismanagement.',
+    ],
+    duration: 1, // Immediate crisis in 2011; long-term impacts persist
+    complexity: Complexity.hard,
+    severity: Severity.critical,
+
+    isLegalCase: true,
+    isEthicalCase: true,
+    isBusinessCase: false,
+    isSocietalImpactCase: true,
+    isScientificCase: true,
+    isCulturalCase: false,
+    isCrisisCase: true,
+  ),
+
+  const CaseStudy(
+    id: 'c41',
+    categories: [
+      'TI', // Technology & Innovation
+      'LE', // Law & Ethics
+    ],
+    title: 'The WannaCry Ransomware Attack',
+    imageUrl: 'https://asimily.com/wp-content/uploads/2023/08/The-WannaCry-Ransomware-Legacy-Attack-Asimily-png.png',
+    keywords: [
+      'Cybersecurity',
+      'Ransomware',
+      'EternalBlue Vulnerability',
+      'Global Disruption',
+      'Lazarus Group',
+    ],
+    caseStudy: [
+      'In May 2017, the WannaCry ransomware attack spread rapidly around the globe, affecting over 200,000 computers in more than 150 countries. The malware exploited a critical vulnerability in Microsoft Windows (known as EternalBlue) to encrypt files on infected systems and demand ransom payments in Bitcoin.',
+      'The attack had immediate and severe consequences for a range of organizations, most notably crippling the United Kingdom’s National Health Service (NHS), where hospitals and clinics were forced to cancel appointments and divert emergency services, highlighting the vulnerability of critical infrastructure to cyber threats.',
+      'Believed to have been launched by the North Korean-linked Lazarus Group, WannaCry raised significant concerns about state-sponsored cyberattacks and underscored the importance of timely software updates and robust cybersecurity measures.',
+      'The incident sparked a global call-to-action for improved cybersecurity practices, leading to collaborative efforts among governments, private organizations, and cybersecurity experts to prevent similar future attacks.',
+      'While a decryption tool was eventually found to mitigate further damage, the WannaCry attack remains a stark reminder of the far-reaching impact of cyber threats in an increasingly digital world.',
+    ],
+    duration: 1, // Immediate crisis in May 2017 (short-term outbreak)
+    complexity: Complexity.hard,
+    severity: Severity.critical,
+
+    isLegalCase: false,
+    isEthicalCase: true,
+    isBusinessCase: false,
+    isSocietalImpactCase: true,
+    isScientificCase: false,
+    isCulturalCase: false,
+    isCrisisCase: true,
+  ),
+
+  const CaseStudy(
+    id: 'c42',
+    categories: [
+      'PG', // Politics & Governance
+      'FE', // Finance & Economics
+      'HC', // History & Culture
+      'HM'
+    ],
+    title: 'The COVID-19 Pandemic',
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4_qWZ_DgDovOwwfabzGT5H8eNjDHz_c4B7Q&s',
+    keywords: [
+      'Global Pandemic',
+      'Public Health Crisis',
+      'Economic Impact',
+      'Government Response',
+      'Social Distancing',
+    ],
+    caseStudy: [
+      'First identified in Wuhan, China in December 2019, the COVID-19 pandemic rapidly escalated into a global crisis, with the World Health Organization declaring it a pandemic in March 2020. The virus spread to nearly every country, infecting millions and causing significant loss of life.',
+      'Governments worldwide implemented drastic measures such as lockdowns, travel bans, and social distancing protocols to contain the virus. These actions led to unprecedented disruptions in global economies, education systems, and everyday life.',
+      'The pandemic spurred an extraordinary scientific response, culminating in the rapid development, approval, and mass distribution of multiple vaccines. This effort was one of the fastest in medical history, involving international collaboration and significant financial investments.',
+      'Despite these efforts, challenges such as vaccine hesitancy, misinformation, and uneven healthcare infrastructure led to varying outcomes across different regions, highlighting deep-seated inequalities in global health and economic stability.',
+      'The COVID-19 crisis not only strained healthcare systems but also reshaped societal norms and accelerated digital transformation across industries. It raised critical debates about balancing individual freedoms with public health, and its long-term impacts continue to influence global governance, economic policies, and cultural practices.',
+    ],
+    duration: 3, // 2019 - 2022 (approximate crisis period)
+    complexity: Complexity.hard,
+    severity: Severity.critical,
+
+    isLegalCase: false,
+    isEthicalCase: false,
+    isBusinessCase: false,
+    isSocietalImpactCase: true,
+    isScientificCase: true,
+    isCulturalCase: true,
+    isCrisisCase: true,
+  ),
+
+  const CaseStudy(
+    id: 'c43',
+    categories: [
+      'PG',
+      'HC',
+      'LE',
+    ],
+    title: 'The Brexit Referendum',
+    imageUrl: 'https://4a7efb2d53317100f611-1d7064c4f7b6de25658a4199efb34975.ssl.cf1.rackcdn.com/brexit-referendum-5-cybersecurity-implications-showcase_image-3-p-2160.jpg',
+    keywords: [
+      'Brexit',
+      'European Union',
+      'Political Referendum',
+      'UK Politics',
+      'National Sovereignty',
+    ],
+    caseStudy: [
+      'On June 23, 2016, the United Kingdom held a historic referendum in which a narrow majority voted to leave the European Union, an event commonly known as Brexit. The decision marked a significant turning point in UK politics and had far-reaching implications for the nation’s legal, economic, and cultural landscape.',
+      'The campaign was highly polarized, with advocates for Brexit emphasizing regaining national sovereignty, controlling immigration, and reducing EU regulations, while opponents warned of economic uncertainty, diminished global influence, and potential social division.',
+      'Following the vote, the UK entered a prolonged period of negotiation and political turmoil as it sought to establish a withdrawal agreement with the EU. The subsequent negotiations were marked by intense debates over trade, security, and legal alignment, ultimately culminating in the UK’s formal exit from the EU in January 2020.',
+      'The Brexit process also triggered a series of legal challenges and constitutional debates, raising questions about the nature of sovereignty and the future of the Union, especially with growing calls for Scottish independence.',
+      'Overall, the Brexit Referendum remains a landmark event that not only reshaped the political order in the UK but also had significant cultural and societal repercussions, influencing debates on national identity and global integration.',
+    ],
+    duration: 4, // 2016 - 2020
+    complexity: Complexity.hard,
+    severity: Severity.critical,
+
+    isLegalCase: true,
+    isEthicalCase: false,
+    isBusinessCase: false,
+    isSocietalImpactCase: true,
+    isScientificCase: false,
+    isCulturalCase: true,
+    isCrisisCase: true,
+  ),
+
+  const CaseStudy(
+    id: 'c44',
+    categories: [
+      'ES',
+      'HC',
+      'PG',
+      'HM'
+    ],
+    title: 'The 2004 Indian Ocean Tsunami',
+    imageUrl: 'https://static.toiimg.com/thumb/msid-55071172,width-1280,height-720,resizemode-4/55071172.jpg',
+    keywords: [
+      'Natural Disaster',
+      'Earthquake',
+      'Tsunami',
+      'Humanitarian Crisis',
+      'Global Aid',
+    ],
+    caseStudy: [
+      'On December 26, 2004, a massive undersea earthquake off the coast of Sumatra, Indonesia, with a magnitude of 9.1–9.3, triggered a series of catastrophic tsunamis that struck the coasts of 14 countries along the Indian Ocean.',
+      'The tsunamis resulted in widespread devastation, with waves reaching heights of up to 30 meters in some areas, causing the deaths of over 230,000 people and displacing millions. The disaster left entire communities in ruins, with critical infrastructure, homes, and livelihoods destroyed.',
+      'The scale of the tragedy prompted an unprecedented global humanitarian response, as governments, NGOs, and private donors mobilized billions of dollars in aid to support relief and reconstruction efforts. The disaster also underscored the urgent need for improved early warning systems and disaster preparedness in vulnerable coastal regions.',
+      'In the aftermath, affected nations faced long-term challenges, including rebuilding infrastructure, resettling displaced populations, and mitigating ongoing environmental impacts such as coastal erosion and ecosystem damage.',
+      'The 2004 Indian Ocean Tsunami remains one of the deadliest natural disasters in modern history and has significantly influenced international policies on disaster management, early warning systems, and global humanitarian aid.',
+    ],
+    duration: 1, // Immediate impact in December 2004
+    complexity: Complexity.simple,
+    severity: Severity.critical,
+
+    isLegalCase: false,
+    isEthicalCase: false,
+    isBusinessCase: false,
+    isSocietalImpactCase: true,
+    isScientificCase: true,
+    isCulturalCase: true,
+    isCrisisCase: true,
+  ),
+
+  const CaseStudy(
+    id: 'c45',
+    categories: [
+      'TI', // Technology & Innovation
+      'LE', // Law & Ethics
+      'PG', // Politics & Governance
+    ],
+    title: 'The SolarWinds Cyberattack',
+    imageUrl: 'https://i.ytimg.com/vi/Sphqregsss4/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBucFjyT5lTwiMg7vQ9Tskthw1AcA',
+    keywords: [
+      'Cyberattack',
+      'Supply Chain Security',
+      'Nation-State Hack',
+      'Government Breach',
+      'Digital Espionage',
+    ],
+    caseStudy: [
+      'Discovered in December 2020, the SolarWinds Cyberattack was a sophisticated supply chain breach that compromised the update mechanism of SolarWinds’ Orion software. Malicious code was inserted into routine software updates, affecting thousands of organizations worldwide.',
+      'The attack is widely attributed to a nation-state group, enabling persistent access to sensitive networks of U.S. government agencies, Fortune 500 companies, and critical infrastructure providers. This unprecedented breach raised alarms about vulnerabilities in global IT supply chains and national cybersecurity.',
+      'Investigations revealed that the attackers exploited weak security practices and digital trust assumptions, leading to extensive data exfiltration and undermining confidence in software supply chain integrity.',
+      'The incident spurred urgent calls for cybersecurity reforms, tighter regulation, and enhanced public-private cooperation to protect critical digital infrastructure against state-sponsored cyber espionage.',
+      'The SolarWinds attack remains one of the most consequential cybersecurity incidents in recent history, highlighting the evolving threat landscape and the need for robust digital defense strategies.',
+    ],
+    duration: 1, // 2020 - 2021
+    complexity: Complexity.hard,
+    severity: Severity.critical,
+
+    isLegalCase: true,
+    isEthicalCase: true,
+    isBusinessCase: true,
+    isSocietalImpactCase: true,
+    isScientificCase: false,
+    isCulturalCase: false,
+    isCrisisCase: true,
+  ),
+
+  const CaseStudy(
+    id: 'c46',
+    categories: [
+
+      'PG',
+      'HC',
+    ],
+    title: 'The Grenfell Tower Fire',
+    imageUrl: 'https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/1267C/production/_96488357_tower_sequence.png',
+    keywords: [
+      'Fire Disaster',
+      'Building Safety',
+      'Negligence',
+      'Urban Crisis',
+      'Government Accountability',
+    ],
+    caseStudy: [
+      'On June 14, 2017, a devastating fire broke out in Grenfell Tower, a 24-story residential building in West London. The fire spread rapidly, fueled by flammable exterior cladding and poor fire safety measures.',
+      'The disaster resulted in over 70 fatalities and hundreds of injuries, causing widespread devastation and displacing many residents. The tragedy exposed systemic failures in building regulations and emergency response protocols.',
+      'Public outcry surged as investigations revealed long-standing neglect and a lack of accountability from both the building management and local authorities. The fire became a symbol of urban neglect and inequality in housing safety.',
+      'In the aftermath, a comprehensive public inquiry was launched to investigate the causes of the fire and to reform safety standards for high-rise buildings across the UK. The findings have led to significant changes in fire safety policies and renewed calls for government accountability in housing management.',
+      'The Grenfell Tower Fire remains a stark reminder of the critical importance of enforcing robust safety standards to protect vulnerable communities and prevent future tragedies.',
+    ],
+    duration: 1, // Immediate crisis on June 14, 2017
+    complexity: Complexity.hard,
+    severity: Severity.critical,
+
+    isLegalCase: true,
+    isEthicalCase: true,
+    isBusinessCase: false,
+    isSocietalImpactCase: true,
+    isScientificCase: false,
+    isCulturalCase: true,
+    isCrisisCase: true,
+  ),
+
+  const CaseStudy(
+    id: 'c47',
+    categories: [
+      'LE', // Law & Ethics
+      'PG', // Politics & Governance
+      'FE', // Finance & Economics
+    ],
+    title: 'Operation Car Wash (Lava Jato)',
+    imageUrl: 'https://static01.nyt.com/images/2021/02/26/opinion/26Estrada/26Estrada-videoSixteenByNineJumbo1600.jpg',
+    keywords: [
+      'Corruption',
+      'Bribery',
+      'Petrobras',
+      'Political Scandal',
+      'Brazil',
+    ],
+    caseStudy: [
+      'Operation Car Wash (Operação Lava Jato) was a sweeping corruption investigation that began in 2014 in Brazil. It exposed a massive bribery scheme involving the state-run oil company Petrobras, major construction firms, and numerous politicians, revealing how kickbacks were funneled to secure lucrative contracts.',
+      'The investigation uncovered that billions of dollars in public funds were embezzled through complex networks of corruption, implicating top executives and political figures across multiple Latin American countries. The scandal led to the arrest and conviction of high-profile individuals, including former presidents and influential business leaders.',
+      'The fallout from Operation Car Wash had far-reaching consequences, triggering political crises, economic downturns, and a significant loss of public trust in government institutions. It prompted a series of legal reforms and anti-corruption measures aimed at increasing transparency and accountability in both the public and private sectors.',
+      'Despite controversies and challenges during its lengthy investigation, Operation Car Wash remains one of the most impactful corruption scandals in modern history, reshaping the political landscape in Brazil and setting a precedent for global anti-corruption efforts.',
+    ],
+    duration: 6, // 2014 - 2020
+    complexity: Complexity.hard,
+    severity: Severity.critical,
+
+    isLegalCase: true,
+    isEthicalCase: true,
+    isBusinessCase: true,
+    isSocietalImpactCase: true,
+    isScientificCase: false,
+    isCulturalCase: true,
+    isCrisisCase: false,
+  ),
+
+  const CaseStudy(
+    id: 'c48',
+    categories: [
+      'PG', // Politics & Governance
+      'HC', // History & Culture
+      'LE', // Law & Ethics
+      'HM'
+    ],
+    title: 'The Rwandan Genocide',
+    imageUrl: 'https://content.magnumphotos.com/wp-content/uploads/2019/04/cortex/nn11583325-teaser-story-big.jpg',
+    keywords: [
+      'Genocide',
+      'Ethnic Conflict',
+      'Mass Atrocity',
+      'Human Rights Violation',
+      'International Intervention',
+    ],
+    caseStudy: [
+      'In 1994, over the course of roughly 100 days, a systematic campaign of ethnic cleansing led to the brutal killing of an estimated 800,000 people in Rwanda. The violence primarily targeted the Tutsi minority, although moderate Hutus were also victimized, as extremist Hutu factions incited mass hatred and violence.',
+      'The genocide was fueled by decades of ethnic tension, political manipulation, and historical grievances, exacerbated by incendiary propaganda and a breakdown of state authority. Ordinary citizens were drawn into acts of violence, and entire communities were torn apart amid widespread atrocities including mass killings, sexual violence, and forced displacement.',
+      'Despite early warnings and clear signs of escalating violence, the international community largely failed to intervene effectively. The inaction of global powers has since been widely criticized, prompting significant debates on the responsibility to protect vulnerable populations.',
+      'In the aftermath, both international tribunals and local courts were established to bring perpetrators to justice, leading to landmark legal proceedings that reshaped international law regarding genocide and crimes against humanity.',
+      'The Rwandan Genocide remains a stark reminder of the catastrophic consequences of unchecked ethnic hatred and political failure, profoundly influencing how the world approaches conflict prevention, humanitarian intervention, and post-conflict reconciliation.',
+    ],
+    duration: 0.27, // Approximately 100 days (0.27 years)
+    complexity: Complexity.hard,
+    severity: Severity.critical,
+
+    isLegalCase: true,
+    isEthicalCase: true,
+    isBusinessCase: false,
+    isSocietalImpactCase: true,
+    isScientificCase: false,
+    isCulturalCase: true,
+    isCrisisCase: true,
+  ),
+
+  const CaseStudy(
+    id: 'c49',
+    categories: [
+      'LE', // Law & Ethics
+      'PG', // Politics & Governance
+      'HC', // History & Culture
+
+    ],
+    title: 'The Boston Marathon Bombing',
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8s5m_o_XwRFhkCwm9DeWTvaL1y_BrhTzBgg&s',
+    keywords: [
+      'Terrorism',
+      'Public Safety',
+      'Law Enforcement',
+      'Counterterrorism',
+      'Mass Casualty Attack',
+    ],
+    caseStudy: [
+      'On April 15, 2013, during the Boston Marathon, two homemade bombs exploded near the finish line in Boston, Massachusetts, killing 3 people and injuring over 264 others. The coordinated attack shocked the nation and prompted a swift and massive law enforcement response.',
+      'The bombing underscored the persistent threat of terrorism on U.S. soil and led to an intensive investigation involving federal, state, and local agencies. Within days, authorities identified and apprehended the suspects linked to extremist ideologies, highlighting the effectiveness—and challenges—of modern counterterrorism efforts.',
+      'The incident sparked widespread debates on enhancing public safety and surveillance, as well as the balance between civil liberties and security. The tragedy also catalyzed improvements in emergency response strategies and reshaped policies aimed at preventing future attacks.',
+      'The Boston Marathon Bombing remains a pivotal event in recent American history, symbolizing both the vulnerability of public spaces to terrorist threats and the resilience of communities in the face of adversity.',
+    ],
+    duration: 0.002, // The attack occurred on a single day (April 15, 2013)
+    complexity: Complexity.moderate,
+    severity: Severity.critical,
+
+    isLegalCase: true,
+    isEthicalCase: true,
+    isBusinessCase: false,
+    isSocietalImpactCase: true,
+    isScientificCase: false,
+    isCulturalCase: true,
+    isCrisisCase: true,
+  ),
+
+  const CaseStudy(
+    id: 'c50',
+    categories: [
+
+      'FE', // Finance & Economics
+      'PG', // Politics & Governance
+    ],
+    title: 'The Panama Papers Leak',
+    imageUrl: 'https://economictimes.indiatimes.com/thumb/msid-64685550,width-1200,height-900,resizemode-4,imgsize-87914/untitled-8.jpg?from=mdr',
+    keywords: [
+      'Offshore Finance',
+      'Tax Evasion',
+      'Corruption',
+      'Investigative Journalism',
+      'Data Leak',
+    ],
+    caseStudy: [
+      'In April 2016, a massive leak of 11.5 million documents from the Panamanian law firm Mossack Fonseca, known as the Panama Papers, revealed how wealthy individuals and public officials used offshore tax havens to conceal their wealth, evade taxes, and launder money.',
+      'The leaked documents exposed secret financial dealings of hundreds of high-profile figures worldwide, sparking global debates on tax justice, financial transparency, and corruption. Governments, investigative journalists, and regulatory agencies collaborated to sift through the data, leading to a series of high-profile investigations and policy changes.',
+      'The revelations led to resignations of prominent public figures, criminal investigations, and reforms in financial regulation in several countries. The Panama Papers not only exposed the dark side of global finance but also underscored the power of investigative journalism in holding the elite accountable.',
+      'This case remains one of the largest data breaches in history, significantly influencing public discourse on economic inequality, regulatory oversight, and the ethical responsibilities of financial institutions and governments.',
+    ],
+    duration: 1, // 2016 (ongoing impact)
+    complexity: Complexity.hard,
+    severity: Severity.critical,
+
+    isLegalCase: true,
+    isEthicalCase: true,
+    isBusinessCase: true,
+    isSocietalImpactCase: true,
+    isScientificCase: false,
+    isCulturalCase: true,
+    isCrisisCase: false,
+  ),
+
 
 ];

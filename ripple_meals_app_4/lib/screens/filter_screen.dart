@@ -3,12 +3,6 @@ import 'package:ripple_meals_app_4/data/dummy_data.dart';
 import 'package:ripple_meals_app_4/models/casestudy.dart';
 import 'package:ripple_meals_app_4/screens/meals_screen.dart';
 
-enum Filter {
-  gluttenFree,
-  lactoseFree,
-  vegetarian,
-  vegan,
-}
 
 class FilterScreen extends StatefulWidget {
   List<CaseStudy> favoriteMeals;
@@ -72,7 +66,7 @@ class FilterScreenState extends State<FilterScreen> {
                 favoriteMeals: widget.favoriteMeals,
                 mealsList: filteredMeals,
                 categoryColor: Colors.orange,
-                title: "Filtered Meals",
+                title: "Available Cases",
                 onToggleFavorite: widget.onToggleFavorite)));
   }
 
@@ -214,12 +208,12 @@ class FilterScreenState extends State<FilterScreen> {
                           _scientificCaseFilterSet, _culturalCaseFilterSet,
                           _crisisCaseFilterSet);
                     },
-                    child: Text("Apply")),
+                    child: const Text("Apply")),
                 ElevatedButton(
                     onPressed: () {
                       Navigator.pop(context);
                     },
-                    child: Text("Cancel"))
+                    child: const Text("Cancel"))
               ],
             )
           ],
