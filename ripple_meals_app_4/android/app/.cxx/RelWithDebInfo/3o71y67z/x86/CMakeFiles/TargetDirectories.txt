@@ -1,0 +1,2 @@
+C:/Users/jeesh/AndroidStudioProjects/ripple_meals_app_4/android/app/.cxx/RelWithDebInfo/3o71y67z/x86/CMakeFiles/edit_cache.dir
+C:/Users/jeesh/AndroidStudioProjects/ripple_meals_app_4/android/app/.cxx/RelWithDebInfo/3o71y67z/x86/CMakeFiles/rebuild_cache.dir
