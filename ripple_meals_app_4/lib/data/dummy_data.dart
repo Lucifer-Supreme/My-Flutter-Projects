@@ -1861,5 +1861,526 @@ isCrisisCase: true,
     isCrisisCase: false,
   ),
 
+  const CaseStudy(
+    id: 'c51',
+    categories: [
+      'FE', // Finance & Economics
+      'PG', // Politics & Governance
+      'LE', // Law & Ethics
+    ],
+    title: 'The Greek Debt Crisis',
+    imageUrl: 'https://i.ndtvimg.com/i/2015-07/greece-yes-no_650x400_81436064290.jpg',
+    keywords: [
+      'Economic Crisis',
+      'Sovereign Debt',
+      'Bailout',
+      'Austerity Measures',
+      'Political Turmoil',
+    ],
+    caseStudy: [
+      'The Greek Debt Crisis emerged in 2009 when Greece disclosed severe fiscal mismanagement and mounting public debt, leading to a loss of confidence among investors. This crisis quickly escalated into a full-blown sovereign debt crisis, forcing Greece to seek international financial assistance.',
+      'Multiple bailout agreements were reached with the European Union, the European Central Bank, and the International Monetary Fund, accompanied by harsh austerity measures aimed at reducing public spending and restructuring the economy. These measures led to widespread social unrest, protests, and significant political instability.',
+      'The crisis not only resulted in massive economic contraction, skyrocketing unemployment, and severe social hardship but also reshaped the political landscape of Greece, contributing to the rise of new political parties and deep divisions within society.',
+      'The Greek Debt Crisis has been a subject of extensive debate on fiscal responsibility, the effectiveness of austerity policies, and the impact of global financial integration on national sovereignty. Its aftermath continues to influence economic and political policies in Europe and serves as a cautionary tale for emerging economies worldwide.',
+    ],
+    duration: 9, // 2009 - 2018 (approximate period of acute crisis and recovery measures)
+    complexity: Complexity.hard,
+    severity: Severity.critical,
+
+    isLegalCase: true,
+    isEthicalCase: true,
+    isBusinessCase: false,
+    isSocietalImpactCase: true,
+    isScientificCase: false,
+    isCulturalCase: true,
+    isCrisisCase: true,
+  ),
+
+  const CaseStudy(
+    id: 'c52',
+    categories: [
+      'PG', // Politics & Governance (primary)
+      'HC', // History & Culture (secondary)
+    ],
+    title: 'The Arab Spring',
+    imageUrl: 'https://media.npr.org/assets/img/2011/12/17/tunisia_custom-35d572bf67a3883025a98c4376fada55a58950fb.jpg',
+    keywords: [
+      'Protests',
+      'Uprising',
+      'Political Reform',
+      'Regime Change',
+      'Social Justice',
+    ],
+    caseStudy: [
+      'The Arab Spring was a groundbreaking series of protests and uprisings that began in December 2010 in Tunisia and quickly spread throughout the Arab world. Citizens in multiple countries, driven by grievances over political repression, economic hardship, and corruption, took to the streets demanding greater freedom and accountability from their governments.',
+      'In countries like Tunisia, Egypt, and Libya, these movements led to dramatic regime changes, while in others, such as Syria and Yemen, the uprisings evolved into prolonged conflicts that continue to affect regional stability. The Arab Spring not only reshaped national governments but also ignited widespread debates about democracy, human rights, and social justice in the modern era.',
+      'The movements highlighted the power of grassroots mobilization in the digital age, as social media played a pivotal role in organizing protests and spreading information. Despite its varied outcomes across different nations, the Arab Spring remains a seminal moment in contemporary history that underscores the desire for political and cultural transformation.',
+    ],
+    duration: 5, // Approximate period: 2010 - 2015
+    complexity: Complexity.hard,
+    severity: Severity.critical,
+
+    isLegalCase: false,
+    isEthicalCase: true,
+    isBusinessCase: false,
+    isSocietalImpactCase: true,
+    isScientificCase: false,
+    isCulturalCase: true,
+    isCrisisCase: true,
+  ),
+
+  const CaseStudy(
+    id: 'c53',
+    categories: [
+      'ES', // Environmental & Sustainability (primary)
+      'LE', // Law & Ethics (secondary)
+    ],
+    title: 'The Exxon Valdez Oil Spill',
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTdxzOl_HwyIUoTJcSchntlREM9mQKGR5mbQ&s',
+    keywords: [
+      'Oil Spill',
+      'Environmental Disaster',
+      'Marine Ecology',
+      'Legal Liability',
+      'Regulatory Reform',
+    ],
+    caseStudy: [
+      'On March 24, 1989, the Exxon Valdez oil tanker, operated by Exxon, struck Bligh Reef in Prince William Sound, Alaska. This tragic accident resulted in the release of approximately 11 million gallons (about 257,000 barrels) of crude oil into the pristine Alaskan waters, marking one of the worst environmental disasters in history.',
+      'The spill devastated a vast area of marine and coastal ecosystems. Thousands of miles of shoreline were contaminated, and the spill claimed the lives of hundreds of thousands of seabirds, marine mammals, and fish. The contamination severely disrupted the food chain, leading to long-term ecological damage that is still evident in some areas decades later.',
+      'Initial response efforts were hampered by the remote location, harsh weather conditions, and a lack of preparedness, resulting in a delayed and often criticized cleanup operation. The environmental damage was compounded by the challenges of removing oil from sensitive natural habitats, with many species and local communities facing lasting adverse effects.',
+      'Legally, the disaster led to a series of high-profile lawsuits. Exxon faced enormous financial liabilities, with courts eventually holding the company accountable for billions of dollars in damages. This legal fallout not only affected Exxon’s operations and reputation but also spurred significant changes in environmental policy and corporate accountability.',
+      'One of the lasting legacies of the Exxon Valdez Oil Spill was the passage of the U.S. Oil Pollution Act of 1990. This landmark legislation strengthened regulations on oil transportation and spill response, increased liability for oil companies, and improved federal preparedness for future environmental catastrophes.',
+      'The spill remains a cautionary tale about the importance of robust safety protocols, environmental stewardship, and regulatory oversight in the oil industry. It also highlighted the vulnerability of delicate ecosystems and indigenous communities that rely on these natural resources for their livelihood.',
+    ],
+    duration: 1, // Immediate crisis in 1989; long-term recovery and legal impact extended over subsequent years
+    complexity: Complexity.hard,
+    severity: Severity.critical,
+
+    isLegalCase: true,
+    isEthicalCase: true,
+    isBusinessCase: false,
+    isSocietalImpactCase: true,
+    isScientificCase: false,
+    isCulturalCase: true,
+    isCrisisCase: true,
+
+
+  ),
+
+  const CaseStudy(
+    id: 'c54',
+    categories: [
+      'PG', // Politics & Governance (primary)
+      'HC', // History & Culture (secondary)
+    ],
+    title: 'The September 11 Attacks',
+    imageUrl: 'https://ca-times.brightspotcdn.com/dims4/default/f88f402/2147483647/strip/false/crop/2000x1347+0+0/resize/1486x1001!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F2b%2Fd8%2Fd1cca6577d1a553dfae7588b4d93%2Fla-xpm-photo-2001-sep-12-na-sept-11-attack-201105-01',
+    keywords: [
+      'Terrorism',
+      'Al-Qaeda',
+      'World Trade Center',
+      'Pentagon',
+      'Hijacked Planes',
+    ],
+    caseStudy: [
+      'On September 11, 2001, the United States experienced one of its most devastating terrorist attacks. Nineteen militants associated with al-Qaeda hijacked four commercial airplanes. Two planes were deliberately flown into the Twin Towers of the World Trade Center in New York City, causing both towers to collapse. A third plane struck the Pentagon in Arlington, Virginia, while the fourth, United Airlines Flight 93, crashed into a field in Pennsylvania after passengers attempted to regain control.',
+      'The coordinated attacks resulted in the tragic loss of nearly 3,000 lives, with thousands more injured. The sheer scale and suddenness of the event sent shockwaves across the globe, fundamentally altering international security and political dynamics.',
+      'In response, the United States launched the War on Terror, initiating military operations in Afghanistan and later in Iraq, and implementing sweeping changes in domestic and international security policies. These measures included the establishment of the Department of Homeland Security and the enactment of the USA PATRIOT Act, aimed at preventing future terrorist acts.',
+      'Culturally, 9/11 has had a lasting impact on art, literature, and public consciousness, with numerous memorials and museums dedicated to preserving the memory of the victims and educating future generations about the events of that day. The attacks continue to influence discussions on freedom, security, and the balance between civil liberties and public safety.',
+      'The legacy of the September 11 Attacks remains a powerful reminder of the far-reaching consequences of terrorism, reshaping not only U.S. policies but also the global geopolitical landscape for decades to come.',
+    ],
+    duration: 0.002, // The attacks occurred on a single day (September 11, 2001)
+    complexity: Complexity.hard, // Understandability is high due to the multifaceted impact and historical significance
+    severity: Severity.critical, // The event had catastrophic human, cultural, and geopolitical consequences
+
+    isLegalCase: true,
+    isEthicalCase: true,
+    isBusinessCase: false,
+    isSocietalImpactCase: true,
+    isScientificCase: false,
+    isCulturalCase: true,
+    isCrisisCase: true,
+  ),
+
+  const CaseStudy(
+    id: 'c55',
+    categories: [
+      'PG', // Politics & Governance (primary, for the governmental response and policy impact)
+      'HC', // History & Culture (secondary, for its lasting impact on society and public health narratives)
+    ],
+    title: 'The Zika Virus Outbreak',
+    imageUrl: 'https://images.newscientist.com/wp-content/uploads/2016/02/f0127511-zika_virus_in_blood_illustration-spl.jpg',
+    keywords: [
+      'Zika Virus',
+      'Public Health Crisis',
+      'Microcephaly',
+      'Mosquito-borne',
+      'Global Health',
+    ],
+    caseStudy: [
+      'The Zika Virus Outbreak emerged in the Americas around 2015, with Brazil becoming the epicenter. Transmitted primarily by Aedes mosquitoes, the virus was linked to a sharp increase in cases of microcephaly—a condition where newborns are born with abnormally small heads—and other neurological disorders such as Guillain-Barré syndrome.',
+      'The rapid spread of the virus and its severe health implications prompted the World Health Organization (WHO) to declare a Public Health Emergency of International Concern in February 2016. Governments across the region quickly implemented mosquito control measures, issued travel advisories, and initiated extensive public health campaigns to educate citizens about preventive measures.',
+      'The outbreak had far-reaching consequences: affected countries experienced declines in tourism revenue, significant strain on public healthcare systems, and widespread social anxiety. Researchers and public health officials collaborated internationally to accelerate the development of diagnostic tests, vaccines, and innovative vector control strategies.',
+      'While the immediate crisis subsided by 2017, the legacy of the Zika outbreak endures, with ongoing studies examining its long-term effects on affected populations and the evolution of mosquito-borne disease management. The outbreak reshaped global health policies, spurred regulatory reforms, and remains a key case study in the challenges of managing emerging infectious diseases in an interconnected world.',
+    ],
+    duration: 2, // 2015 - 2017 (peak period of the outbreak)
+    complexity: Complexity.moderate, // The outbreak involved multifaceted public health responses and international collaboration, making it moderately complex
+    severity: Severity.critical,  // Given the severe impact on public health, especially on newborns, and lasting socio-economic repercussions, severity is set as critical
+
+    isLegalCase: false,
+    isEthicalCase: true,    // Ethical concerns regarding public health preparedness and response are prominent
+    isBusinessCase: false,
+    isSocietalImpactCase: true,
+    isScientificCase: true, // Significant scientific research was spurred as a result
+    isCulturalCase: true,   // It has a lasting impact on public health narratives and cultural perceptions of disease
+    isCrisisCase: true,
+  ),
+
+  const CaseStudy(
+    id: 'c56',
+    categories: [
+      'PG', // Politics & Governance (primary)
+      'HC', // History & Culture (secondary)
+    ],
+    title: 'The January 6 Capitol Riot',
+    imageUrl: 'https://www.pewresearch.org/wp-content/uploads/sites/20/2022/01/FT_22.01.04_Jan6_feature-jpg.webp?w=1200&h=628&crop=1',
+    keywords: [
+      'Capitol Riot',
+      'Political Violence',
+      'US Capitol',
+      'Insurrection',
+      'January 6, 2021',
+    ],
+    caseStudy: [
+      'On January 6, 2021, as Congress was convened to certify the 2020 Electoral College results, a large group of supporters of then-President Donald Trump stormed the United States Capitol in Washington, D.C. The mob breached security barriers, vandalized offices, and engaged in violent confrontations with law enforcement, marking one of the most significant assaults on the nation’s democratic institutions.',
+      'The attack resulted in extensive property damage, multiple injuries to both rioters and police officers, and the tragic loss of several lives. The incident abruptly halted the certification process, plunging the country into a state of shock and sparking a nationwide debate on political extremism, the influence of misinformation, and the vulnerability of public institutions.',
+      'In the aftermath, hundreds of individuals were arrested and charged with a variety of offenses ranging from trespassing and disorderly conduct to assault and conspiracy. Federal and local authorities launched comprehensive investigations to determine the extent of the planning behind the riot and to hold those responsible accountable through the legal system.',
+      'Culturally, the Capitol Riot has become a defining moment in recent American history, influencing public discourse, media narratives, and even art and literature. It has reshaped discussions about the state of democracy, the role of social media in mobilizing extremist groups, and the need for improved security protocols for public institutions.',
+      'The event continues to be analyzed by scholars, policymakers, and the public, serving as a stark reminder of how political polarization and misinformation can lead to real-world violence and the erosion of democratic norms.',
+    ],
+    duration: 0.002, // The event occurred on a single day (January 6, 2021)
+    complexity: Complexity.hard, // Multifaceted implications across political, social, and cultural dimensions make it hard to fully grasp
+    severity: Severity.critical, // High severity due to fatalities, extensive legal consequences, and lasting impact on democratic processes
+
+    isLegalCase: true,
+    isEthicalCase: true,
+    isBusinessCase: false,
+    isSocietalImpactCase: true,
+    isScientificCase: false,
+    isCulturalCase: true,
+    isCrisisCase: true,
+  ),
+
+  const CaseStudy(
+    id: 'c57',
+    categories: [
+      'PG', // Politics & Governance (primary)
+      'HC', // History & Culture (secondary)
+    ],
+    title: 'The 2010 Haiti Earthquake',
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwUdl-bnXjlEtIAZoGuFNfIAfVujd21HlQmQ&s',
+    keywords: [
+      'Earthquake',
+      'Natural Disaster',
+      'Humanitarian Crisis',
+      'International Aid',
+      'Reconstruction',
+    ],
+    caseStudy: [
+      'On January 12, 2010, a devastating 7.0 magnitude earthquake struck Haiti, with its epicenter located near the capital city of Port-au-Prince. The quake unleashed widespread destruction, flattening buildings, crippling infrastructure, and leaving a massive portion of the population homeless.',
+      'The immediate impact was catastrophic: official estimates report that over 230,000 people lost their lives, while more than 300,000 were injured, and approximately 1.5 million people were displaced. The disaster severely affected hospitals, schools, and government facilities, hampering rescue and relief efforts during the critical first days.',
+      'International aid poured in as governments, NGOs, and humanitarian organizations mobilized to provide emergency relief, medical care, food, and shelter. However, the scale of destruction, combined with Haiti’s pre-existing economic and political challenges, made recovery and reconstruction an enormous, ongoing challenge.',
+      'The earthquake exposed deep-seated issues in Haiti’s governance and infrastructure, sparking debates on disaster preparedness, corruption, and the effectiveness of international aid. The slow pace of recovery, coupled with subsequent natural disasters and political instability, has left a lasting impact on the nation’s development and collective memory.',
+      'Today, the 2010 Haiti Earthquake is remembered not only for its immediate human tragedy but also as a turning point that reshaped Haiti’s socio-political landscape, influencing policy reforms and the global approach to disaster response and recovery in vulnerable regions.',
+    ],
+    duration: 1, // Immediate crisis on January 12, 2010 (with long-term recovery impact)
+    complexity: Complexity.hard, // Multifaceted issues in disaster response, governance, and international aid make it hard to fully address
+    severity: Severity.critical, // Catastrophic loss of life and prolonged humanitarian crisis
+
+    isLegalCase: false,
+    isEthicalCase: true,  // Ethical considerations in aid distribution and reconstruction
+    isBusinessCase: false,
+    isSocietalImpactCase: true,
+    isScientificCase: false,
+    isCulturalCase: true,
+    isCrisisCase: true,
+  ),
+
+  const CaseStudy(
+    id: 'c58',
+    categories: [
+      'TI', // Technology & Innovation (primary)
+      'BS', // Business & Startups (secondary)
+    ],
+    title: 'The Samsung Galaxy Note 7 Battery Crisis',
+    imageUrl: 'https://i.guim.co.uk/img/media/4489bb63e0bf4e8f9123803179f1a6514947ff7f/0_193_3500_2100/master/3500.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=8d6b86e4304aa46077b8bd47514bfa98',
+    keywords: [
+      'Battery Fires',
+      'Product Recall',
+      'Safety Issues',
+      'Technology Failure',
+      'Corporate Crisis',
+    ],
+    caseStudy: [
+      'In August 2016, Samsung launched the Galaxy Note 7 as a flagship smartphone, celebrated for its cutting-edge features and performance. However, within weeks, reports surfaced of battery malfunctions, with some devices overheating and even catching fire.',
+      'Detailed investigations revealed that the lithium-ion batteries used in the Note 7 were prone to short-circuiting due to design and manufacturing defects. Despite an initial recall and battery replacement program, further incidents forced Samsung to completely discontinue the product.',
+      'The crisis led to massive financial losses, estimated in billions, and significantly damaged Samsung’s reputation for quality and safety. The event sparked widespread media coverage and consumer backlash, raising urgent questions about corporate responsibility, product safety standards, and quality control in high-tech manufacturing.',
+      'In response, Samsung overhauled its quality assurance protocols, implemented stricter safety testing for battery technology, and worked with global regulatory bodies to prevent similar issues in the future. The Galaxy Note 7 crisis has since become a landmark case study in managing product recalls and the risks inherent in rapid technological innovation.',
+    ],
+    duration: 0.2, // Approximately a few months (2016 launch to discontinuation)
+    complexity: Complexity.moderate, // The issues were complex but understandable with detailed investigation reports available.
+    severity: Severity.high, // High severity due to significant financial impact and safety concerns, though not catastrophic in loss of life.
+
+    isLegalCase: true,    // Involved legal actions and product liability claims.
+    isEthicalCase: true,  // Raised ethical questions about corporate responsibility and consumer safety.
+    isBusinessCase: true, // Had major financial implications and affected market reputation.
+    isSocietalImpactCase: false,
+    isScientificCase: true, // Involved detailed scientific investigation of battery technology.
+    isCulturalCase: false,
+    isCrisisCase: true,
+  ),
+
+  const CaseStudy(
+    id: 'c59',
+    categories: [
+      'LE', // Law & Ethics (primary)
+      'TI', // Technology & Innovation (secondary)
+    ],
+    title: 'The Apple vs. FBI Encryption Dispute',
+    imageUrl: 'https://static.guim.co.uk/sys-images/Guardian/Pix/audio/video/2016/2/18/1455801740414/KP_1800942_crop_640x480.jpg',
+    keywords: [
+      'Encryption',
+      'Privacy',
+      'Digital Rights',
+      'FBI',
+      'Tech vs. Security',
+    ],
+    caseStudy: [
+      'In early 2016, following the tragic San Bernardino shooting, the FBI demanded that Apple unlock the iPhone of one of the attackers to assist in their investigation. This request ignited a fierce national debate over digital privacy and the role of technology companies in balancing individual rights with national security imperatives.',
+      'Apple staunchly argued that building a backdoor into its iOS system would not only compromise the security of millions of users but also set a dangerous precedent for government overreach into private data. The company maintained that any weakening of encryption would ultimately leave all users vulnerable to cybercriminals and other malicious entities.',
+      'The legal battle that ensued pitted government agencies against one of the world’s largest tech companies, with courts examining the limits of governmental power in the digital age. Public opinion was divided, as advocates for privacy and civil liberties clashed with those prioritizing law enforcement and security.',
+      'Despite the heated legal and public debate, the case was eventually dropped after the FBI discovered an alternative means to access the required data. Nonetheless, the incident left a lasting impact on technology policy, influencing ongoing discussions about encryption, surveillance, and the balance between security and privacy.',
+      'The Apple vs. FBI Encryption Dispute remains a landmark case study in the digital era, encapsulating the complex interplay between technological innovation, legal authority, and ethical considerations in an increasingly interconnected world.',
+    ],
+    duration: 0.5, // The dispute lasted several months in 2016
+    complexity: Complexity.moderate, // The issues are complex but accessible through public debate and legal proceedings
+    severity: Severity.high, // High severity due to its profound impact on digital rights and technology policy
+
+    isLegalCase: true,
+    isEthicalCase: true,
+    isBusinessCase: false,
+    isSocietalImpactCase: true,
+    isScientificCase: false,
+    isCulturalCase: true,
+    isCrisisCase: false,
+  ),
+
+  const CaseStudy(
+    id: 'c60',
+    categories: [
+      'PG', // Politics & Governance (primary)
+      'HC', // History & Culture (secondary)
+    ],
+    title: 'The 2008 Mumbai Terror Attacks',
+    imageUrl: 'https://static01.nyt.com/images/2016/02/09/world/09India-web/09India-web-superJumbo.jpg',
+    keywords: [
+      'Terrorism',
+      'Coordinated Attacks',
+      'Lashkar-e-Taiba',
+      'Mumbai',
+      'Urban Warfare',
+    ],
+    caseStudy: [
+      'On November 26, 2008, a series of meticulously coordinated terrorist attacks shook Mumbai, India, as militants from the Pakistan-based group Lashkar-e-Taiba launched an assault on multiple key locations. Over a period of approximately 60 hours, the attackers targeted iconic sites such as the Taj Mahal Palace Hotel, Oberoi Trident, a busy railway station, a Jewish community center, and popular local eateries, aiming to maximize chaos and casualties.',
+      'The attacks resulted in the tragic loss of at least 174 lives and left over 300 people injured, with many more impacted by the ensuing panic and security lockdowns. The militants employed both firearms and explosive devices, and their operation was characterized by careful planning and rapid execution, exploiting Mumbai’s dense urban landscape to evade immediate containment by security forces.',
+      'The prolonged nature of the assault overwhelmed local law enforcement and emergency services, leading to intense firefights and hostage situations that lasted for nearly three days. The city’s infrastructure suffered extensive damage, and the emotional trauma inflicted on the citizens spurred nationwide and global outrage.',
+      'In response, the Indian government launched a comprehensive investigation, resulting in numerous arrests and legal proceedings that aimed to dismantle the terrorist network behind the attacks. The event also led to significant changes in India’s counter-terrorism policies, with increased intelligence sharing and heightened security measures across major urban centers.',
+      'The 2008 Mumbai Terror Attacks remain a defining moment in contemporary history, symbolizing the vulnerabilities of urban areas to sophisticated terrorist operations and underscoring the importance of coordinated global efforts to combat terrorism. The legacy of this tragedy continues to influence security protocols and public policy debates on both national and international levels.',
+    ],
+    duration: 3, // Immediate crisis on November 2008 with long-term repercussions lasting several years
+    complexity: Complexity.hard, // The incident involves multifaceted security, political, and cultural dimensions, making it hard to fully address
+    severity: Severity.critical, // The event had catastrophic consequences in terms of loss of life and long-term impact on national security and public confidence
+
+    isLegalCase: true,
+    isEthicalCase: true,
+    isBusinessCase: false,
+    isSocietalImpactCase: true,
+    isScientificCase: false,
+    isCulturalCase: true,
+    isCrisisCase: true,
+  ),
+
+  const CaseStudy(
+    id: 'c61',
+    categories: [
+      'PG', // Politics & Governance (primary)
+      'ES', // Environmental & Sustainability (secondary)
+    ],
+    title: 'The Texas Power Crisis 2021',
+    imageUrl: 'https://image.cnbcfm.com/api/v1/image/106841395-1613564987356-gettyimages-1231211590-WEATHER.jpeg?v=1613565027',
+    keywords: [
+      'Power Outage',
+      'Winter Storm',
+      'Grid Failure',
+      'Energy Policy',
+      'Infrastructure Vulnerability',
+    ],
+    caseStudy: [
+      'In February 2021, an unprecedented winter storm swept across Texas, triggering a massive power crisis that exposed critical vulnerabilities in the state’s energy infrastructure. Record-low temperatures and a surge in electricity demand for heating led to widespread blackouts affecting millions of residents across the state.',
+      'The crisis was marked by the simultaneous failure of multiple energy sources—natural gas, wind, and nuclear—due to inadequate weatherization and outdated infrastructure. With the Texas power grid operating largely independently from the national grid, the state found itself unable to import additional power during the emergency, exacerbating the situation.',
+      'As the outage persisted for several days, hundreds of deaths were reported due to hypothermia, carbon monoxide poisoning, and other related causes, while emergency services struggled to provide adequate assistance. The economic impact was severe, with damages estimated in the billions, and the crisis highlighted deep-seated issues in energy management and regulatory oversight.',
+      'In the aftermath, state and federal investigations scrutinized the policy decisions that contributed to the disaster, including the deregulated market structure that prioritized cost over reliability. The incident sparked intense debates over the need for a resilient energy infrastructure capable of withstanding extreme weather events, and led to calls for significant reforms in energy policy and grid modernization.',
+      'The Texas Power Crisis of 2021 stands as a sobering reminder of the interplay between environmental challenges and policy failures. It has had a lasting impact on public trust, reshaped discussions about climate resilience and energy security, and continues to influence legislative efforts aimed at overhauling the state’s energy system.',
+    ],
+    duration: 0.1, // Crisis unfolded over a few days in February 2021
+    complexity: Complexity.moderate, // The issues involve multiple layers of infrastructural and policy failures, making it moderately complex
+    severity: Severity.high, // High severity due to significant loss of life, economic damage, and long-lasting policy repercussions
+
+    isLegalCase: true,    // Subsequent investigations and legal actions followed the crisis
+    isEthicalCase: true,  // The crisis raised ethical concerns regarding public safety and the responsibilities of policymakers
+    isBusinessCase: false,
+    isSocietalImpactCase: true, // The event had a profound impact on public trust and societal well-being
+    isScientificCase: false,
+    isCulturalCase: false,
+    isCrisisCase: true,
+  ),
+
+  const CaseStudy(
+    id: 'c62',
+    categories: [
+      'PG', // Politics & Governance (primary)
+      'HC', // History & Culture (secondary)
+    ],
+    title: 'The 2019–2020 Hong Kong Protests',
+    imageUrl: 'https://c.files.bbci.co.uk/9F86/production/_108283804_gettyimages-1154553368.jpg',
+    keywords: [
+      'Hong Kong',
+      'Pro-Democracy',
+      'Extradition Bill',
+      'Civil Unrest',
+      'Political Protest',
+    ],
+    caseStudy: [
+      'In June 2019, Hong Kong was thrust into a period of intense civil unrest when proposed legislation to amend extradition laws sparked widespread fears of increased interference from mainland China. The bill was seen as a direct threat to the “one country, two systems” framework and the region’s cherished civil liberties.',
+      'What began as peaceful protests rapidly escalated into a large-scale pro-democracy movement. Demonstrators organized massive marches, sit-ins, and creative symbolic actions—most notably, the ubiquitous use of umbrellas as both practical shields and emblems of defiance. The protests united diverse groups, from students to professionals, all demanding greater democratic reforms and accountability from the government.',
+      'Over the following months, confrontations between protesters and law enforcement intensified. The police response, involving tear gas, rubber bullets, and mass arrests, further fueled public anger and deepened societal divisions. The unrest not only paralyzed daily life and disrupted Hong Kong’s status as a major financial hub but also attracted significant international attention.',
+      'The protests triggered a profound debate on Hong Kong’s future. While the government eventually withdrew the contentious extradition bill, protesters’ demands evolved to include calls for broader political reforms and investigations into police conduct. The movement left a lasting legacy on the region’s identity, inspiring cultural expressions and international solidarity, while also reshaping local and global discourse on democratic rights and autonomy.',
+    ],
+    duration: 1.5, // Approximately 18 months (mid-2019 to early 2020)
+    complexity: Complexity.hard, // The multifaceted political, legal, and cultural dimensions render it hard to fully grasp
+    severity: Severity.high, // High severity due to significant societal impact and enduring political ramifications
+
+    isLegalCase: true,    // Generated legal debates and actions emerged from clashes and government responses
+    isEthicalCase: true,  // Raised deep ethical questions about freedom of expression and state authority
+    isBusinessCase: false,
+    isSocietalImpactCase: true, // Significantly altered social dynamics and public trust
+    isScientificCase: false,
+    isCulturalCase: true, // Had a profound cultural impact, influencing art and public discourse
+    isCrisisCase: true,   // Considered a political crisis with far-reaching implications
+  ),
+
+
+  const CaseStudy(
+    id: 'c63',
+    categories: [
+      'PG', // Politics & Governance (primary)
+      'HC', // History & Culture (secondary)
+    ],
+    title: 'The Russian Invasion of Ukraine (2022)',
+    imageUrl: 'https://cdn.britannica.com/46/231946-050-31CC461B/Russia-Ukraine-war-Ukrainian-servicemen-Kyiv-2022.jpg',
+    keywords: [
+      'Russian Invasion',
+      'Ukraine War',
+      'Geopolitical Crisis',
+      'International Sanctions',
+      'Military Conflict',
+    ],
+    caseStudy: [
+      'On February 24, 2022, Russia launched a full-scale military invasion of Ukraine, dramatically escalating the conflict that had simmered since 2014. The invasion, which began with coordinated attacks across multiple fronts, has led to widespread devastation, significant loss of life, and the displacement of millions of civilians.',
+      'Ukrainian forces, despite being outnumbered, have mounted a resilient defense using a combination of conventional tactics and asymmetric warfare, leading to protracted battles in urban centers and rural areas alike. The conflict has disrupted global supply chains, particularly in energy and food sectors, as Ukraine is a major grain exporter and Russia a key energy provider.',
+      'The international community responded swiftly with severe economic sanctions aimed at crippling Russia’s financial and energy sectors, while diplomatic efforts have been ongoing to negotiate a ceasefire amid deep-seated mistrust between the involved parties. These measures, along with global humanitarian aid, underscore the war’s profound impact on regional and global stability.',
+      'Culturally, the invasion has galvanized Ukrainian national identity and sparked a global movement of solidarity, with citizens and governments worldwide rallying in support of Ukraine. The conflict has not only reshaped Eastern European geopolitics but has also reinvigorated debates over sovereignty, international law, and the future of global security.',
+      'The Russian Invasion of Ukraine continues to evolve, with long-term ramifications expected to influence international relations, economic policies, and the cultural fabric of the region for years to come.',
+    ],
+    duration: 1, // Ongoing conflict, with immediate impact spanning 2022-2023
+    complexity: Complexity.hard, // The conflict involves multifaceted political, historical, and military dimensions
+    severity: Severity.critical, // Critical severity due to massive humanitarian, economic, and geopolitical impacts
+
+    isLegalCase: true,
+    isEthicalCase: true,
+    isBusinessCase: false,
+    isSocietalImpactCase: true,
+    isScientificCase: false,
+    isCulturalCase: true,
+    isCrisisCase: true,
+  ),
+
+  const CaseStudy(
+    id: 'c64',
+    categories: [
+      'FE', // Finance & Economics (primary)
+      'PG', // Politics & Governance (secondary)
+    ],
+    title: 'The Suez Canal Blockage by Ever Given',
+    imageUrl: 'https://www.morethanshipping.com/wp-content/uploads/2023/07/suez-canal-blockage-report-mts.jpg',
+    keywords: [
+      'Suez Canal',
+      'Ever Given',
+      'Trade Disruption',
+      'Supply Chain',
+      'Global Economics',
+    ],
+    caseStudy: [
+      'In March 2021, the massive container ship Ever Given became wedged in the Suez Canal, one of the world’s most critical waterways for international trade. The ship’s grounding blocked the canal for nearly six days, causing a significant backup of vessels and disrupting the flow of goods between Asia and Europe.',
+      'The incident resulted in immediate and widespread economic repercussions, with billions of dollars in global trade being delayed daily. Shipping companies, port operators, and industries dependent on timely delivery of goods faced massive logistical challenges, prompting urgent reassessments of supply chain resilience.',
+      'This blockage highlighted the fragility of global trade routes and the high stakes involved in maritime logistics, as even a single vessel’s mishap can ripple across the world economy. It also sparked debates among policymakers about the need for improved infrastructure, better contingency planning, and potential regulatory changes to prevent similar disruptions in the future.',
+      'The Ever Given was eventually refloated after extensive salvage efforts, but the event remains a vivid example of how critical choke points in global supply chains can trigger far-reaching economic and political consequences.',
+    ],
+    duration: 0.02, // Approximately 6 days (0.02 years)
+    complexity: Complexity.moderate, // Complex in terms of global economic impact and logistical challenges, yet understandable through detailed analysis
+    severity: Severity.high, // High severity due to significant financial losses and global trade disruption, though not catastrophic in terms of human life
+
+    isLegalCase: false,
+    isEthicalCase: false,
+    isBusinessCase: true,
+    isSocietalImpactCase: true,
+    isScientificCase: false,
+    isCulturalCase: false,
+    isCrisisCase: true,
+  ),
+
+  const CaseStudy(
+    id: 'c65',
+    categories: [
+      'FE', // Finance & Economics (primary)
+      'TI', // Technology & Innovation (secondary)
+    ],
+    title: 'The Global Semiconductor Chip Shortage',
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbvy-IljNga6TdHrqaqEzRO1BylIc9e1TAuQ&s',
+    keywords: [
+      'Semiconductor Shortage',
+      'Supply Chain Disruption',
+      'Electronics',
+      'Automotive Impact',
+      'Global Trade',
+    ],
+    caseStudy: [
+      'Starting in 2020 and intensifying into 2021, the global semiconductor chip shortage emerged as a critical supply chain disruption that affected industries worldwide. The crisis was fueled by an unprecedented surge in demand for consumer electronics amid the COVID-19 pandemic, alongside production constraints and escalating geopolitical tensions.',
+      'Major semiconductor manufacturers found themselves unable to scale production quickly enough to meet soaring demand. This imbalance led to severe delays in production across multiple sectors—most notably in the automotive industry, where vehicle manufacturers were forced to halt or scale back production lines, and in consumer electronics, where delays affected everything from smartphones to computers.',
+      'The shortage exposed critical vulnerabilities in global supply chains, prompting governments and corporations to re-evaluate their manufacturing and stockpiling strategies. In response, many nations launched initiatives to boost domestic semiconductor production, and companies accelerated investments in new fabrication facilities and technology upgrades to mitigate future risks.',
+      'The global chip shortage not only led to significant financial losses and operational disruptions but also reshaped long-term strategies in supply chain management and international trade policies. Its effects continue to influence how industries approach manufacturing resilience, innovation, and diversification in a highly interconnected global economy.',
+    ],
+    duration: 2, // Approximately 2020 - 2022
+    complexity: Complexity.moderate, // The crisis involves multifaceted supply chain, demand, and geopolitical factors, making it moderately complex.
+    severity: Severity.high, // High severity due to significant disruptions in global industry and economic repercussions.
+
+    isLegalCase: false,
+    isEthicalCase: false,
+    isBusinessCase: true,
+    isSocietalImpactCase: true,
+    isScientificCase: true,
+    isCulturalCase: false,
+    isCrisisCase: true,
+  ),
 
 ];
