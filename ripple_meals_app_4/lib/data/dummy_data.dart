@@ -2383,4 +2383,287 @@ isCrisisCase: true,
     isCrisisCase: true,
   ),
 
+  const CaseStudy(
+    id: 'c66',
+    categories: [
+      'PG', // Politics & Governance (primary)
+      'HC', // History & Culture (secondary)
+    ],
+    title: 'The Beirut Explosion',
+    imageUrl: 'https://www.hrw.org/sites/default/files/styles/embed_xxl/public/media_2020/08/202008mena_lebanon_explosions.jpg?itok=ljdnf0Tx',
+    keywords: [
+      'Beirut Explosion',
+      'Ammonium Nitrate',
+      'Port Disaster',
+      'Government Mismanagement',
+      'Lebanon',
+    ],
+    caseStudy: [
+      'On August 4, 2020, a catastrophic explosion rocked the port of Beirut, Lebanon, when approximately 2,750 tonnes of ammonium nitrate detonated due to prolonged negligent storage. The explosion obliterated large sections of the city, leaving over 200 people dead and thousands injured while displacing an estimated 300,000 residents.',
+      'The immediate aftermath saw widespread devastation: entire neighborhoods were flattened, critical infrastructure was destroyed, and emergency services were overwhelmed. The blast not only inflicted severe human tragedy but also severely impacted Beirut’s economy, further destabilizing an already fragile nation facing years of political and economic turmoil.',
+      'Investigations revealed that the ammonium nitrate had been stored unsafely for years at the port, highlighting gross regulatory failures and rampant corruption among public officials. This revelation sparked public outrage and deepened mistrust in the government’s ability to safeguard its citizens.',
+      'In response, international aid poured in, and the Lebanese government faced intense pressure to reform its safety regulations and address systemic corruption. The Beirut Explosion has since become a watershed moment in Lebanese history, symbolizing the consequences of governmental neglect and the urgent need for institutional reform.',
+      'The event’s profound impact continues to influence Lebanon’s political discourse and cultural identity, serving as a stark reminder of the critical importance of accountability and effective governance in protecting public safety.',
+    ],
+    duration: 0.002, // The explosion was an instantaneous event on August 4, 2020
+    complexity: Complexity.moderate, // The incident involves multifaceted issues in governance, public safety, and societal impact, making it moderately complex
+    severity: Severity.high, // High severity due to significant human loss, economic damage, and lasting political ramifications
+
+    isLegalCase: true,
+    isEthicalCase: true,
+    isBusinessCase: false,
+    isSocietalImpactCase: true,
+    isScientificCase: false,
+    isCulturalCase: true,
+    isCrisisCase: true,
+  ),
+
+  const CaseStudy(
+    id: 'c67',
+    categories: [
+      'PG', // Politics & Governance (primary)
+      'HC', // History & Culture (secondary)
+    ],
+    title: 'The Oklahoma City Bombing',
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkYUNGUUoT5wIZMaVX3QJqVZLHtKu83lf2DQ&s',
+    keywords: [
+      'Domestic Terrorism',
+      'Murrah Federal Building',
+      'Timothy McVeigh',
+      'Oklahoma City',
+      'Extremism',
+    ],
+    caseStudy: [
+      'On April 19, 1995, a devastating act of domestic terrorism shook the United States when a truck bomb was detonated outside the Alfred P. Murrah Federal Building in Oklahoma City. Orchestrated by Timothy McVeigh and his accomplice Terry Nichols, the explosion resulted in the tragic loss of 168 lives and injured over 680 people.',
+      'The attack was intended as a violent protest against what the perpetrators viewed as excessive federal power and government overreach. The bombing not only caused extensive physical destruction of the building and its surroundings but also left an indelible mark on the national psyche.',
+      'In the chaotic aftermath, emergency responders worked under harrowing conditions to rescue survivors and recover victims, while investigators launched an unprecedented domestic terrorism probe. The subsequent trial led to the conviction and long-term incarceration of McVeigh and Nichols, and sparked nationwide discussions about domestic extremism and security.',
+      'The Oklahoma City Bombing catalyzed major reforms in U.S. law enforcement and counterterrorism strategies, prompting enhancements in intelligence gathering, emergency preparedness, and security protocols for federal buildings. It also spurred a cultural reckoning, with memorials and public commemorations ensuring that the victims and the lessons learned are not forgotten.',
+      'Today, the event remains a somber reminder of the dangers posed by extremist ideologies within a society and underscores the ongoing need for vigilance, unity, and effective policies to combat domestic terrorism.',
+    ],
+    duration: 0.002, // The event occurred on a single day (April 19, 1995)
+    complexity: Complexity.moderate, // The event is moderately complex with clear political, legal, and cultural ramifications
+    severity: Severity.high, // High severity due to significant loss of life and its enduring impact on national security and societal resilience
+
+    isLegalCase: true,
+    isEthicalCase: true,
+    isBusinessCase: false,
+    isSocietalImpactCase: true,
+    isScientificCase: false,
+    isCulturalCase: true,
+    isCrisisCase: true,
+  ),
+
+
+  const CaseStudy(
+    id: 'c68',
+    categories: [
+      'BS', // Business & Startups (primary)
+      'HC', // History & Culture (secondary)
+    ],
+    title: 'The Fyre Festival Disaster',
+    imageUrl: 'https://i.cbc.ca/1.4090348.1493396216!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_940/fyre-festival-tweet.jpg',
+    keywords: [
+      'Fyre Festival',
+      'Event Fraud',
+      'Influencer Culture',
+      'Corporate Misconduct',
+      'Social Media Hype',
+    ],
+    caseStudy: [
+      'Fyre Festival was promoted as a revolutionary luxury music festival scheduled for April 2017 on Great Exuma in the Bahamas. Marketed as an exclusive, high-end event with gourmet food, luxurious accommodations, and top-tier musical performances, it garnered massive attention on social media, driven by endorsements from prominent influencers.',
+      'In stark contrast to its lavish promises, festival-goers arrived to find disaster relief tents, meager food rations, and a complete lack of basic infrastructure. The promised villas were nowhere to be seen, and attendees were left stranded in deplorable conditions. The organizers had grossly mismanaged funds and logistics, resulting in a catastrophic failure of the event.',
+      'Investigations later revealed that the event was built on fraudulent claims, with organizers, led by entrepreneur Billy McFarland (and in association with celebrity Ja Rule), misleading investors, sponsors, and ticket holders about the event’s scale and quality. As the chaos unfolded, lawsuits piled up, and McFarland was eventually arrested and convicted for fraud.',
+      'The fallout from Fyre Festival was swift and severe—both financially and reputationally. The disaster not only exposed the vulnerabilities of relying on influencer marketing without substance but also ignited a global conversation about corporate ethics, transparency in event planning, and the pitfalls of modern digital hype.',
+      'Today, the Fyre Festival disaster stands as a cautionary tale in the business world and popular culture, serving as a reminder of the critical importance of ethical practices, robust planning, and accountability in the face of digital marketing and luxury branding.',
+    ],
+    duration: 0.1, // The event collapsed within a few days in April 2017
+    complexity: Complexity.moderate, // The case involves multiple facets including business fraud, social media dynamics, and legal issues, making it moderately complex
+    severity: Severity.high, // High severity due to significant financial losses, reputational damage, and legal ramifications, though no loss of life occurred
+
+    isLegalCase: true,    // Involved extensive legal actions and criminal charges
+    isEthicalCase: true,  // Raised serious ethical concerns regarding misrepresentation and fraud
+    isBusinessCase: true, // Directly impacted the business and events industry, with long-term implications for corporate governance
+    isSocietalImpactCase: true, // Influenced public perception of influencer culture and modern marketing practices
+    isScientificCase: false,
+    isCulturalCase: true, // Became a cultural phenomenon and widely discussed in media and documentaries
+    isCrisisCase: true,
+  ),
+
+  const CaseStudy(
+    id: 'c69',
+    categories: [
+      //'PG', // Politics & Governance (primary)
+      'HC', // History & Culture (secondary)
+      'HM'
+    ],
+    title: 'The West Africa Ebola Outbreak',
+    imageUrl: 'https://d3i6fh83elv35t.cloudfront.net/newshour/app/uploads/2014/10/456999956-1024x702.jpg',
+    keywords: [
+      'Ebola Outbreak',
+      'West Africa',
+      'Public Health Crisis',
+      'International Response',
+      'Viral Epidemic',
+    ],
+    caseStudy: [
+      'The West Africa Ebola Outbreak was a devastating public health crisis that unfolded from 2013 to 2016, primarily affecting Guinea, Liberia, and Sierra Leone. It remains the most widespread Ebola epidemic in history, with over 28,000 reported cases and more than 11,000 fatalities.',
+      'The epidemic began in rural Guinea and quickly spread to densely populated urban areas, overwhelming already fragile healthcare infrastructures. The lack of resources, combined with widespread mistrust between local communities and health officials, exacerbated the spread of the virus and hindered early containment efforts.',
+      'In response, the World Health Organization declared the outbreak a Public Health Emergency of International Concern, mobilizing global aid and expertise. International governments, non-governmental organizations, and local agencies collaborated to deploy emergency medical teams, establish treatment centers, and launch public education campaigns on prevention.',
+      'The crisis also led to significant socio-economic disruptions: traditional burial practices were upended to prevent further infections, and entire communities faced long-term setbacks due to the loss of life, labor, and public trust in healthcare systems.',
+      'Beyond its immediate human and economic toll, the West Africa Ebola Outbreak spurred critical advancements in medical research, particularly in vaccine development and treatment protocols, which have since informed responses to subsequent epidemics. The outbreak’s legacy endures in global health policy reforms aimed at strengthening epidemic preparedness and response in low-resource settings.',
+    ],
+    duration: 3, // Approximately 2013 - 2016
+    complexity: Complexity.hard, // Involves multifaceted challenges in healthcare infrastructure, socio-cultural dynamics, and international coordination
+    severity: Severity.critical, // Critical severity due to high mortality, extensive disruption, and lasting impacts on affected societies
+
+    isLegalCase: false,
+    isEthicalCase: true,  // Raised ethical issues regarding global health resource allocation and response equity
+    isBusinessCase: false,
+    isSocietalImpactCase: true, // Major disruption to communities and long-term socio-economic consequences
+    isScientificCase: true, // Stimulated significant scientific research and accelerated vaccine development
+    isCulturalCase: true, // Altered traditional practices and had profound cultural impacts in the affected regions
+    isCrisisCase: true,
+  ),
+
+  const CaseStudy(
+    id: 'c70',
+    categories: [
+      'FE', // Finance & Economics (primary)
+      //'PG', // Politics & Governance (secondary)
+      'TI'
+    ],
+    title: 'The Silicon Valley Bank Collapse',
+    imageUrl: 'https://akm-img-a-in.tosshub.com/businesstoday/images/story/202303/svb22232-sixteen_nine.jpg?size=948:533',
+    keywords: [
+      'Silicon Valley Bank',
+      'Bank Run',
+      'Financial Crisis',
+      'Tech Sector',
+      'Regulatory Intervention',
+    ],
+    caseStudy: [
+      'In March 2023, Silicon Valley Bank (SVB), a pivotal financial institution serving the technology and startup ecosystem, abruptly collapsed after a massive bank run. The bank’s aggressive investment strategy, particularly its heavy exposure to long-term securities amid a period of rising interest rates, left it vulnerable when the tech sector experienced a downturn.',
+      'As rumors about its financial instability spread, depositors rushed to withdraw their funds, leading to a liquidity crisis that quickly spiraled out of control. Within a matter of days, SVB found itself insolvent, triggering emergency measures by U.S. regulators to protect depositors and prevent a broader financial contagion.',
+      'The collapse sent shockwaves through global financial markets and raised serious concerns about risk management practices in banks that serve niche industries. U.S. authorities, including the FDIC and the Federal Reserve, intervened by securing deposits and taking control of the bank’s assets to stabilize the situation and restore confidence in the financial system.',
+      'This event has since sparked widespread debates over the impact of monetary policy, regulatory oversight, and the need for diversification in banking portfolios—especially for institutions heavily linked to volatile sectors like technology. The Silicon Valley Bank collapse serves as a stark reminder of how rapidly changing economic conditions can expose underlying vulnerabilities in the financial system.',
+    ],
+    duration: 0.02, // The crisis unfolded over a few days in March 2023
+    complexity: Complexity.moderate, // Involves multiple economic and regulatory factors, making it moderately complex
+    severity: Severity.high, // High severity due to significant market repercussions and financial disruption, though without immediate catastrophic loss of life
+
+    isLegalCase: true,    // Led to legal scrutiny and regulatory actions
+    isEthicalCase: false,
+    isBusinessCase: true, // Direct impact on the tech and banking sectors
+    isSocietalImpactCase: true, // Broader implications on public confidence and economic stability
+    isScientificCase: false,
+    isCulturalCase: false,
+    isCrisisCase: true,
+  ),
+
+  const CaseStudy(
+    id: 'c71',
+    categories: [
+      'FE', // Finance & Economics (primary)
+      'BS', // Business & Startups (secondary)
+    ],
+    title: 'The Collapse of FTX Crypto Exchange',
+    imageUrl: 'https://images.theconversation.com/files/495726/original/file-20221116-12-324kxc.jpg?ixlib=rb-4.1.0&rect=24%2C251%2C4812%2C2406&q=45&auto=format&w=1356&h=668&fit=crop',
+    keywords: [
+      'FTX',
+      'Crypto Collapse',
+      'Liquidity Crisis',
+      'Bankruptcy',
+      'Fraud Allegations',
+    ],
+    caseStudy: [
+      'In November 2022, FTX, one of the world’s largest cryptocurrency exchanges, experienced a rapid and catastrophic collapse that sent shockwaves through the financial markets. Initially regarded as a reliable platform for digital asset trading, FTX’s downfall was precipitated by a liquidity crisis and revelations of serious mismanagement and alleged fraud.',
+      'The crisis began when questions arose about the financial practices at FTX, particularly the commingling of customer funds with those of its sister hedge fund, Alameda Research. As investors and customers rushed to withdraw their assets, the exchange found itself unable to meet the sudden surge in demand for cash, triggering a classic bank run in the crypto space.',
+      'Within days, FTX declared bankruptcy, leaving billions of dollars in digital assets in limbo and causing a massive loss of investor confidence across the industry. Regulatory bodies around the world quickly initiated investigations, and legal proceedings followed, targeting FTX’s founder, Sam Bankman-Fried, and other top executives for alleged financial misconduct.',
+      'The collapse of FTX not only led to enormous financial losses but also sparked a broader crisis of confidence in the cryptocurrency market. It forced investors, regulators, and industry leaders to confront critical questions about transparency, risk management, and the need for robust regulatory oversight in an increasingly complex and fast-moving digital asset ecosystem.',
+      'Today, the FTX collapse serves as a stark reminder of the vulnerabilities inherent in emerging financial technologies and the potential consequences of unchecked corporate governance failures in the crypto industry.',
+    ],
+    duration: 0.05, // Crisis unfolded over a few days in November 2022
+    complexity: Complexity.hard, // The event involves multifaceted financial, technological, and legal aspects, making it hard to fully comprehend
+    severity: Severity.high, // High severity due to enormous financial losses, market disruption, and long-term regulatory and legal ramifications
+
+    isLegalCase: true,
+    isEthicalCase: true,
+    isBusinessCase: true,
+    isSocietalImpactCase: true,
+    isScientificCase: false,
+    isCulturalCase: false,
+    isCrisisCase: false,
+  ),
+
+  const CaseStudy(
+    id: 'c72',
+    categories: [
+      'TI', // Technology & Innovation (primary)
+      //'PG', // Politics & Governance (secondary)
+    ],
+    title: 'The Sony Pictures Hack',
+    imageUrl: 'https://platform.vox.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/15810614/hacking-sony.0.1546214858.png?quality=90&strip=all&crop=0%2C15.095986038394%2C100%2C69.808027923211&w=1200',
+    keywords: [
+      'Cyberattack',
+      'Data Breach',
+      'Sony Pictures',
+      'North Korea',
+      'Political Retaliation',
+    ],
+
+    caseStudy: [
+      'In November 2014, Sony Pictures Entertainment fell victim to a major cyberattack that exposed sensitive internal data including confidential emails, personal employee information, and unreleased films. The attack was highly sophisticated, using advanced malware to infiltrate Sony’s network, and it resulted in a significant breach of corporate and personal data.',
+      'The hack was widely attributed to North Korean actors, who were believed to have launched the attack in response to Sony’s release of "The Interview," a satirical film depicting a fictional assassination attempt on the North Korean leader. This connection sparked international controversy and heightened tensions between the U.S. and North Korea.',
+      'The fallout from the attack was extensive: it led to substantial financial losses for Sony, forced the cancellation of the film’s theatrical release in some regions, and resulted in long-term reputational damage. The incident also exposed vulnerabilities in corporate cybersecurity practices, prompting many companies worldwide to re-evaluate and strengthen their digital defenses.',
+      'In the aftermath, legal and political debates ensued regarding cyberwarfare, state-sponsored hacking, and the balance between national security and corporate transparency. The Sony Pictures hack remains a landmark case that continues to influence global cybersecurity policies and international relations in the digital age.',
+    ],
+    duration: 0.02, // The crisis unfolded over a few days in November 2014
+    complexity: Complexity.moderate, // Involves multifaceted technological, legal, and political dimensions that are moderately complex
+    severity: Severity.high, // High severity due to significant financial losses, international political repercussions, and lasting impacts on cybersecurity practices
+
+    isLegalCase: true,
+    isEthicalCase: true,
+    isBusinessCase: true,
+    isSocietalImpactCase: true,
+    isScientificCase: false,
+    isCulturalCase: true,
+    isCrisisCase: true,
+  ),
+
+  const CaseStudy(
+    id: 'c73',
+    categories: [
+      'PG', // Politics & Governance (primary)
+      'HC', // History & Culture (secondary)
+    ],
+    title: 'The 2021 Myanmar Military Coup',
+    imageUrl: 'https://cdn.britannica.com/97/263897-050-21B241DA/Myanmar-February-2021-military-coup-Numbers-of-people-gather-to-protest-against-a-military-coup-in-Mandalay-Myanmar-February-22-2021-Coup-detat.jpg',
+    keywords: [
+      'Myanmar Coup',
+      'Military Takeover',
+      'Aung San Suu Kyi',
+      'Civil Disobedience',
+      'Political Crisis',
+    ],
+    caseStudy: [
+      'On February 1, 2021, the military of Myanmar, known as the Tatmadaw, executed a coup by detaining the country’s elected leaders, including State Counsellor Aung San Suu Kyi and President Win Myint. This action abruptly halted the country’s democratic transition following the November 2020 general election, which was widely recognized as free and fair by the international community.',
+      'The military justified the coup by alleging widespread electoral fraud—a claim that was largely dismissed by independent observers. In response, millions of citizens across Myanmar mobilized in a massive civil disobedience movement, staging protests, strikes, and acts of resistance against the military regime.',
+      'The crackdown by security forces was swift and often violent, resulting in numerous casualties, mass arrests, and a deepening humanitarian crisis. The coup not only disrupted political processes but also led to severe economic downturns, widespread social instability, and the displacement of thousands of citizens.',
+      'Internationally, the coup sparked condemnation and led to the imposition of targeted sanctions by Western nations and regional bodies. Ongoing debates center on the legality of the military takeover, the ethical implications of suppressing democratic freedoms, and the long-term impact on Myanmar’s cultural and social fabric.',
+      'As resistance efforts continue—including the emergence of a parallel government and armed insurgencies—the 2021 Myanmar Military Coup remains a pivotal moment in Southeast Asian history, symbolizing both the resilience of the populace and the challenges of restoring democratic governance in the face of authoritarian power.',
+    ],
+    duration: 1, // The coup began in February 2021 and its effects continue to evolve
+    complexity: Complexity.hard, // Involves multifaceted political, social, and humanitarian dimensions
+    severity: Severity.critical, // Critical severity due to extensive human rights abuses, political instability, and long-term societal impact
+
+    isLegalCase: true,
+    isEthicalCase: true,
+    isBusinessCase: false,
+    isSocietalImpactCase: true,
+    isScientificCase: false,
+    isCulturalCase: true,
+    isCrisisCase: true,
+  ),
+
+
 ];
