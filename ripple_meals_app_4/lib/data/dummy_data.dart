@@ -2380,7 +2380,7 @@ isCrisisCase: true,
     isSocietalImpactCase: true,
     isScientificCase: true,
     isCulturalCase: false,
-    isCrisisCase: true,
+    isCrisisCase: false,
   ),
 
   const CaseStudy(
@@ -2627,7 +2627,7 @@ isCrisisCase: true,
     isSocietalImpactCase: true,
     isScientificCase: false,
     isCulturalCase: true,
-    isCrisisCase: true,
+    isCrisisCase: false,
   ),
 
   const CaseStudy(
