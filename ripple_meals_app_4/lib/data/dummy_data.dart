@@ -3059,8 +3059,6 @@ var dummyCases = [
         true, // Shaped cultural perceptions of learning and digital education in India and beyond
     isCrisisCase: false,
   ),
-
-
   const CaseStudy(
     id: 'c84',
     categories: [
@@ -3101,8 +3099,6 @@ var dummyCases = [
         true, // Influences cultural norms around education and lifelong learning
     isCrisisCase: false,
   ),
-
-
   const CaseStudy(
     id: 'c85',
     categories: [
@@ -3143,8 +3139,6 @@ var dummyCases = [
         true, // Influences cultural attitudes towards self-improvement and technological proficiency
     isCrisisCase: false,
   ),
-
-
   const CaseStudy(
     id: 'c86',
     categories: [
@@ -3263,8 +3257,6 @@ var dummyCases = [
         true, // Influenced art, literature, and historical narratives in both Western and Eastern cultures
     isCrisisCase: true,
   ),
-
-
   const CaseStudy(
     id: 'c89',
     categories: [
@@ -3305,7 +3297,6 @@ var dummyCases = [
         true, // Influenced cultural narratives, literature, and art about colonialism in India
     isCrisisCase: true,
   ),
-
   const CaseStudy(
     id: 'c90',
     categories: [
@@ -3313,7 +3304,8 @@ var dummyCases = [
       //'PG', // Politics & Governance (secondary)
     ],
     title: 'The Battle of Haldighati: Valor and Resistance',
-    imageUrl: 'https://pragyata.com/wp-content/uploads/2020/08/Chronicles-of-Valour-The-Battle-of-Haldighati.jpg',
+    imageUrl:
+        'https://pragyata.com/wp-content/uploads/2020/08/Chronicles-of-Valour-The-Battle-of-Haldighati.jpg',
     keywords: [
       'Battle of Haldighati',
       'Maharana Pratap',
@@ -3326,28 +3318,33 @@ var dummyCases = [
       'The battle was waged in the rugged terrain of Haldighati, where the harsh landscape played a crucial role in shaping the tactics of both sides. Despite being outnumbered, Maharana Pratap’s forces employed guerilla warfare and leveraged their intimate knowledge of the terrain to counter the Mughal advantage. The fierce and costly battle did not result in a clear tactical victory for either side, but it came to epitomize the spirit of defiance and sacrifice that would inspire generations.',
       'Although the Mughal army eventually gained a strategic upper hand, the battle’s true legacy lies in its cultural and historical significance. It has been immortalized in Indian folklore, literature, and art as a symbol of unyielding resistance and the enduring pride of the Rajput community. The Battle of Haldighati continues to serve as a potent reminder of the human cost of war and the complex interplay of honor, strategy, and destiny in shaping historical events.',
     ],
-    duration: 0.002, // The battle was fought in a single day (~1 day expressed in years)
-    complexity: Complexity.moderate, // Moderately complex due to intricate military tactics and historical nuances
-    severity: Severity.high, // High severity due to its profound cultural impact and significant historical consequences
+    duration:
+        0.002, // The battle was fought in a single day (~1 day expressed in years)
+    complexity: Complexity
+        .moderate, // Moderately complex due to intricate military tactics and historical nuances
+    severity: Severity
+        .high, // High severity due to its profound cultural impact and significant historical consequences
 
     isLegalCase: false,
     isEthicalCase: false,
     isBusinessCase: false,
-    isSocietalImpactCase: true, // Left a lasting impact on regional society and national identity
+    isSocietalImpactCase:
+        true, // Left a lasting impact on regional society and national identity
     isScientificCase: false,
-    isCulturalCase: true, // Profound influence on cultural narratives and historical memory
+    isCulturalCase:
+        true, // Profound influence on cultural narratives and historical memory
     isCrisisCase: true,
   ),
-
-
   const CaseStudy(
     id: 'c91',
     categories: [
       'EL', // Education & Learning (primary)
       'HC', // History & Culture (secondary)
     ],
-    title: 'The Destruction of Nalanda University: A Lost Beacon of Ancient Learning',
-    imageUrl: 'https://indroyc.com/wp-content/uploads/2024/06/nalanda-university.jpeg?w=1200', // Example image URL; replace if needed
+    title:
+        'The Destruction of Nalanda University: A Lost Beacon of Ancient Learning',
+    imageUrl:
+        'https://indroyc.com/wp-content/uploads/2024/06/nalanda-university.jpeg?w=1200', // Example image URL; replace if needed
     keywords: [
       'Nalanda University',
       'Ancient Education',
@@ -3361,20 +3358,24 @@ var dummyCases = [
       'The destruction of Nalanda not only marked a tragic loss of knowledge and cultural heritage but also signaled a major turning point in the intellectual history of the Indian subcontinent. The collapse of this great center of learning contributed to the decline of Buddhist influence in the region and had profound, lasting impacts on educational traditions and cultural memory in Asia.',
       'Today, the ruins of Nalanda University stand as a somber reminder of the vulnerability of cultural and educational institutions in times of conflict, and its legacy continues to inspire efforts to preserve and revive ancient knowledge in the modern era.',
     ],
-    duration: 0.25, // The destructive event occurred over a short period (approximately 1 day, expressed in years)
-    complexity: Complexity.moderate, // Moderately complex due to the interplay of military conquest, cultural loss, and educational decline
-    severity: Severity.high, // High severity given the irreversible loss of intellectual heritage and profound societal impact
+    duration:
+        0.25, // The destructive event occurred over a short period (approximately 1 day, expressed in years)
+    complexity: Complexity
+        .moderate, // Moderately complex due to the interplay of military conquest, cultural loss, and educational decline
+    severity: Severity
+        .high, // High severity given the irreversible loss of intellectual heritage and profound societal impact
 
     isLegalCase: false,
-    isEthicalCase: true,    // Raises ethical questions about the destruction of cultural heritage and loss of knowledge
+    isEthicalCase:
+        true, // Raises ethical questions about the destruction of cultural heritage and loss of knowledge
     isBusinessCase: false,
-    isSocietalImpactCase: true, // Significant societal impact through the long-term decline in educational and cultural development
+    isSocietalImpactCase:
+        true, // Significant societal impact through the long-term decline in educational and cultural development
     isScientificCase: false,
-    isCulturalCase: true,   // Deeply influenced cultural narratives and historical consciousness in India and beyond
+    isCulturalCase:
+        true, // Deeply influenced cultural narratives and historical consciousness in India and beyond
     isCrisisCase: true,
   ),
-
-
   const CaseStudy(
     id: 'c92',
     categories: [
@@ -3382,7 +3383,8 @@ var dummyCases = [
       'PG', // Politics & Governance (secondary)
     ],
     title: 'The Invasions of Mahmud of Ghazni and Impact on Indian Culture',
-    imageUrl: 'https://www.cheggindia.com/wp-content/uploads/2023/12/mahmud-of-ghazni.png', // Example image URL; please replace with a preferred source if necessary
+    imageUrl:
+        'https://www.cheggindia.com/wp-content/uploads/2023/12/mahmud-of-ghazni.png', // Example image URL; please replace with a preferred source if necessary
     keywords: [
       'Mahmud of Ghazni',
       'Temple Destruction',
@@ -3396,18 +3398,368 @@ var dummyCases = [
       'However, modern scholarship also emphasizes that the historical impact of these invasions is multifaceted. While there was undeniable cultural loss and hardship, some historians argue that the subsequent periods witnessed a complex process of cultural synthesis. This blending of influences eventually contributed to the rich, diverse tapestry of later Indian culture. Nonetheless, the negative impacts—especially the immediate and irreversible loss of cultural heritage—remain a critical aspect of the historical narrative.',
       'This case study serves as an example of how military conquests can lead to profound and lasting changes in cultural and educational landscapes. It continues to be the subject of extensive academic research and debate, reflecting on the ethical and societal consequences of historical conflicts.',
     ],
-    duration: 27, // The specific events (e.g., the destruction of Somnath) occurred over a short period (roughly one day)
-    complexity: Complexity.moderate, // Moderately complex due to diverse historical interpretations and the multifaceted nature of cultural change
-    severity: Severity.high, // High severity given the extensive loss of cultural heritage and its enduring impact on societal development
+    duration:
+        27, // The specific events (e.g., the destruction of Somnath) occurred over a short period (roughly one day)
+    complexity: Complexity
+        .moderate, // Moderately complex due to diverse historical interpretations and the multifaceted nature of cultural change
+    severity: Severity
+        .high, // High severity given the extensive loss of cultural heritage and its enduring impact on societal development
 
     isLegalCase: false,
-    isEthicalCase: true,    // Raises important ethical considerations regarding the destruction of cultural heritage
+    isEthicalCase:
+        true, // Raises important ethical considerations regarding the destruction of cultural heritage
     isBusinessCase: false,
-    isSocietalImpactCase: true, // Profound societal impact through the disruption of cultural and religious traditions
+    isSocietalImpactCase:
+        true, // Profound societal impact through the disruption of cultural and religious traditions
     isScientificCase: false,
-    isCulturalCase: true,   // Deeply influenced cultural narratives and historical memory in the region
+    isCulturalCase:
+        true, // Deeply influenced cultural narratives and historical memory in the region
     isCrisisCase: true,
   ),
+  const CaseStudy(
+    id: 'c93',
+    categories: [
+      'FE', // Finance & Economics (primary)
+    ],
+    title: 'The Collapse of Barings Bank: Rogue Trader Nick Leeson',
+    imageUrl: 'https://pbs.twimg.com/media/CrxJhkpWgAE1E8A.jpg',
+    keywords: [
+      'Barings Bank',
+      'Nick Leeson',
+      'Rogue Trading',
+      'Financial Collapse',
+      'Bank Scandal',
+    ],
+    caseStudy: [
+      'Barings Bank, established in 1762, was once one of the most venerable financial institutions in the United Kingdom. However, in the early 1990s, the bank’s long-standing reputation was shattered by the actions of rogue trader Nick Leeson, who operated out of Barings’ Singapore office. Leeson engaged in unauthorized speculative trading on futures contracts at the Singapore International Monetary Exchange (SIMEX), hiding mounting losses in a concealed error account.',
+      'Over a span of roughly three years—from 1992 until the catastrophic blow-up in 1995—Leeson’s risky trades amassed losses estimated at £827 million. As these losses spiraled out of control, the bank’s risk management systems and internal controls proved woefully inadequate, leading to the sudden collapse of Barings in February 1995. The bank was subsequently acquired by the Dutch banking group ING for a nominal sum, marking one of the most dramatic financial failures in modern banking history.',
+      'The collapse not only exposed severe shortcomings in corporate governance and oversight but also triggered sweeping regulatory reforms across the global financial industry. The scandal prompted financial institutions worldwide to re-examine risk management practices and led to the implementation of stricter controls on trading activities and internal auditing processes.',
+      'The Barings Bank debacle remains a landmark case study in financial risk, highlighting the dangers of unchecked speculative trading, inadequate regulatory oversight, and the potential for individual misconduct to bring down even the most storied institutions.',
+    ],
+    duration: 3, // Approximately 1992-1995
+    complexity: Complexity
+        .moderate, // Involves multifaceted issues in risk management, corporate oversight, and financial regulation
+    severity: Severity
+        .high, // High severity due to the catastrophic collapse of a historic bank and its long-lasting impact on global financial practices
 
+    isLegalCase: true,
+    isEthicalCase: true,
+    isBusinessCase: true,
+    isSocietalImpactCase: false,
+    isScientificCase: false,
+    isCulturalCase: false,
+    isCrisisCase: false,
+  ),
+  const CaseStudy(
+    id: 'c94',
+    categories: [
+      'FE', // Finance & Economics (primary)
+      'BS', // Business & Startups (secondary)
+    ],
+    title: 'The Parmalat Scandal: Corporate Fraud in Italy',
+    imageUrl:
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHTl7SGem7-IC5AocNIbHktgcFAm6fiQpfcg&s',
+    keywords: [
+      'Parmalat',
+      'Corporate Fraud',
+      'Accounting Scandal',
+      'Bankruptcy',
+      'Italy',
+    ],
+    caseStudy: [
+      'In 2003, Parmalat, once a powerhouse in Europe’s dairy industry, was brought down by one of the largest corporate frauds in history. The company’s financial statements were grossly manipulated through complex schemes involving falsified accounts, hidden debts, and off-balance sheet transactions that masked a staggering €14 billion in financial irregularities.',
+      'At the center of the scandal was founder Calisto Tanzi, whose fraudulent practices enabled Parmalat to present an artificially robust financial position. When the truth emerged, it led to a dramatic collapse of the company, wiping out billions of euros in investor value and shaking global financial markets.',
+      'The fallout from the Parmalat scandal was immense: it triggered widespread legal actions, resulted in the conviction of top executives, and forced a complete overhaul of corporate governance standards in Italy and across Europe. Regulatory bodies tightened financial reporting requirements and auditing standards to prevent similar occurrences in the future.',
+      'Today, the Parmalat scandal serves as a landmark case study in corporate fraud, illustrating the catastrophic consequences of unchecked managerial malfeasance and inadequate regulatory oversight. Its legacy continues to influence modern practices in corporate governance and financial transparency, serving as a stern reminder of the importance of ethical business practices and robust financial controls.',
+    ],
+    duration:
+        1, // The scandal unfolded over a period leading up to and culminating in 2003
+    complexity: Complexity
+        .hard, // Involves intricate financial manipulations and systemic regulatory failures
+    severity: Severity
+        .high, // High severity due to massive financial losses and lasting impact on market regulations
 
+    isLegalCase: true,
+    isEthicalCase: true,
+    isBusinessCase: true,
+    isSocietalImpactCase: false,
+    isScientificCase: false,
+    isCulturalCase: false,
+    isCrisisCase: false,
+  ),
+  const CaseStudy(
+    id: 'c95',
+    categories: [
+      'FE', // Finance & Economics (primary)
+      'PG', // Politics & Governance (secondary)
+    ],
+    title: 'The 1MDB Scandal: A Global Financial Fraud',
+    imageUrl:
+        'https://financialcrimeacademy.org/wp-content/uploads/2022/02/68.jpg',
+    keywords: [
+      '1MDB',
+      'Financial Fraud',
+      'Corruption',
+      'Malaysia',
+      'Global Scandal',
+    ],
+    caseStudy: [
+      'Established in 2009 as a sovereign wealth fund to boost economic development, 1MDB (1Malaysia Development Berhad) quickly spiraled into one of the most infamous financial frauds in modern history. Allegations emerged that billions of dollars were misappropriated through a labyrinth of complex financial transactions involving key political figures, including former Prime Minister Najib Razak, and a network of international financiers.',
+      'Over the course of approximately seven years, funds were diverted from the intended development projects into private accounts and shell companies across multiple jurisdictions. This vast embezzlement not only destabilized the Malaysian economy but also sparked a series of high-profile investigations and legal actions in several countries.',
+      'The fallout from the scandal led to a major crisis of confidence in corporate governance and financial regulation, prompting sweeping reforms aimed at tightening oversight of sovereign wealth funds and international financial transactions. The 1MDB scandal profoundly affected Malaysia’s political landscape, igniting public outrage, calls for accountability, and a reexamination of the relationships between state institutions and private financial entities.',
+      'Today, the 1MDB case serves as a benchmark for the global risks associated with unchecked corruption and inadequate regulatory frameworks. It continues to influence financial policies and legal practices worldwide, while also shaping cultural perceptions of transparency and accountability in the modern financial system.',
+    ],
+    duration: 7, // Approximately 2009-2016
+    complexity: Complexity
+        .moderate, // Involves intricate cross-border financial schemes and regulatory failures
+    severity: Severity
+        .high, // High severity due to massive financial losses and far-reaching political and economic impacts
+
+    isLegalCase: true,
+    isEthicalCase: true,
+    isBusinessCase: true,
+    isSocietalImpactCase: false,
+    isScientificCase: false,
+    isCulturalCase: false,
+    isCrisisCase: false,
+  ),
+  const CaseStudy(
+    id: 'c96',
+    categories: [
+      'PG', // Politics & Governance (primary)
+      'HC', // History & Culture (secondary)
+    ],
+    title: 'Kristallnacht: The Night of Broken Glass',
+    imageUrl:
+        'https://ichef.bbci.co.uk/news/480/cpsprodpb/1543B/production/_127599078_img46010.jpg.webp',
+    keywords: [
+      'Kristallnacht',
+      'Night of Broken Glass',
+      'Nazi Pogrom',
+      'Anti-Semitism',
+      'Nazi Germany',
+    ],
+    caseStudy: [
+      'On November 9-10, 1938, the Nazi regime orchestrated a violent pogrom against Jewish communities in Germany and Austria, an event now known as Kristallnacht or the Night of Broken Glass. During this state-sponsored attack, synagogues were torched, Jewish-owned stores and homes were vandalized, and windows were shattered, leaving the streets glittering with broken glass.',
+      'Approximately 30,000 Jewish men were arrested and sent to concentration camps, and dozens of Jews lost their lives in the ensuing violence. Kristallnacht marked a dramatic escalation from economic and social persecution to overt physical violence and destruction against an entire community.',
+      'The brutality of the event sent shockwaves both within the Nazi-controlled territories and around the world, serving as a grim prelude to the systematic genocide of the Holocaust. The widespread cultural and religious devastation, coupled with the mass arrests, fundamentally altered the social fabric of Jewish life in Europe.',
+      'International condemnation followed, but the repercussions for the Jewish community were profound—leading many to flee the increasingly hostile environment while leaving behind a legacy of trauma and cultural loss. Today, Kristallnacht stands as a powerful reminder of the catastrophic consequences of state-sponsored hate and the importance of safeguarding human rights and cultural heritage.',
+    ],
+    duration: 0.002, // Approximately 2 days (expressed in years)
+    complexity: Complexity
+        .moderate, // Involves multifaceted issues of state policy, social violence, and international response
+    severity: Severity
+        .critical, // Critical severity due to its profound human cost and lasting cultural impact
+
+    isLegalCase: false,
+    isEthicalCase:
+        true, // Raises significant ethical issues regarding hate crimes and state-sponsored discrimination
+    isBusinessCase: false,
+    isSocietalImpactCase:
+        true, // Profound impact on Jewish society and global human rights discourse
+    isScientificCase: false,
+    isCulturalCase:
+        true, // Deep cultural and historical significance in shaping the memory of persecution
+    isCrisisCase: true,
+  ),
+  const CaseStudy(
+    id: 'c97',
+    categories: [
+      'HC', // History & Culture (primary)
+      'PG', // Politics & Governance (secondary)
+    ],
+    title: 'The Holocaust: Systematic Genocide in Nazi Germany',
+    imageUrl:
+        'https://www.icrc.org/sites/default/files/styles/desktop_full/public/document/image/genocide-home-150428.jpg.webp?itok=HRZQr9y_', // Example image URL; replace with a preferred source if necessary
+    keywords: [
+      'Holocaust',
+      'Genocide',
+      'Nazi Germany',
+      'World War II',
+      'Shoah',
+    ],
+    caseStudy: [
+      'The Holocaust was the systematic, state-sponsored genocide orchestrated by Nazi Germany, in which six million Jews, along with millions of other victims including Romani people, disabled individuals, political dissidents, and others, were exterminated during World War II. The roots of this atrocity began in the early 1930s when the Nazi regime, under Adolf Hitler, implemented draconian racial policies aimed at purifying the German state and expanding its territory.',
+      'Between 1933 and 1945, a combination of discriminatory laws, propaganda, and brutal repression paved the way for mass persecution. Ghettos were established to segregate Jewish communities, and concentration camps were built across occupied territories to imprison, exploit, and ultimately exterminate millions of innocent people. The “Final Solution”—the Nazis’ plan to annihilate the Jewish population—was meticulously implemented through deportations, mass shootings, gas chambers, and forced labor. The scale and industrial nature of the genocide marked a dark chapter in human history.',
+      'The Holocaust not only resulted in an unimaginable loss of life but also had profound and lasting impacts on global society. In its aftermath, the world witnessed the Nuremberg Trials, which set a precedent for international law and accountability for crimes against humanity. The memory of the Holocaust has since become a cornerstone of modern human rights discourse, influencing education, remembrance practices, and policies aimed at preventing future genocides.',
+      'Today, the Holocaust serves as a solemn reminder of the dangers of unchecked hatred, prejudice, and totalitarianism. Its legacy continues to shape discussions about ethics, justice, and the responsibilities of nations to protect vulnerable populations, ensuring that the lessons of this tragedy are never forgotten.',
+    ],
+    duration: 12, // Approximately 1933-1945
+    complexity: Complexity
+        .hard, // Involves multifaceted military, political, social, and cultural dimensions
+    severity: Severity
+        .critical, // Critical severity due to the catastrophic loss of life and long-lasting global impact
+
+    isLegalCase:
+        true, // Followed by significant legal proceedings (e.g., Nuremberg Trials)
+    isEthicalCase:
+        true, // Raises profound ethical questions regarding human rights and state-sponsored genocide
+    isBusinessCase: false,
+    isSocietalImpactCase:
+        true, // Profound and lasting impact on societies worldwide
+    isScientificCase: false,
+    isCulturalCase:
+        true, // Deeply influenced cultural narratives and collective memory
+    isCrisisCase: true,
+  ),
+  const CaseStudy(
+    id: 'c98',
+    categories: [
+      'HC', // History & Culture (primary)
+      'PG', // Politics & Governance (secondary)
+    ],
+    title: 'World War I: The Great War and Its Lasting Impact',
+    imageUrl:
+        'https://assets.editorial.aetnd.com/uploads/2009/10/world-war-one-gettyimages-90007631.jpg', // Example image; replace if needed
+    keywords: [
+      'World War I',
+      'The Great War',
+      'Trench Warfare',
+      'Global Conflict',
+      '1914-1918',
+    ],
+    caseStudy: [
+      'World War I, known as the Great War, raged from 1914 to 1918 and involved a complex web of alliances among major world powers. Sparked by the assassination of Archduke Franz Ferdinand of Austria, the conflict quickly escalated as countries mobilized in support of their allies. The war was fought primarily on European soil, where the brutal reality of trench warfare led to prolonged stalemates and staggering casualties.',
+      'Technological innovations, including machine guns, tanks, and chemical weapons, transformed the nature of combat, making the war one of the most devastating conflicts in human history. The enormous loss of life, combined with the economic burden and societal upheaval, had far-reaching consequences that reshaped the political landscape of the 20th century.',
+      'The aftermath of World War I saw the collapse of empires—the Austro-Hungarian, Ottoman, Russian, and German—and led to significant redrawing of national boundaries, laying the groundwork for future geopolitical tensions. The harsh conditions imposed on Germany by the Treaty of Versailles fueled political instability and contributed to the rise of extremist ideologies, setting the stage for World War II.',
+      'Culturally, the war had a profound impact on literature, art, and public consciousness, as societies grappled with the trauma of unprecedented carnage and loss. Memorials, poetry, and novels emerged to capture the sorrow and heroism of the era, ensuring that the legacy of the Great War remains deeply embedded in collective memory.',
+    ],
+    duration: 4, // 1914 to 1918 (4 years)
+    complexity: Complexity
+        .hard, // Involves multifaceted military, political, and cultural dimensions making it hard to fully comprehend
+    severity: Severity
+        .critical, // Critical severity due to its catastrophic human, political, and economic consequences
+
+    isLegalCase:
+        true, // Led to extensive legal and diplomatic negotiations (e.g., Treaty of Versailles)
+    isEthicalCase:
+        true, // Raises enduring ethical questions about warfare, human suffering, and international responsibility
+    isBusinessCase: false,
+    isSocietalImpactCase:
+        true, // Profound societal impact across multiple nations and generations
+    isScientificCase: false,
+    isCulturalCase:
+        true, // Deeply influenced cultural narratives, art, and literature globally
+    isCrisisCase: true,
+  ),
+  const CaseStudy(
+    id: 'c99',
+    categories: [
+      'HC', // History & Culture (primary)
+      'PG', // Politics & Governance (secondary)
+    ],
+    title: 'World War II: A Global Conflict that Reshaped the World',
+    imageUrl:
+        'https://res.cloudinary.com/jerrick/image/upload/d_642250b563292b35f27461a7.png,f_jpg,fl_progressive,q_auto,w_1024/65383538a52559001dd05538.jpg', // Example image; replace with a preferred source if necessary
+    keywords: [
+      'World War II',
+      'Global Conflict',
+      'Holocaust',
+      'Military Strategy',
+      'Geopolitical Change',
+    ],
+    caseStudy: [
+      'World War II, which lasted from 1939 to 1945, was a global conflict that involved most of the world’s nations and resulted in unprecedented devastation and loss of life. Sparked by the aggressive expansionism of Nazi Germany under Adolf Hitler and the imperial ambitions of Japan, the war quickly escalated into a multi-front struggle between the Allies and the Axis powers.',
+      'The war saw a multitude of significant events and turning points, including the Battle of Britain, the invasion of the Soviet Union, the attack on Pearl Harbor, and the D-Day invasion. Technological advancements and new military strategies, such as blitzkrieg tactics and amphibious assaults, fundamentally changed the nature of warfare. The Holocaust, a systematic, state-sponsored genocide perpetrated by Nazi Germany, resulted in the murder of six million Jews along with millions of other victims, leaving an indelible scar on human history.',
+      'The conflict culminated in the unconditional surrender of Germany in May 1945 and Japan in September 1945, reshaping national boundaries and leading to the emergence of the United States and the Soviet Union as superpowers. The aftermath of World War II brought about major geopolitical realignments, the founding of the United Nations, and a global commitment to prevent future conflicts through legal and diplomatic frameworks, as evidenced by the Nuremberg Trials.',
+      'The cultural, political, and economic impacts of World War II continue to influence the modern world. The war spurred significant technological and scientific advancements, reshaped societal structures, and left a lasting legacy in literature, art, and collective memory. It remains a defining moment in human history, symbolizing both the depths of human cruelty and the resilience required to rebuild in its aftermath.',
+    ],
+    duration: 6, // 1939 to 1945 (6 years)
+    complexity: Complexity
+        .hard, // Involves multifaceted military, political, social, and cultural dimensions
+    severity: Severity
+        .critical, // Critical severity due to catastrophic human loss, geopolitical shifts, and enduring global impact
+
+    isLegalCase:
+        true, // Led to extensive legal proceedings (e.g., Nuremberg Trials)
+    isEthicalCase:
+        true, // Raises profound ethical issues regarding human rights and the conduct of war
+    isBusinessCase: false,
+    isSocietalImpactCase:
+        true, // Profound and lasting impact on societies worldwide
+    isScientificCase: false,
+    isCulturalCase:
+        true, // Deeply influenced art, literature, and collective cultural memory
+    isCrisisCase: true,
+  ),
+  const CaseStudy(
+    id: 'c100',
+    categories: [
+      'HC', // History & Culture (primary)
+      //'PG', // Politics & Governance (secondary)
+    ],
+    title: 'The Disappearance of Malaysia Airlines Flight MH370',
+    imageUrl:
+        'https://upload.wikimedia.org/wikipedia/commons/0/05/Boeing_777-200ER_Malaysia_AL_%28MAS%29_9M-MRO_-_color.jpg',
+    keywords: [
+      'MH370',
+      'Malaysia Airlines',
+      'Aviation Mystery',
+      'Disappearance',
+      'International Search',
+    ],
+    caseStudy: [
+      'On March 8, 2014, Malaysia Airlines Flight MH370 mysteriously vanished from radar while en route from Kuala Lumpur to Beijing, sparking one of the greatest aviation mysteries in modern history. The aircraft, carrying 239 passengers and crew, disappeared under puzzling circumstances, leaving families and authorities worldwide grappling with uncertainty and grief.',
+      'Despite an extensive multinational search covering vast areas of the Indian Ocean, the wreckage of MH370 has never been conclusively located, and the exact cause of its disappearance remains unresolved. The ongoing investigation has spawned numerous theories—ranging from mechanical failure and human error to more speculative scenarios involving hijacking or deliberate sabotage—yet no definitive explanation has emerged.',
+      'The disappearance of MH370 has profoundly impacted the aviation industry, prompting a re-evaluation of global flight tracking systems and search and rescue protocols. It has also led to changes in international regulatory standards to improve communication and oversight in air travel, with the aim of preventing similar tragedies in the future.',
+      'Culturally, the mystery of MH370 continues to capture the public imagination, inspiring documentaries, books, and widespread media coverage. It has become a symbol of the limitations of modern technology and the enduring enigmas that can still challenge even the most advanced systems in our globalized world.',
+      'The case stands as a poignant reminder of the unpredictable nature of modern transportation and the far-reaching human and regulatory impacts when a tragedy remains unsolved. Its legacy persists in ongoing efforts to enhance aviation safety and in the collective memory of those affected by the incident.',
+    ],
+    duration:
+        0.002, // The disappearance was instantaneous (approximately 1 day expressed in years)
+    complexity: Complexity
+        .hard, // Involves multifaceted technological, investigative, and geopolitical dimensions
+    severity: Severity
+        .high, // High severity due to profound emotional, societal, and regulatory impacts from the unresolved mystery
+
+    isLegalCase: false,
+    isEthicalCase: false,
+    isBusinessCase: false,
+    isSocietalImpactCase:
+        true, // Significant impact on public trust and aviation regulation
+    isScientificCase:
+        true, // Extensive scientific investigation and technological challenges involved
+    isCulturalCase:
+        false, // Deep cultural impact with an enduring presence in public discourse
+    isCrisisCase: false,
+  ),
+  const CaseStudy(
+    id: 'c101',
+    categories: [
+      'PG', // Politics & Governance (primary)
+      'HC', // History & Culture (secondary)
+    ],
+    title: 'The Suez Crisis: A Pivotal Moment in Decolonization',
+    imageUrl:
+        'https://www.nam.ac.uk/sites/default/files/styles/slice_lg/public/2017-10/121726_slice.jpg.webp?itok=HBSVFYDd', // Example image URL; replace if needed
+    keywords: [
+      'Suez Crisis',
+      'Nasser',
+      'Nationalization',
+      'Decolonization',
+      'Cold War',
+    ],
+    caseStudy: [
+      'In 1956, the Suez Crisis emerged as a turning point in global politics and decolonization when Egyptian President Gamal Abdel Nasser nationalized the Suez Canal, a vital waterway previously controlled by British and French interests. This bold move was seen as an assertion of Egyptian sovereignty and a challenge to the old colonial order, and it quickly set off a series of dramatic events.',
+      'In response to the nationalization, Israel, followed by Britain and France, launched a military intervention aimed at regaining control of the canal and toppling Nasser. The ensuing conflict lasted for about a month, leading to intense military engagements and significant casualties on all sides. International pressure, particularly from the United States and the Soviet Union, forced the invading forces to withdraw, marking a decisive defeat for the old European colonial powers.',
+      'The crisis had far-reaching consequences: it accelerated the process of decolonization in Africa and Asia, reshaped the balance of power during the Cold War, and redefined international norms regarding state sovereignty and economic nationalism. The Suez Crisis remains a seminal event in modern history, symbolizing both the decline of European imperial influence and the rise of new geopolitical dynamics in a post-colonial world.',
+      'Today, the legacy of the Suez Crisis continues to influence discussions on international law, global trade, and the political transformation of regions emerging from colonial rule, making it a key subject of study in both political science and cultural history.',
+    ],
+    duration: 0.1, // Approximately 1 month (expressed in years)
+    complexity: Complexity
+        .moderate, // Moderately complex due to the intricate interplay of military, political, and cultural factors
+    severity: Severity
+        .high, // High severity due to its profound impact on decolonization and global power dynamics
+
+    isLegalCase: false,
+    isEthicalCase:
+        true, // Raises ethical questions about imperialism, national sovereignty, and the consequences of military intervention
+    isBusinessCase: false,
+    isSocietalImpactCase:
+        true, // Significant impact on global society by reshaping colonial structures and international relations
+    isScientificCase: false,
+    isCulturalCase:
+        true, // Deeply influenced cultural narratives and historical memory regarding the end of empire
+    isCrisisCase: true,
+  ),
 ];
