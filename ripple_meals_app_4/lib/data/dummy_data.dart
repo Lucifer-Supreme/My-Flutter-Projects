@@ -596,137 +596,119 @@ var dummyCases = [
     isCulturalCase: false,
     isCrisisCase: true,
   ),
-
   const CaseStudy(
-id: 'c17',
-categories: [
-'LE', // Law & Ethics
-'PG', // Politics & Governance
-'PHB', // Psychology & Human Behavior
-],
-title: 'The Abu Ghraib Prison Abuse Scandal',
-imageUrl: 'https://www.aljazeera.com/wp-content/uploads/2017/09/ac192fb96d0c40cc981b5d99801a7e83_18.jpeg?resize=1200%2C675',
-keywords: [
-'Human Rights Violation',
-'Prisoner Abuse',
-'War Crimes',
-'Psychological Torture',
-'Ethical Dilemma',
-],
-caseStudy: [
-'In 2003–2004, reports and leaked photographs revealed severe mistreatment, physical abuse, and psychological torture of detainees at the Abu Ghraib prison in Iraq by U.S. military personnel.',
-
-'Detainees, many of whom were suspected insurgents, were subjected to beatings, sexual humiliation, forced nudity, and stress positions—all captured in disturbing images that shocked the world.',
-
-'The scandal exposed systemic failures in military oversight, leading to the prosecution of a few lower-ranking soldiers, though higher-level officials largely avoided accountability.',
-
-'Public backlash was severe, with global protests, diplomatic fallout, and intensified anti-American sentiment in the Middle East. The scandal also raised concerns over the ethics of war, interrogation methods, and human rights violations.',
-
-'The Abu Ghraib case remains a dark chapter in modern military history, reshaping discussions on prisoner rights, ethical warfare, and military accountability.',
-],
-duration: 2, // years (2003–2004),
-complexity: Complexity.hard,
-severity: Severity.critical,
-isLegalCase: true,
-isEthicalCase: true,
-isBusinessCase: false,
-isSocietalImpactCase: true,
-isScientificCase: false,
-isCulturalCase: false,
-isCrisisCase: true,
-),
-
+    id: 'c17',
+    categories: [
+      'LE', // Law & Ethics
+      'PG', // Politics & Governance
+      'PHB', // Psychology & Human Behavior
+    ],
+    title: 'The Abu Ghraib Prison Abuse Scandal',
+    imageUrl:
+        'https://www.aljazeera.com/wp-content/uploads/2017/09/ac192fb96d0c40cc981b5d99801a7e83_18.jpeg?resize=1200%2C675',
+    keywords: [
+      'Human Rights Violation',
+      'Prisoner Abuse',
+      'War Crimes',
+      'Psychological Torture',
+      'Ethical Dilemma',
+    ],
+    caseStudy: [
+      'In 2003–2004, reports and leaked photographs revealed severe mistreatment, physical abuse, and psychological torture of detainees at the Abu Ghraib prison in Iraq by U.S. military personnel.',
+      'Detainees, many of whom were suspected insurgents, were subjected to beatings, sexual humiliation, forced nudity, and stress positions—all captured in disturbing images that shocked the world.',
+      'The scandal exposed systemic failures in military oversight, leading to the prosecution of a few lower-ranking soldiers, though higher-level officials largely avoided accountability.',
+      'Public backlash was severe, with global protests, diplomatic fallout, and intensified anti-American sentiment in the Middle East. The scandal also raised concerns over the ethics of war, interrogation methods, and human rights violations.',
+      'The Abu Ghraib case remains a dark chapter in modern military history, reshaping discussions on prisoner rights, ethical warfare, and military accountability.',
+    ],
+    duration: 2, // years (2003–2004),
+    complexity: Complexity.hard,
+    severity: Severity.critical,
+    isLegalCase: true,
+    isEthicalCase: true,
+    isBusinessCase: false,
+    isSocietalImpactCase: true,
+    isScientificCase: false,
+    isCulturalCase: false,
+    isCrisisCase: true,
+  ),
   const CaseStudy(
-id: 'c18',
-categories: [
-'BS', // Business & Startups
-'FE', // Finance & Economics
-],
-title: 'The Wirecard Accounting Scandal',
-imageUrl: 'https://media.licdn.com/dms/image/v2/C4E12AQHsbVD3VPBgrg/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1592999340797?e=2147483647&v=beta&t=-uvyQhVRdGNaVwWR5gK10appqNJEZRskZLCmjW5oswM',
-keywords: [
-'Corporate Fraud',
-'Financial Scandal',
-'Accounting Manipulation',
-'Stock Market Crash',
-'Regulatory Failure',
-],
-caseStudy: [
-'Wirecard, once Germany’s leading fintech company, was exposed in 2020 for massive accounting fraud involving nearly €1.9 billion missing from its balance sheets.',
-
-'For years, Wirecard executives manipulated financial statements to inflate revenue, deceive investors, and secure bank loans. The missing money, supposedly held in Philippine bank accounts, was later revealed to be nonexistent.',
-
-'The scandal unraveled after an investigation by the Financial Times, leading to the collapse of Wirecard, the arrest of key executives, and one of the biggest corporate frauds in European history.',
-
-'The case exposed weak regulatory oversight in Germany, particularly by BaFin (Federal Financial Supervisory Authority), which failed to act despite multiple warnings.',
-
-'Wirecard’s downfall shook global financial markets, caused billions in losses for investors, and raised serious concerns about auditing firms’ credibility, as EY (Ernst & Young) had signed off on Wirecard’s fake accounts for years.',
-],
-duration: 2 ,// years (2018–2020) (though fraud was ongoing for over a decade),
-complexity: Complexity.hard,
-severity: Severity.critical,
-isLegalCase: true,
-isEthicalCase: true,
-isBusinessCase: true,
-isSocietalImpactCase: true,
-isScientificCase: false,
-isCulturalCase: false,
-isCrisisCase: true,
-),
-
+    id: 'c18',
+    categories: [
+      'BS', // Business & Startups
+      'FE', // Finance & Economics
+    ],
+    title: 'The Wirecard Accounting Scandal',
+    imageUrl:
+        'https://media.licdn.com/dms/image/v2/C4E12AQHsbVD3VPBgrg/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1592999340797?e=2147483647&v=beta&t=-uvyQhVRdGNaVwWR5gK10appqNJEZRskZLCmjW5oswM',
+    keywords: [
+      'Corporate Fraud',
+      'Financial Scandal',
+      'Accounting Manipulation',
+      'Stock Market Crash',
+      'Regulatory Failure',
+    ],
+    caseStudy: [
+      'Wirecard, once Germany’s leading fintech company, was exposed in 2020 for massive accounting fraud involving nearly €1.9 billion missing from its balance sheets.',
+      'For years, Wirecard executives manipulated financial statements to inflate revenue, deceive investors, and secure bank loans. The missing money, supposedly held in Philippine bank accounts, was later revealed to be nonexistent.',
+      'The scandal unraveled after an investigation by the Financial Times, leading to the collapse of Wirecard, the arrest of key executives, and one of the biggest corporate frauds in European history.',
+      'The case exposed weak regulatory oversight in Germany, particularly by BaFin (Federal Financial Supervisory Authority), which failed to act despite multiple warnings.',
+      'Wirecard’s downfall shook global financial markets, caused billions in losses for investors, and raised serious concerns about auditing firms’ credibility, as EY (Ernst & Young) had signed off on Wirecard’s fake accounts for years.',
+    ],
+    duration:
+        2, // years (2018–2020) (though fraud was ongoing for over a decade),
+    complexity: Complexity.hard,
+    severity: Severity.critical,
+    isLegalCase: true,
+    isEthicalCase: true,
+    isBusinessCase: true,
+    isSocietalImpactCase: true,
+    isScientificCase: false,
+    isCulturalCase: false,
+    isCrisisCase: true,
+  ),
   const CaseStudy(
-id: 'c19',
-categories: [
-'TI', // Technology & Innovation
-'LE', // Law & Ethics
-'PG', // Politics & Governance
-],
-title: 'The Pegasus Spyware Controversy',
-imageUrl: 'https://www.livelaw.in/h-upload/2021/07/19/1500x900_396972-pegasus-spyware.jpg',
-keywords: [
-'Surveillance',
-'Privacy Violation',
-'Cybersecurity',
-'Government Espionage',
-'Human Rights',
-],
-caseStudy: [
-'In 2021, an investigation by The Pegasus Project revealed that the Israeli NSO Group had developed and sold powerful spyware known as Pegasus to various governments worldwide.',
+    id: 'c19',
+    categories: [
+      'TI', // Technology & Innovation
+      'LE', // Law & Ethics
+      'PG', // Politics & Governance
+    ],
+    title: 'The Pegasus Spyware Controversy',
+    imageUrl:
+        'https://www.livelaw.in/h-upload/2021/07/19/1500x900_396972-pegasus-spyware.jpg',
+    keywords: [
+      'Surveillance',
+      'Privacy Violation',
+      'Cybersecurity',
+      'Government Espionage',
+      'Human Rights',
+    ],
+    caseStudy: [
+      'In 2021, an investigation by The Pegasus Project revealed that the Israeli NSO Group had developed and sold powerful spyware known as Pegasus to various governments worldwide.',
+      'Pegasus was capable of hacking smartphones remotely, extracting messages, tracking locations, and even turning on microphones and cameras without user consent.',
+      'Evidence showed that journalists, activists, politicians, and business executives were being targeted, sparking global outrage over privacy violations and government surveillance abuse.',
+      'NSO Group insisted that Pegasus was only sold to "vetted government agencies" for counterterrorism purposes, but reports suggested its use against dissidents and critics in multiple countries.',
+      'Following the revelations, Apple sued NSO Group, and multiple nations launched investigations into the ethical and legal implications of state-sponsored hacking tools.',
+      'The case raised important questions about cybersecurity, digital rights, and the balance between national security and personal privacy.',
+    ],
+    duration: 3, // years (2018 - 2021),
+    complexity: Complexity.hard,
+    severity: Severity.critical,
 
-'Pegasus was capable of hacking smartphones remotely, extracting messages, tracking locations, and even turning on microphones and cameras without user consent.',
-
-'Evidence showed that journalists, activists, politicians, and business executives were being targeted, sparking global outrage over privacy violations and government surveillance abuse.',
-
-'NSO Group insisted that Pegasus was only sold to "vetted government agencies" for counterterrorism purposes, but reports suggested its use against dissidents and critics in multiple countries.',
-
-'Following the revelations, Apple sued NSO Group, and multiple nations launched investigations into the ethical and legal implications of state-sponsored hacking tools.',
-
-'The case raised important questions about cybersecurity, digital rights, and the balance between national security and personal privacy.',
-],
-duration: 3,// years (2018 - 2021),
-complexity: Complexity.hard,
-severity: Severity.critical,
-
-isLegalCase: true,
-isEthicalCase: true,
-isBusinessCase: false,
-isSocietalImpactCase: true,
-isScientificCase: false,
-isCulturalCase: false,
-isCrisisCase: true,
-),
-
-
+    isLegalCase: true,
+    isEthicalCase: true,
+    isBusinessCase: false,
+    isSocietalImpactCase: true,
+    isScientificCase: false,
+    isCulturalCase: false,
+    isCrisisCase: true,
+  ),
   const CaseStudy(
     id: 'c20',
-    categories: [
-      'TI',
-      'ES',
-      'BS',
-      'HC'
-    ],
+    categories: ['TI', 'ES', 'BS', 'HC'],
     title: 'The Challenger Space Shuttle Disaster',
-    imageUrl: 'https://cdn.britannica.com/30/148830-050-D216F45C/Crew-Challenger-mission-Christa-McAuliffe-Gregory-Jarvis-November-1985.jpg',
+    imageUrl:
+        'https://cdn.britannica.com/30/148830-050-D216F45C/Crew-Challenger-mission-Christa-McAuliffe-Gregory-Jarvis-November-1985.jpg',
     keywords: [
       'NASA',
       'Engineering Failure',
@@ -744,7 +726,6 @@ isCrisisCase: true,
     duration: 1,
     complexity: Complexity.moderate,
     severity: Severity.critical,
-
     isLegalCase: true,
     isEthicalCase: true,
     isBusinessCase: false,
@@ -753,16 +734,12 @@ isCrisisCase: true,
     isCulturalCase: false,
     isCrisisCase: true,
   ),
-
   const CaseStudy(
     id: 'c21',
-    categories: [
-      'LE',
-      'BS',
-      'FE'
-    ],
+    categories: ['LE', 'BS', 'FE'],
     title: 'The Stanford Financial Group Ponzi Scheme',
-    imageUrl: 'https://fortune.com/img-assets/wp-content/uploads/2023/02/GettyImages-140799302-e1677523212339.jpg',
+    imageUrl:
+        'https://fortune.com/img-assets/wp-content/uploads/2023/02/GettyImages-140799302-e1677523212339.jpg',
     keywords: [
       'Ponzi Scheme',
       'Financial Fraud',
@@ -780,7 +757,6 @@ isCrisisCase: true,
     duration: 12,
     complexity: Complexity.hard,
     severity: Severity.critical,
-
     isLegalCase: true,
     isEthicalCase: true,
     isBusinessCase: true,
@@ -789,7 +765,6 @@ isCrisisCase: true,
     isCulturalCase: false,
     isCrisisCase: true,
   ),
-
   const CaseStudy(
     id: 'c22',
     categories: [
@@ -797,7 +772,8 @@ isCrisisCase: true,
       'BS',
     ],
     title: 'The EpiPen Price Gouging Scandal',
-    imageUrl: 'https://www.beasleyallen.com/wp-content/uploads/epipen-price-gouging.jpg',
+    imageUrl:
+        'https://www.beasleyallen.com/wp-content/uploads/epipen-price-gouging.jpg',
     keywords: [
       'Pharmaceutical Pricing',
       'Healthcare Scandal',
@@ -815,7 +791,6 @@ isCrisisCase: true,
     duration: 9,
     complexity: Complexity.moderate,
     severity: Severity.high,
-
     isLegalCase: true,
     isEthicalCase: true,
     isBusinessCase: true,
@@ -824,7 +799,6 @@ isCrisisCase: true,
     isCulturalCase: false,
     isCrisisCase: true,
   ),
-
   const CaseStudy(
     id: 'c23',
     categories: [
@@ -832,7 +806,8 @@ isCrisisCase: true,
       'PG',
     ],
     title: 'The 2008 Financial Crisis',
-    imageUrl: 'https://dubeat.com/wp-content/uploads/2018/09/Sample-Essay-on-Causes-and-effects-of-global-financial-crisis-2008-770x350.jpg',
+    imageUrl:
+        'https://dubeat.com/wp-content/uploads/2018/09/Sample-Essay-on-Causes-and-effects-of-global-financial-crisis-2008-770x350.jpg',
     keywords: [
       'Economic Collapse',
       'Subprime Mortgage Crisis',
@@ -850,7 +825,6 @@ isCrisisCase: true,
     duration: 2,
     complexity: Complexity.hard,
     severity: Severity.critical,
-
     isLegalCase: true,
     isEthicalCase: true,
     isBusinessCase: true,
@@ -859,7 +833,6 @@ isCrisisCase: true,
     isCulturalCase: false,
     isCrisisCase: true,
   ),
-
   const CaseStudy(
     id: 'c24',
     categories: [
@@ -868,7 +841,8 @@ isCrisisCase: true,
       'HC',
     ],
     title: 'The Iran-Contra Affair',
-    imageUrl: 'https://i0.wp.com/text-message.blogs.archives.gov/wp-content/uploads/sites/5/2021/08/C38108-15.jpg?resize=685%2C458',
+    imageUrl:
+        'https://i0.wp.com/text-message.blogs.archives.gov/wp-content/uploads/sites/5/2021/08/C38108-15.jpg?resize=685%2C458',
     keywords: [
       'Political Scandal',
       'Covert Operations',
@@ -886,7 +860,6 @@ isCrisisCase: true,
     duration: 2,
     complexity: Complexity.moderate,
     severity: Severity.high,
-
     isLegalCase: true,
     isEthicalCase: true,
     isBusinessCase: false,
@@ -895,7 +868,6 @@ isCrisisCase: true,
     isCulturalCase: false,
     isCrisisCase: true,
   ),
-
   const CaseStudy(
     id: 'c25',
     categories: [
@@ -903,7 +875,8 @@ isCrisisCase: true,
       'BS',
     ],
     title: 'The Bernie Madoff Ponzi Scheme',
-    imageUrl: 'https://i0.wp.com/revealnews.org/wp-content/uploads/2018/02/bernie-madoff-final.jpg?fit=1000%2C562&ssl=1',
+    imageUrl:
+        'https://i0.wp.com/revealnews.org/wp-content/uploads/2018/02/bernie-madoff-final.jpg?fit=1000%2C562&ssl=1',
     keywords: [
       'Ponzi Scheme',
       'Financial Fraud',
@@ -921,7 +894,6 @@ isCrisisCase: true,
     duration: 00,
     complexity: Complexity.hard,
     severity: Severity.critical,
-
     isLegalCase: true,
     isEthicalCase: true,
     isBusinessCase: true,
@@ -930,7 +902,6 @@ isCrisisCase: true,
     isCulturalCase: false,
     isCrisisCase: true,
   ),
-
   const CaseStudy(
     id: 'c26',
     categories: [
@@ -939,7 +910,8 @@ isCrisisCase: true,
       'BS',
     ],
     title: 'The Lehman Brothers Collapse',
-    imageUrl: 'https://media.licdn.com/dms/image/v2/D4D12AQGgBq1VcyLTbg/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1725877311761?e=2147483647&v=beta&t=6XgZflQF0YGBynL9q0kXctGUxGFpUhz8g6MeVQeL_AY',
+    imageUrl:
+        'https://media.licdn.com/dms/image/v2/D4D12AQGgBq1VcyLTbg/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1725877311761?e=2147483647&v=beta&t=6XgZflQF0YGBynL9q0kXctGUxGFpUhz8g6MeVQeL_AY',
     keywords: [
       'Financial Crisis',
       'Bankruptcy',
@@ -959,7 +931,6 @@ isCrisisCase: true,
     duration: 1,
     complexity: Complexity.hard,
     severity: Severity.critical,
-
     isLegalCase: true,
     isEthicalCase: true,
     isBusinessCase: true,
@@ -968,7 +939,6 @@ isCrisisCase: true,
     isCulturalCase: false,
     isCrisisCase: true,
   ),
-
   const CaseStudy(
     id: 'c27',
     categories: [
@@ -977,7 +947,8 @@ isCrisisCase: true,
       'BS',
     ],
     title: 'The Uber Greyball Scandal',
-    imageUrl: 'https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/99C1/production/_90816393_gettyimages-495298217.jpg.webp',
+    imageUrl:
+        'https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/99C1/production/_90816393_gettyimages-495298217.jpg.webp',
     keywords: [
       'Corporate Misconduct',
       'Regulatory Evasion',
@@ -997,7 +968,6 @@ isCrisisCase: true,
     duration: 4,
     complexity: Complexity.moderate,
     severity: Severity.high,
-
     isLegalCase: true,
     isEthicalCase: true,
     isBusinessCase: true,
@@ -1006,7 +976,6 @@ isCrisisCase: true,
     isCulturalCase: false,
     isCrisisCase: false,
   ),
-
   const CaseStudy(
     id: 'c28',
     categories: [
@@ -1015,7 +984,8 @@ isCrisisCase: true,
       'PG',
     ],
     title: 'The Tuskegee Syphilis Experiment',
-    imageUrl: 'https://www.mcgill.ca/oss/files/oss/styles/hd/public/tuskegee_study.jpg?itok=QaQOKZlx&timestamp=1548275432',
+    imageUrl:
+        'https://www.mcgill.ca/oss/files/oss/styles/hd/public/tuskegee_study.jpg?itok=QaQOKZlx&timestamp=1548275432',
     keywords: [
       'Medical Ethics Violation',
       'Human Experimentation',
@@ -1046,16 +1016,12 @@ isCrisisCase: true,
     isCulturalCase: true,
     isCrisisCase: true,
   ),
-
   const CaseStudy(
     id: 'c29',
-    categories: [
-      'PG',
-      'FE',
-      'BS'
-    ],
+    categories: ['PG', 'FE', 'BS'],
     title: 'The LIBOR Scandal',
-    imageUrl: 'https://sevenpillarsinstitute.org/wp-content/uploads/2017/11/bank-of-england-libor-scandal.jpg',
+    imageUrl:
+        'https://sevenpillarsinstitute.org/wp-content/uploads/2017/11/bank-of-england-libor-scandal.jpg',
     keywords: [
       'Financial Manipulation',
       'Banking Fraud',
@@ -1085,17 +1051,12 @@ isCrisisCase: true,
     isCulturalCase: false,
     isCrisisCase: true,
   ),
-
   const CaseStudy(
     id: 'c30',
-    categories: [
-      'LE',
-      'BS',
-      'HC',
-      'ES'
-    ],
+    categories: ['LE', 'BS', 'HC', 'ES'],
     title: 'The McLibel Case',
-    imageUrl: 'https://res.cloudinary.com/dyw8mv3b0/image/upload/q_85,w_1200,h_1200,c_limit/v1/news/2023_10/G4JKPG_ppkvmq.jpg',
+    imageUrl:
+        'https://res.cloudinary.com/dyw8mv3b0/image/upload/q_85,w_1200,h_1200,c_limit/v1/news/2023_10/G4JKPG_ppkvmq.jpg',
     keywords: [
       'Defamation Lawsuit',
       'Corporate Accountability',
@@ -1122,17 +1083,12 @@ isCrisisCase: true,
     isCulturalCase: false,
     isCrisisCase: false,
   ),
-
   const CaseStudy(
     id: 'c31',
-    categories: [
-
-      'BS',
-      'HM',
-      'LE'
-    ],
+    categories: ['BS', 'HM', 'LE'],
     title: 'The OxyContin and Purdue Pharma Scandal',
-    imageUrl: 'https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fcom.ft.imagepublish.upp-prod-eu.s3.amazonaws.com%2Fcf3a6636-5ee2-11e9-9300-0becfc937c37?source=next-article&fit=scale-down&quality=highest&width=700&dpr=1',
+    imageUrl:
+        'https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fcom.ft.imagepublish.upp-prod-eu.s3.amazonaws.com%2Fcf3a6636-5ee2-11e9-9300-0becfc937c37?source=next-article&fit=scale-down&quality=highest&width=700&dpr=1',
     keywords: [
       'Opioid Crisis',
       'Corporate Misconduct',
@@ -1164,7 +1120,6 @@ isCrisisCase: true,
     isCulturalCase: false,
     isCrisisCase: true,
   ),
-
   const CaseStudy(
     id: 'c32',
     categories: [
@@ -1172,7 +1127,8 @@ isCrisisCase: true,
       'TI',
     ],
     title: 'The Stuxnet Cyberweapon Attack',
-    imageUrl: 'https://s.yimg.com/ny/api/res/1.2/fPoqjCXq.MJ0uazdz.ezPg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD02NDY-/https://s.yimg.com/os/creatr-uploaded-images/2019-08/1bef9bd0-cb54-11e9-afbb-41ba524c604d',
+    imageUrl:
+        'https://s.yimg.com/ny/api/res/1.2/fPoqjCXq.MJ0uazdz.ezPg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD02NDY-/https://s.yimg.com/os/creatr-uploaded-images/2019-08/1bef9bd0-cb54-11e9-afbb-41ba524c604d',
     keywords: [
       'Cyber Warfare',
       'Industrial Sabotage',
@@ -1201,17 +1157,12 @@ isCrisisCase: true,
     isCulturalCase: false,
     isCrisisCase: true,
   ),
-
   const CaseStudy(
     id: 'c33',
-    categories: [
-      'BS',
-      'ES',
-      'HM',
-      'HC'
-    ],
+    categories: ['BS', 'ES', 'HM', 'HC'],
     title: 'The Bhopal Gas Tragedy',
-    imageUrl: 'https://sageuniversity.edu.in/assets/images/blog/the-aftermath-of-bhopal-gas-tragedy-and-its-laws.png',
+    imageUrl:
+        'https://sageuniversity.edu.in/assets/images/blog/the-aftermath-of-bhopal-gas-tragedy-and-its-laws.png',
     keywords: [
       'Industrial Disaster',
       'Environmental Catastrophe',
@@ -1240,8 +1191,6 @@ isCrisisCase: true,
     isCulturalCase: false,
     isCrisisCase: true,
   ),
-
-
   const CaseStudy(
     id: 'c34',
     categories: [
@@ -1249,7 +1198,8 @@ isCrisisCase: true,
       'PHB',
     ],
     title: 'The McMartin Preschool Trial',
-    imageUrl: 'https://static01.nyt.com/images/2014/03/06/multimedia/retro-mcmartin-preschool/retro-mcmartin-preschool-superJumbo.jpg',
+    imageUrl:
+        'https://static01.nyt.com/images/2014/03/06/multimedia/retro-mcmartin-preschool/retro-mcmartin-preschool-superJumbo.jpg',
     keywords: [
       'False Allegations',
       'Mass Hysteria',
@@ -1277,7 +1227,6 @@ isCrisisCase: true,
     isCulturalCase: true,
     isCrisisCase: false,
   ),
-
   const CaseStudy(
     id: 'c35',
     categories: [
@@ -1286,7 +1235,8 @@ isCrisisCase: true,
       'HC',
     ],
     title: 'The Salem Witch Trials',
-    imageUrl: 'https://th-thumbnailer.cdn-si-edu.com/FpLi24Hbyb2LHtmgf-5okCoGohw=/fit-in/1600x0/filters:focal(1280x914:1281x915)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/40/e6/40e69d4a-6016-4815-ba7a-01fce1bb2e5d/examination_of_a_witch_-_tompkins_matteson.jpeg',
+    imageUrl:
+        'https://th-thumbnailer.cdn-si-edu.com/FpLi24Hbyb2LHtmgf-5okCoGohw=/fit-in/1600x0/filters:focal(1280x914:1281x915)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/40/e6/40e69d4a-6016-4815-ba7a-01fce1bb2e5d/examination_of_a_witch_-_tompkins_matteson.jpeg',
     keywords: [
       'Mass Hysteria',
       'Witchcraft',
@@ -1315,7 +1265,6 @@ isCrisisCase: true,
     isCulturalCase: true,
     isCrisisCase: false,
   ),
-
   const CaseStudy(
     id: 'c36',
     categories: [
@@ -1324,7 +1273,8 @@ isCrisisCase: true,
       'PHB',
     ],
     title: 'The Brown v. Board of Education Case',
-    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXd7h7UNDhyEr0I7M7OTCOcKLuu_yJLOaXsw&s',
+    imageUrl:
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXd7h7UNDhyEr0I7M7OTCOcKLuu_yJLOaXsw&s',
     keywords: [
       'Racial Segregation',
       'Education Reform',
@@ -1333,27 +1283,26 @@ isCrisisCase: true,
       'Supreme Court',
     ],
     caseStudy: [
-    'Brown v. Board of Education was a landmark 1954 U.S. Supreme Court case that declared racial segregation in public schools unconstitutional.',
-    'The case was brought by Oliver Brown, who sued the Board of Education of Topeka, Kansas, after his daughter was denied entry to an all-white school near their home. His case was joined with several others representing Black families across the country.',
-    'At the time, segregation in schools was justified under the doctrine of "separate but equal," established by the 1896 Plessy v. Ferguson case. However, in practice, segregated Black schools were underfunded and lacked proper resources compared to their white counterparts.',
-    'The legal team, led by Thurgood Marshall of the NAACP, argued that segregation violated the Equal Protection Clause of the 14th Amendment. They provided psychological studies, such as the "Doll Test," which demonstrated the negative effects of segregation on Black children\'s self-esteem and development.',
-  'In a unanimous 9-0 decision, the Supreme Court ruled that "separate educational facilities are inherently unequal," overturning Plessy v. Ferguson and setting the stage for nationwide desegregation.',
-    'This decision marked a turning point in the Civil Rights Movement, sparking nationwide resistance and eventual progress toward educational equality. However, many Southern states resisted desegregation, leading to further legal battles and federal interventions in the years that followed.',
-    'Brown v. Board of Education remains a cornerstone case in education reform and civil rights, highlighting the role of the legal system in shaping social progress.',
+      'Brown v. Board of Education was a landmark 1954 U.S. Supreme Court case that declared racial segregation in public schools unconstitutional.',
+      'The case was brought by Oliver Brown, who sued the Board of Education of Topeka, Kansas, after his daughter was denied entry to an all-white school near their home. His case was joined with several others representing Black families across the country.',
+      'At the time, segregation in schools was justified under the doctrine of "separate but equal," established by the 1896 Plessy v. Ferguson case. However, in practice, segregated Black schools were underfunded and lacked proper resources compared to their white counterparts.',
+      'The legal team, led by Thurgood Marshall of the NAACP, argued that segregation violated the Equal Protection Clause of the 14th Amendment. They provided psychological studies, such as the "Doll Test," which demonstrated the negative effects of segregation on Black children\'s self-esteem and development.',
+      'In a unanimous 9-0 decision, the Supreme Court ruled that "separate educational facilities are inherently unequal," overturning Plessy v. Ferguson and setting the stage for nationwide desegregation.',
+      'This decision marked a turning point in the Civil Rights Movement, sparking nationwide resistance and eventual progress toward educational equality. However, many Southern states resisted desegregation, leading to further legal battles and federal interventions in the years that followed.',
+      'Brown v. Board of Education remains a cornerstone case in education reform and civil rights, highlighting the role of the legal system in shaping social progress.',
     ],
-  duration: 3, // 1951 - 1954
-  complexity: Complexity.hard,
-  severity: Severity.high,
+    duration: 3, // 1951 - 1954
+    complexity: Complexity.hard,
+    severity: Severity.high,
 
-  isLegalCase: true,
-  isEthicalCase: true,
-  isBusinessCase: false,
-  isSocietalImpactCase: true,
-  isScientificCase: false,
-  isCulturalCase: true,
+    isLegalCase: true,
+    isEthicalCase: true,
+    isBusinessCase: false,
+    isSocietalImpactCase: true,
+    isScientificCase: false,
+    isCulturalCase: true,
     isCrisisCase: false,
   ),
-
   const CaseStudy(
     id: 'c37',
     categories: [
@@ -1362,7 +1311,8 @@ isCrisisCase: true,
       'FE',
     ],
     title: 'The College Admissions Scandal (Operation Varsity Blues)',
-    imageUrl: 'https://occ-0-8407-90.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABQFxcVmPTsi8JtAY-YLuJmXeviQOeSppT6shCU_2_XdM1-uhkM84j-A2hXcaKA6XNE9Hr9AKq2UNBQ368gS2vzwNOHcgxmUGeRpf7Okz85PQ6p62UgQNbMSe4RT0zufUXHjAeA.jpg?r=415',
+    imageUrl:
+        'https://occ-0-8407-90.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABQFxcVmPTsi8JtAY-YLuJmXeviQOeSppT6shCU_2_XdM1-uhkM84j-A2hXcaKA6XNE9Hr9AKq2UNBQ368gS2vzwNOHcgxmUGeRpf7Okz85PQ6p62UgQNbMSe4RT0zufUXHjAeA.jpg?r=415',
     keywords: [
       'College Admissions',
       'Bribery',
@@ -1392,7 +1342,6 @@ isCrisisCase: true,
     isCulturalCase: false,
     isCrisisCase: false,
   ),
-
   const CaseStudy(
     id: 'c38',
     categories: [
@@ -1401,7 +1350,8 @@ isCrisisCase: true,
       'PG',
     ],
     title: 'No Child Left Behind Act: Success or Failure?',
-    imageUrl: 'https://cdn.theatlantic.com/thumbor/xH8T4zoDv0LVlEN4xL5SDNUB4Y0=/0x131:2048x1283/960x540/media/img/mt/2015/12/essa/original.jpg',
+    imageUrl:
+        'https://cdn.theatlantic.com/thumbor/xH8T4zoDv0LVlEN4xL5SDNUB4Y0=/0x131:2048x1283/960x540/media/img/mt/2015/12/essa/original.jpg',
     keywords: [
       'Education Policy',
       'Standardized Testing',
@@ -1430,7 +1380,6 @@ isCrisisCase: true,
     isCulturalCase: false,
     isCrisisCase: false,
   ),
-
   const CaseStudy(
     id: 'c39',
     categories: [
@@ -1438,7 +1387,8 @@ isCrisisCase: true,
       'PG',
     ],
     title: 'The Common Core State Standards Initiative',
-    imageUrl: 'https://miro.medium.com/v2/resize:fit:1200/1*v1V0ZtXxnSXW6UaJx04eXA.jpeg',
+    imageUrl:
+        'https://miro.medium.com/v2/resize:fit:1200/1*v1V0ZtXxnSXW6UaJx04eXA.jpeg',
     keywords: [
       'Education Reform',
       'Standardized Curriculum',
@@ -1457,24 +1407,25 @@ isCrisisCase: true,
     complexity: Complexity.moderate,
     severity: Severity.medium,
 
-    isLegalCase: true,    // due to legal challenges and policy debates
-    isEthicalCase: true,  // because it raised ethical issues around educational equity
+    isLegalCase: true, // due to legal challenges and policy debates
+    isEthicalCase:
+        true, // because it raised ethical issues around educational equity
     isBusinessCase: false,
     isSocietalImpactCase: true,
     isScientificCase: false,
     isCulturalCase: true, // significant cultural and political debates
     isCrisisCase: false,
   ),
-
   const CaseStudy(
     id: 'c40',
     categories: [
       'ES',
       'HM'
-      'PG',
+          'PG',
     ],
     title: 'The Fukushima Daiichi Nuclear Disaster',
-    imageUrl: 'https://bpb-us-e1.wpmucdn.com/sites.suffolk.edu/dist/1/951/files/2015/10/FukushimaMeltdown101113.jpeg',
+    imageUrl:
+        'https://bpb-us-e1.wpmucdn.com/sites.suffolk.edu/dist/1/951/files/2015/10/FukushimaMeltdown101113.jpeg',
     keywords: [
       'Nuclear Disaster',
       'Earthquake',
@@ -1500,7 +1451,6 @@ isCrisisCase: true,
     isCulturalCase: false,
     isCrisisCase: true,
   ),
-
   const CaseStudy(
     id: 'c41',
     categories: [
@@ -1508,7 +1458,8 @@ isCrisisCase: true,
       'LE', // Law & Ethics
     ],
     title: 'The WannaCry Ransomware Attack',
-    imageUrl: 'https://asimily.com/wp-content/uploads/2023/08/The-WannaCry-Ransomware-Legacy-Attack-Asimily-png.png',
+    imageUrl:
+        'https://asimily.com/wp-content/uploads/2023/08/The-WannaCry-Ransomware-Legacy-Attack-Asimily-png.png',
     keywords: [
       'Cybersecurity',
       'Ransomware',
@@ -1535,7 +1486,6 @@ isCrisisCase: true,
     isCulturalCase: false,
     isCrisisCase: true,
   ),
-
   const CaseStudy(
     id: 'c42',
     categories: [
@@ -1545,7 +1495,8 @@ isCrisisCase: true,
       'HM'
     ],
     title: 'The COVID-19 Pandemic',
-    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4_qWZ_DgDovOwwfabzGT5H8eNjDHz_c4B7Q&s',
+    imageUrl:
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4_qWZ_DgDovOwwfabzGT5H8eNjDHz_c4B7Q&s',
     keywords: [
       'Global Pandemic',
       'Public Health Crisis',
@@ -1572,7 +1523,6 @@ isCrisisCase: true,
     isCulturalCase: true,
     isCrisisCase: true,
   ),
-
   const CaseStudy(
     id: 'c43',
     categories: [
@@ -1581,7 +1531,8 @@ isCrisisCase: true,
       'LE',
     ],
     title: 'The Brexit Referendum',
-    imageUrl: 'https://4a7efb2d53317100f611-1d7064c4f7b6de25658a4199efb34975.ssl.cf1.rackcdn.com/brexit-referendum-5-cybersecurity-implications-showcase_image-3-p-2160.jpg',
+    imageUrl:
+        'https://4a7efb2d53317100f611-1d7064c4f7b6de25658a4199efb34975.ssl.cf1.rackcdn.com/brexit-referendum-5-cybersecurity-implications-showcase_image-3-p-2160.jpg',
     keywords: [
       'Brexit',
       'European Union',
@@ -1608,17 +1559,12 @@ isCrisisCase: true,
     isCulturalCase: true,
     isCrisisCase: true,
   ),
-
   const CaseStudy(
     id: 'c44',
-    categories: [
-      'ES',
-      'HC',
-      'PG',
-      'HM'
-    ],
+    categories: ['ES', 'HC', 'PG', 'HM'],
     title: 'The 2004 Indian Ocean Tsunami',
-    imageUrl: 'https://static.toiimg.com/thumb/msid-55071172,width-1280,height-720,resizemode-4/55071172.jpg',
+    imageUrl:
+        'https://static.toiimg.com/thumb/msid-55071172,width-1280,height-720,resizemode-4/55071172.jpg',
     keywords: [
       'Natural Disaster',
       'Earthquake',
@@ -1645,7 +1591,6 @@ isCrisisCase: true,
     isCulturalCase: true,
     isCrisisCase: true,
   ),
-
   const CaseStudy(
     id: 'c45',
     categories: [
@@ -1654,7 +1599,8 @@ isCrisisCase: true,
       'PG', // Politics & Governance
     ],
     title: 'The SolarWinds Cyberattack',
-    imageUrl: 'https://i.ytimg.com/vi/Sphqregsss4/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBucFjyT5lTwiMg7vQ9Tskthw1AcA',
+    imageUrl:
+        'https://i.ytimg.com/vi/Sphqregsss4/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBucFjyT5lTwiMg7vQ9Tskthw1AcA',
     keywords: [
       'Cyberattack',
       'Supply Chain Security',
@@ -1681,16 +1627,15 @@ isCrisisCase: true,
     isCulturalCase: false,
     isCrisisCase: true,
   ),
-
   const CaseStudy(
     id: 'c46',
     categories: [
-
       'PG',
       'HC',
     ],
     title: 'The Grenfell Tower Fire',
-    imageUrl: 'https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/1267C/production/_96488357_tower_sequence.png',
+    imageUrl:
+        'https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/1267C/production/_96488357_tower_sequence.png',
     keywords: [
       'Fire Disaster',
       'Building Safety',
@@ -1717,7 +1662,6 @@ isCrisisCase: true,
     isCulturalCase: true,
     isCrisisCase: true,
   ),
-
   const CaseStudy(
     id: 'c47',
     categories: [
@@ -1726,7 +1670,8 @@ isCrisisCase: true,
       'FE', // Finance & Economics
     ],
     title: 'Operation Car Wash (Lava Jato)',
-    imageUrl: 'https://static01.nyt.com/images/2021/02/26/opinion/26Estrada/26Estrada-videoSixteenByNineJumbo1600.jpg',
+    imageUrl:
+        'https://static01.nyt.com/images/2021/02/26/opinion/26Estrada/26Estrada-videoSixteenByNineJumbo1600.jpg',
     keywords: [
       'Corruption',
       'Bribery',
@@ -1752,7 +1697,6 @@ isCrisisCase: true,
     isCulturalCase: true,
     isCrisisCase: false,
   ),
-
   const CaseStudy(
     id: 'c48',
     categories: [
@@ -1762,7 +1706,8 @@ isCrisisCase: true,
       'HM'
     ],
     title: 'The Rwandan Genocide',
-    imageUrl: 'https://content.magnumphotos.com/wp-content/uploads/2019/04/cortex/nn11583325-teaser-story-big.jpg',
+    imageUrl:
+        'https://content.magnumphotos.com/wp-content/uploads/2019/04/cortex/nn11583325-teaser-story-big.jpg',
     keywords: [
       'Genocide',
       'Ethnic Conflict',
@@ -1789,17 +1734,16 @@ isCrisisCase: true,
     isCulturalCase: true,
     isCrisisCase: true,
   ),
-
   const CaseStudy(
     id: 'c49',
     categories: [
       'LE', // Law & Ethics
       'PG', // Politics & Governance
       'HC', // History & Culture
-
     ],
     title: 'The Boston Marathon Bombing',
-    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8s5m_o_XwRFhkCwm9DeWTvaL1y_BrhTzBgg&s',
+    imageUrl:
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8s5m_o_XwRFhkCwm9DeWTvaL1y_BrhTzBgg&s',
     keywords: [
       'Terrorism',
       'Public Safety',
@@ -1825,16 +1769,15 @@ isCrisisCase: true,
     isCulturalCase: true,
     isCrisisCase: true,
   ),
-
   const CaseStudy(
     id: 'c50',
     categories: [
-
       'FE', // Finance & Economics
       'PG', // Politics & Governance
     ],
     title: 'The Panama Papers Leak',
-    imageUrl: 'https://economictimes.indiatimes.com/thumb/msid-64685550,width-1200,height-900,resizemode-4,imgsize-87914/untitled-8.jpg?from=mdr',
+    imageUrl:
+        'https://economictimes.indiatimes.com/thumb/msid-64685550,width-1200,height-900,resizemode-4,imgsize-87914/untitled-8.jpg?from=mdr',
     keywords: [
       'Offshore Finance',
       'Tax Evasion',
@@ -1860,7 +1803,6 @@ isCrisisCase: true,
     isCulturalCase: true,
     isCrisisCase: false,
   ),
-
   const CaseStudy(
     id: 'c51',
     categories: [
@@ -1869,7 +1811,8 @@ isCrisisCase: true,
       'LE', // Law & Ethics
     ],
     title: 'The Greek Debt Crisis',
-    imageUrl: 'https://i.ndtvimg.com/i/2015-07/greece-yes-no_650x400_81436064290.jpg',
+    imageUrl:
+        'https://i.ndtvimg.com/i/2015-07/greece-yes-no_650x400_81436064290.jpg',
     keywords: [
       'Economic Crisis',
       'Sovereign Debt',
@@ -1883,7 +1826,8 @@ isCrisisCase: true,
       'The crisis not only resulted in massive economic contraction, skyrocketing unemployment, and severe social hardship but also reshaped the political landscape of Greece, contributing to the rise of new political parties and deep divisions within society.',
       'The Greek Debt Crisis has been a subject of extensive debate on fiscal responsibility, the effectiveness of austerity policies, and the impact of global financial integration on national sovereignty. Its aftermath continues to influence economic and political policies in Europe and serves as a cautionary tale for emerging economies worldwide.',
     ],
-    duration: 9, // 2009 - 2018 (approximate period of acute crisis and recovery measures)
+    duration:
+        9, // 2009 - 2018 (approximate period of acute crisis and recovery measures)
     complexity: Complexity.hard,
     severity: Severity.critical,
 
@@ -1895,7 +1839,6 @@ isCrisisCase: true,
     isCulturalCase: true,
     isCrisisCase: true,
   ),
-
   const CaseStudy(
     id: 'c52',
     categories: [
@@ -1903,7 +1846,8 @@ isCrisisCase: true,
       'HC', // History & Culture (secondary)
     ],
     title: 'The Arab Spring',
-    imageUrl: 'https://media.npr.org/assets/img/2011/12/17/tunisia_custom-35d572bf67a3883025a98c4376fada55a58950fb.jpg',
+    imageUrl:
+        'https://media.npr.org/assets/img/2011/12/17/tunisia_custom-35d572bf67a3883025a98c4376fada55a58950fb.jpg',
     keywords: [
       'Protests',
       'Uprising',
@@ -1928,7 +1872,6 @@ isCrisisCase: true,
     isCulturalCase: true,
     isCrisisCase: true,
   ),
-
   const CaseStudy(
     id: 'c53',
     categories: [
@@ -1936,7 +1879,8 @@ isCrisisCase: true,
       'LE', // Law & Ethics (secondary)
     ],
     title: 'The Exxon Valdez Oil Spill',
-    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTdxzOl_HwyIUoTJcSchntlREM9mQKGR5mbQ&s',
+    imageUrl:
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTdxzOl_HwyIUoTJcSchntlREM9mQKGR5mbQ&s',
     keywords: [
       'Oil Spill',
       'Environmental Disaster',
@@ -1952,7 +1896,8 @@ isCrisisCase: true,
       'One of the lasting legacies of the Exxon Valdez Oil Spill was the passage of the U.S. Oil Pollution Act of 1990. This landmark legislation strengthened regulations on oil transportation and spill response, increased liability for oil companies, and improved federal preparedness for future environmental catastrophes.',
       'The spill remains a cautionary tale about the importance of robust safety protocols, environmental stewardship, and regulatory oversight in the oil industry. It also highlighted the vulnerability of delicate ecosystems and indigenous communities that rely on these natural resources for their livelihood.',
     ],
-    duration: 1, // Immediate crisis in 1989; long-term recovery and legal impact extended over subsequent years
+    duration:
+        1, // Immediate crisis in 1989; long-term recovery and legal impact extended over subsequent years
     complexity: Complexity.hard,
     severity: Severity.critical,
 
@@ -1963,10 +1908,7 @@ isCrisisCase: true,
     isScientificCase: false,
     isCulturalCase: true,
     isCrisisCase: true,
-
-
   ),
-
   const CaseStudy(
     id: 'c54',
     categories: [
@@ -1974,7 +1916,8 @@ isCrisisCase: true,
       'HC', // History & Culture (secondary)
     ],
     title: 'The September 11 Attacks',
-    imageUrl: 'https://ca-times.brightspotcdn.com/dims4/default/f88f402/2147483647/strip/false/crop/2000x1347+0+0/resize/1486x1001!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F2b%2Fd8%2Fd1cca6577d1a553dfae7588b4d93%2Fla-xpm-photo-2001-sep-12-na-sept-11-attack-201105-01',
+    imageUrl:
+        'https://ca-times.brightspotcdn.com/dims4/default/f88f402/2147483647/strip/false/crop/2000x1347+0+0/resize/1486x1001!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F2b%2Fd8%2Fd1cca6577d1a553dfae7588b4d93%2Fla-xpm-photo-2001-sep-12-na-sept-11-attack-201105-01',
     keywords: [
       'Terrorism',
       'Al-Qaeda',
@@ -1989,9 +1932,12 @@ isCrisisCase: true,
       'Culturally, 9/11 has had a lasting impact on art, literature, and public consciousness, with numerous memorials and museums dedicated to preserving the memory of the victims and educating future generations about the events of that day. The attacks continue to influence discussions on freedom, security, and the balance between civil liberties and public safety.',
       'The legacy of the September 11 Attacks remains a powerful reminder of the far-reaching consequences of terrorism, reshaping not only U.S. policies but also the global geopolitical landscape for decades to come.',
     ],
-    duration: 0.002, // The attacks occurred on a single day (September 11, 2001)
-    complexity: Complexity.hard, // Understandability is high due to the multifaceted impact and historical significance
-    severity: Severity.critical, // The event had catastrophic human, cultural, and geopolitical consequences
+    duration:
+        0.002, // The attacks occurred on a single day (September 11, 2001)
+    complexity: Complexity
+        .hard, // Understandability is high due to the multifaceted impact and historical significance
+    severity: Severity
+        .critical, // The event had catastrophic human, cultural, and geopolitical consequences
 
     isLegalCase: true,
     isEthicalCase: true,
@@ -2001,7 +1947,6 @@ isCrisisCase: true,
     isCulturalCase: true,
     isCrisisCase: true,
   ),
-
   const CaseStudy(
     id: 'c55',
     categories: [
@@ -2009,7 +1954,8 @@ isCrisisCase: true,
       'HC', // History & Culture (secondary, for its lasting impact on society and public health narratives)
     ],
     title: 'The Zika Virus Outbreak',
-    imageUrl: 'https://images.newscientist.com/wp-content/uploads/2016/02/f0127511-zika_virus_in_blood_illustration-spl.jpg',
+    imageUrl:
+        'https://images.newscientist.com/wp-content/uploads/2016/02/f0127511-zika_virus_in_blood_illustration-spl.jpg',
     keywords: [
       'Zika Virus',
       'Public Health Crisis',
@@ -2024,18 +1970,22 @@ isCrisisCase: true,
       'While the immediate crisis subsided by 2017, the legacy of the Zika outbreak endures, with ongoing studies examining its long-term effects on affected populations and the evolution of mosquito-borne disease management. The outbreak reshaped global health policies, spurred regulatory reforms, and remains a key case study in the challenges of managing emerging infectious diseases in an interconnected world.',
     ],
     duration: 2, // 2015 - 2017 (peak period of the outbreak)
-    complexity: Complexity.moderate, // The outbreak involved multifaceted public health responses and international collaboration, making it moderately complex
-    severity: Severity.critical,  // Given the severe impact on public health, especially on newborns, and lasting socio-economic repercussions, severity is set as critical
+    complexity: Complexity
+        .moderate, // The outbreak involved multifaceted public health responses and international collaboration, making it moderately complex
+    severity: Severity
+        .critical, // Given the severe impact on public health, especially on newborns, and lasting socio-economic repercussions, severity is set as critical
 
     isLegalCase: false,
-    isEthicalCase: true,    // Ethical concerns regarding public health preparedness and response are prominent
+    isEthicalCase:
+        true, // Ethical concerns regarding public health preparedness and response are prominent
     isBusinessCase: false,
     isSocietalImpactCase: true,
-    isScientificCase: true, // Significant scientific research was spurred as a result
-    isCulturalCase: true,   // It has a lasting impact on public health narratives and cultural perceptions of disease
+    isScientificCase:
+        true, // Significant scientific research was spurred as a result
+    isCulturalCase:
+        true, // It has a lasting impact on public health narratives and cultural perceptions of disease
     isCrisisCase: true,
   ),
-
   const CaseStudy(
     id: 'c56',
     categories: [
@@ -2043,7 +1993,8 @@ isCrisisCase: true,
       'HC', // History & Culture (secondary)
     ],
     title: 'The January 6 Capitol Riot',
-    imageUrl: 'https://www.pewresearch.org/wp-content/uploads/sites/20/2022/01/FT_22.01.04_Jan6_feature-jpg.webp?w=1200&h=628&crop=1',
+    imageUrl:
+        'https://www.pewresearch.org/wp-content/uploads/sites/20/2022/01/FT_22.01.04_Jan6_feature-jpg.webp?w=1200&h=628&crop=1',
     keywords: [
       'Capitol Riot',
       'Political Violence',
@@ -2059,8 +2010,10 @@ isCrisisCase: true,
       'The event continues to be analyzed by scholars, policymakers, and the public, serving as a stark reminder of how political polarization and misinformation can lead to real-world violence and the erosion of democratic norms.',
     ],
     duration: 0.002, // The event occurred on a single day (January 6, 2021)
-    complexity: Complexity.hard, // Multifaceted implications across political, social, and cultural dimensions make it hard to fully grasp
-    severity: Severity.critical, // High severity due to fatalities, extensive legal consequences, and lasting impact on democratic processes
+    complexity: Complexity
+        .hard, // Multifaceted implications across political, social, and cultural dimensions make it hard to fully grasp
+    severity: Severity
+        .critical, // High severity due to fatalities, extensive legal consequences, and lasting impact on democratic processes
 
     isLegalCase: true,
     isEthicalCase: true,
@@ -2070,7 +2023,6 @@ isCrisisCase: true,
     isCulturalCase: true,
     isCrisisCase: true,
   ),
-
   const CaseStudy(
     id: 'c57',
     categories: [
@@ -2078,7 +2030,8 @@ isCrisisCase: true,
       'HC', // History & Culture (secondary)
     ],
     title: 'The 2010 Haiti Earthquake',
-    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwUdl-bnXjlEtIAZoGuFNfIAfVujd21HlQmQ&s',
+    imageUrl:
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwUdl-bnXjlEtIAZoGuFNfIAfVujd21HlQmQ&s',
     keywords: [
       'Earthquake',
       'Natural Disaster',
@@ -2093,19 +2046,22 @@ isCrisisCase: true,
       'The earthquake exposed deep-seated issues in Haiti’s governance and infrastructure, sparking debates on disaster preparedness, corruption, and the effectiveness of international aid. The slow pace of recovery, coupled with subsequent natural disasters and political instability, has left a lasting impact on the nation’s development and collective memory.',
       'Today, the 2010 Haiti Earthquake is remembered not only for its immediate human tragedy but also as a turning point that reshaped Haiti’s socio-political landscape, influencing policy reforms and the global approach to disaster response and recovery in vulnerable regions.',
     ],
-    duration: 1, // Immediate crisis on January 12, 2010 (with long-term recovery impact)
-    complexity: Complexity.hard, // Multifaceted issues in disaster response, governance, and international aid make it hard to fully address
-    severity: Severity.critical, // Catastrophic loss of life and prolonged humanitarian crisis
+    duration:
+        1, // Immediate crisis on January 12, 2010 (with long-term recovery impact)
+    complexity: Complexity
+        .hard, // Multifaceted issues in disaster response, governance, and international aid make it hard to fully address
+    severity: Severity
+        .critical, // Catastrophic loss of life and prolonged humanitarian crisis
 
     isLegalCase: false,
-    isEthicalCase: true,  // Ethical considerations in aid distribution and reconstruction
+    isEthicalCase:
+        true, // Ethical considerations in aid distribution and reconstruction
     isBusinessCase: false,
     isSocietalImpactCase: true,
     isScientificCase: false,
     isCulturalCase: true,
     isCrisisCase: true,
   ),
-
   const CaseStudy(
     id: 'c58',
     categories: [
@@ -2113,7 +2069,8 @@ isCrisisCase: true,
       'BS', // Business & Startups (secondary)
     ],
     title: 'The Samsung Galaxy Note 7 Battery Crisis',
-    imageUrl: 'https://i.guim.co.uk/img/media/4489bb63e0bf4e8f9123803179f1a6514947ff7f/0_193_3500_2100/master/3500.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=8d6b86e4304aa46077b8bd47514bfa98',
+    imageUrl:
+        'https://i.guim.co.uk/img/media/4489bb63e0bf4e8f9123803179f1a6514947ff7f/0_193_3500_2100/master/3500.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=8d6b86e4304aa46077b8bd47514bfa98',
     keywords: [
       'Battery Fires',
       'Product Recall',
@@ -2127,19 +2084,24 @@ isCrisisCase: true,
       'The crisis led to massive financial losses, estimated in billions, and significantly damaged Samsung’s reputation for quality and safety. The event sparked widespread media coverage and consumer backlash, raising urgent questions about corporate responsibility, product safety standards, and quality control in high-tech manufacturing.',
       'In response, Samsung overhauled its quality assurance protocols, implemented stricter safety testing for battery technology, and worked with global regulatory bodies to prevent similar issues in the future. The Galaxy Note 7 crisis has since become a landmark case study in managing product recalls and the risks inherent in rapid technological innovation.',
     ],
-    duration: 0.2, // Approximately a few months (2016 launch to discontinuation)
-    complexity: Complexity.moderate, // The issues were complex but understandable with detailed investigation reports available.
-    severity: Severity.high, // High severity due to significant financial impact and safety concerns, though not catastrophic in loss of life.
+    duration:
+        0.2, // Approximately a few months (2016 launch to discontinuation)
+    complexity: Complexity
+        .moderate, // The issues were complex but understandable with detailed investigation reports available.
+    severity: Severity
+        .high, // High severity due to significant financial impact and safety concerns, though not catastrophic in loss of life.
 
-    isLegalCase: true,    // Involved legal actions and product liability claims.
-    isEthicalCase: true,  // Raised ethical questions about corporate responsibility and consumer safety.
-    isBusinessCase: true, // Had major financial implications and affected market reputation.
+    isLegalCase: true, // Involved legal actions and product liability claims.
+    isEthicalCase:
+        true, // Raised ethical questions about corporate responsibility and consumer safety.
+    isBusinessCase:
+        true, // Had major financial implications and affected market reputation.
     isSocietalImpactCase: false,
-    isScientificCase: true, // Involved detailed scientific investigation of battery technology.
+    isScientificCase:
+        true, // Involved detailed scientific investigation of battery technology.
     isCulturalCase: false,
     isCrisisCase: true,
   ),
-
   const CaseStudy(
     id: 'c59',
     categories: [
@@ -2147,7 +2109,8 @@ isCrisisCase: true,
       'TI', // Technology & Innovation (secondary)
     ],
     title: 'The Apple vs. FBI Encryption Dispute',
-    imageUrl: 'https://static.guim.co.uk/sys-images/Guardian/Pix/audio/video/2016/2/18/1455801740414/KP_1800942_crop_640x480.jpg',
+    imageUrl:
+        'https://static.guim.co.uk/sys-images/Guardian/Pix/audio/video/2016/2/18/1455801740414/KP_1800942_crop_640x480.jpg',
     keywords: [
       'Encryption',
       'Privacy',
@@ -2163,8 +2126,10 @@ isCrisisCase: true,
       'The Apple vs. FBI Encryption Dispute remains a landmark case study in the digital era, encapsulating the complex interplay between technological innovation, legal authority, and ethical considerations in an increasingly interconnected world.',
     ],
     duration: 0.5, // The dispute lasted several months in 2016
-    complexity: Complexity.moderate, // The issues are complex but accessible through public debate and legal proceedings
-    severity: Severity.high, // High severity due to its profound impact on digital rights and technology policy
+    complexity: Complexity
+        .moderate, // The issues are complex but accessible through public debate and legal proceedings
+    severity: Severity
+        .high, // High severity due to its profound impact on digital rights and technology policy
 
     isLegalCase: true,
     isEthicalCase: true,
@@ -2174,7 +2139,6 @@ isCrisisCase: true,
     isCulturalCase: true,
     isCrisisCase: false,
   ),
-
   const CaseStudy(
     id: 'c60',
     categories: [
@@ -2182,7 +2146,8 @@ isCrisisCase: true,
       'HC', // History & Culture (secondary)
     ],
     title: 'The 2008 Mumbai Terror Attacks',
-    imageUrl: 'https://static01.nyt.com/images/2016/02/09/world/09India-web/09India-web-superJumbo.jpg',
+    imageUrl:
+        'https://static01.nyt.com/images/2016/02/09/world/09India-web/09India-web-superJumbo.jpg',
     keywords: [
       'Terrorism',
       'Coordinated Attacks',
@@ -2197,9 +2162,12 @@ isCrisisCase: true,
       'In response, the Indian government launched a comprehensive investigation, resulting in numerous arrests and legal proceedings that aimed to dismantle the terrorist network behind the attacks. The event also led to significant changes in India’s counter-terrorism policies, with increased intelligence sharing and heightened security measures across major urban centers.',
       'The 2008 Mumbai Terror Attacks remain a defining moment in contemporary history, symbolizing the vulnerabilities of urban areas to sophisticated terrorist operations and underscoring the importance of coordinated global efforts to combat terrorism. The legacy of this tragedy continues to influence security protocols and public policy debates on both national and international levels.',
     ],
-    duration: 3, // Immediate crisis on November 2008 with long-term repercussions lasting several years
-    complexity: Complexity.hard, // The incident involves multifaceted security, political, and cultural dimensions, making it hard to fully address
-    severity: Severity.critical, // The event had catastrophic consequences in terms of loss of life and long-term impact on national security and public confidence
+    duration:
+        3, // Immediate crisis on November 2008 with long-term repercussions lasting several years
+    complexity: Complexity
+        .hard, // The incident involves multifaceted security, political, and cultural dimensions, making it hard to fully address
+    severity: Severity
+        .critical, // The event had catastrophic consequences in terms of loss of life and long-term impact on national security and public confidence
 
     isLegalCase: true,
     isEthicalCase: true,
@@ -2209,7 +2177,6 @@ isCrisisCase: true,
     isCulturalCase: true,
     isCrisisCase: true,
   ),
-
   const CaseStudy(
     id: 'c61',
     categories: [
@@ -2217,7 +2184,8 @@ isCrisisCase: true,
       'ES', // Environmental & Sustainability (secondary)
     ],
     title: 'The Texas Power Crisis 2021',
-    imageUrl: 'https://image.cnbcfm.com/api/v1/image/106841395-1613564987356-gettyimages-1231211590-WEATHER.jpeg?v=1613565027',
+    imageUrl:
+        'https://image.cnbcfm.com/api/v1/image/106841395-1613564987356-gettyimages-1231211590-WEATHER.jpeg?v=1613565027',
     keywords: [
       'Power Outage',
       'Winter Storm',
@@ -2233,18 +2201,22 @@ isCrisisCase: true,
       'The Texas Power Crisis of 2021 stands as a sobering reminder of the interplay between environmental challenges and policy failures. It has had a lasting impact on public trust, reshaped discussions about climate resilience and energy security, and continues to influence legislative efforts aimed at overhauling the state’s energy system.',
     ],
     duration: 0.1, // Crisis unfolded over a few days in February 2021
-    complexity: Complexity.moderate, // The issues involve multiple layers of infrastructural and policy failures, making it moderately complex
-    severity: Severity.high, // High severity due to significant loss of life, economic damage, and long-lasting policy repercussions
+    complexity: Complexity
+        .moderate, // The issues involve multiple layers of infrastructural and policy failures, making it moderately complex
+    severity: Severity
+        .high, // High severity due to significant loss of life, economic damage, and long-lasting policy repercussions
 
-    isLegalCase: true,    // Subsequent investigations and legal actions followed the crisis
-    isEthicalCase: true,  // The crisis raised ethical concerns regarding public safety and the responsibilities of policymakers
+    isLegalCase:
+        true, // Subsequent investigations and legal actions followed the crisis
+    isEthicalCase:
+        true, // The crisis raised ethical concerns regarding public safety and the responsibilities of policymakers
     isBusinessCase: false,
-    isSocietalImpactCase: true, // The event had a profound impact on public trust and societal well-being
+    isSocietalImpactCase:
+        true, // The event had a profound impact on public trust and societal well-being
     isScientificCase: false,
     isCulturalCase: false,
     isCrisisCase: true,
   ),
-
   const CaseStudy(
     id: 'c62',
     categories: [
@@ -2252,7 +2224,8 @@ isCrisisCase: true,
       'HC', // History & Culture (secondary)
     ],
     title: 'The 2019–2020 Hong Kong Protests',
-    imageUrl: 'https://c.files.bbci.co.uk/9F86/production/_108283804_gettyimages-1154553368.jpg',
+    imageUrl:
+        'https://c.files.bbci.co.uk/9F86/production/_108283804_gettyimages-1154553368.jpg',
     keywords: [
       'Hong Kong',
       'Pro-Democracy',
@@ -2267,19 +2240,24 @@ isCrisisCase: true,
       'The protests triggered a profound debate on Hong Kong’s future. While the government eventually withdrew the contentious extradition bill, protesters’ demands evolved to include calls for broader political reforms and investigations into police conduct. The movement left a lasting legacy on the region’s identity, inspiring cultural expressions and international solidarity, while also reshaping local and global discourse on democratic rights and autonomy.',
     ],
     duration: 1.5, // Approximately 18 months (mid-2019 to early 2020)
-    complexity: Complexity.hard, // The multifaceted political, legal, and cultural dimensions render it hard to fully grasp
-    severity: Severity.high, // High severity due to significant societal impact and enduring political ramifications
+    complexity: Complexity
+        .hard, // The multifaceted political, legal, and cultural dimensions render it hard to fully grasp
+    severity: Severity
+        .high, // High severity due to significant societal impact and enduring political ramifications
 
-    isLegalCase: true,    // Generated legal debates and actions emerged from clashes and government responses
-    isEthicalCase: true,  // Raised deep ethical questions about freedom of expression and state authority
+    isLegalCase:
+        true, // Generated legal debates and actions emerged from clashes and government responses
+    isEthicalCase:
+        true, // Raised deep ethical questions about freedom of expression and state authority
     isBusinessCase: false,
-    isSocietalImpactCase: true, // Significantly altered social dynamics and public trust
+    isSocietalImpactCase:
+        true, // Significantly altered social dynamics and public trust
     isScientificCase: false,
-    isCulturalCase: true, // Had a profound cultural impact, influencing art and public discourse
-    isCrisisCase: true,   // Considered a political crisis with far-reaching implications
+    isCulturalCase:
+        true, // Had a profound cultural impact, influencing art and public discourse
+    isCrisisCase:
+        true, // Considered a political crisis with far-reaching implications
   ),
-
-
   const CaseStudy(
     id: 'c63',
     categories: [
@@ -2287,7 +2265,8 @@ isCrisisCase: true,
       'HC', // History & Culture (secondary)
     ],
     title: 'The Russian Invasion of Ukraine (2022)',
-    imageUrl: 'https://cdn.britannica.com/46/231946-050-31CC461B/Russia-Ukraine-war-Ukrainian-servicemen-Kyiv-2022.jpg',
+    imageUrl:
+        'https://cdn.britannica.com/46/231946-050-31CC461B/Russia-Ukraine-war-Ukrainian-servicemen-Kyiv-2022.jpg',
     keywords: [
       'Russian Invasion',
       'Ukraine War',
@@ -2303,8 +2282,10 @@ isCrisisCase: true,
       'The Russian Invasion of Ukraine continues to evolve, with long-term ramifications expected to influence international relations, economic policies, and the cultural fabric of the region for years to come.',
     ],
     duration: 1, // Ongoing conflict, with immediate impact spanning 2022-2023
-    complexity: Complexity.hard, // The conflict involves multifaceted political, historical, and military dimensions
-    severity: Severity.critical, // Critical severity due to massive humanitarian, economic, and geopolitical impacts
+    complexity: Complexity
+        .hard, // The conflict involves multifaceted political, historical, and military dimensions
+    severity: Severity
+        .critical, // Critical severity due to massive humanitarian, economic, and geopolitical impacts
 
     isLegalCase: true,
     isEthicalCase: true,
@@ -2314,7 +2295,6 @@ isCrisisCase: true,
     isCulturalCase: true,
     isCrisisCase: true,
   ),
-
   const CaseStudy(
     id: 'c64',
     categories: [
@@ -2322,7 +2302,8 @@ isCrisisCase: true,
       'PG', // Politics & Governance (secondary)
     ],
     title: 'The Suez Canal Blockage by Ever Given',
-    imageUrl: 'https://www.morethanshipping.com/wp-content/uploads/2023/07/suez-canal-blockage-report-mts.jpg',
+    imageUrl:
+        'https://www.morethanshipping.com/wp-content/uploads/2023/07/suez-canal-blockage-report-mts.jpg',
     keywords: [
       'Suez Canal',
       'Ever Given',
@@ -2337,8 +2318,10 @@ isCrisisCase: true,
       'The Ever Given was eventually refloated after extensive salvage efforts, but the event remains a vivid example of how critical choke points in global supply chains can trigger far-reaching economic and political consequences.',
     ],
     duration: 0.02, // Approximately 6 days (0.02 years)
-    complexity: Complexity.moderate, // Complex in terms of global economic impact and logistical challenges, yet understandable through detailed analysis
-    severity: Severity.high, // High severity due to significant financial losses and global trade disruption, though not catastrophic in terms of human life
+    complexity: Complexity
+        .moderate, // Complex in terms of global economic impact and logistical challenges, yet understandable through detailed analysis
+    severity: Severity
+        .high, // High severity due to significant financial losses and global trade disruption, though not catastrophic in terms of human life
 
     isLegalCase: false,
     isEthicalCase: false,
@@ -2348,7 +2331,6 @@ isCrisisCase: true,
     isCulturalCase: false,
     isCrisisCase: true,
   ),
-
   const CaseStudy(
     id: 'c65',
     categories: [
@@ -2356,7 +2338,8 @@ isCrisisCase: true,
       'TI', // Technology & Innovation (secondary)
     ],
     title: 'The Global Semiconductor Chip Shortage',
-    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbvy-IljNga6TdHrqaqEzRO1BylIc9e1TAuQ&s',
+    imageUrl:
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbvy-IljNga6TdHrqaqEzRO1BylIc9e1TAuQ&s',
     keywords: [
       'Semiconductor Shortage',
       'Supply Chain Disruption',
@@ -2371,8 +2354,10 @@ isCrisisCase: true,
       'The global chip shortage not only led to significant financial losses and operational disruptions but also reshaped long-term strategies in supply chain management and international trade policies. Its effects continue to influence how industries approach manufacturing resilience, innovation, and diversification in a highly interconnected global economy.',
     ],
     duration: 2, // Approximately 2020 - 2022
-    complexity: Complexity.moderate, // The crisis involves multifaceted supply chain, demand, and geopolitical factors, making it moderately complex.
-    severity: Severity.high, // High severity due to significant disruptions in global industry and economic repercussions.
+    complexity: Complexity
+        .moderate, // The crisis involves multifaceted supply chain, demand, and geopolitical factors, making it moderately complex.
+    severity: Severity
+        .high, // High severity due to significant disruptions in global industry and economic repercussions.
 
     isLegalCase: false,
     isEthicalCase: false,
@@ -2382,7 +2367,6 @@ isCrisisCase: true,
     isCulturalCase: false,
     isCrisisCase: false,
   ),
-
   const CaseStudy(
     id: 'c66',
     categories: [
@@ -2390,7 +2374,8 @@ isCrisisCase: true,
       'HC', // History & Culture (secondary)
     ],
     title: 'The Beirut Explosion',
-    imageUrl: 'https://www.hrw.org/sites/default/files/styles/embed_xxl/public/media_2020/08/202008mena_lebanon_explosions.jpg?itok=ljdnf0Tx',
+    imageUrl:
+        'https://www.hrw.org/sites/default/files/styles/embed_xxl/public/media_2020/08/202008mena_lebanon_explosions.jpg?itok=ljdnf0Tx',
     keywords: [
       'Beirut Explosion',
       'Ammonium Nitrate',
@@ -2405,9 +2390,12 @@ isCrisisCase: true,
       'In response, international aid poured in, and the Lebanese government faced intense pressure to reform its safety regulations and address systemic corruption. The Beirut Explosion has since become a watershed moment in Lebanese history, symbolizing the consequences of governmental neglect and the urgent need for institutional reform.',
       'The event’s profound impact continues to influence Lebanon’s political discourse and cultural identity, serving as a stark reminder of the critical importance of accountability and effective governance in protecting public safety.',
     ],
-    duration: 0.002, // The explosion was an instantaneous event on August 4, 2020
-    complexity: Complexity.moderate, // The incident involves multifaceted issues in governance, public safety, and societal impact, making it moderately complex
-    severity: Severity.high, // High severity due to significant human loss, economic damage, and lasting political ramifications
+    duration:
+        0.002, // The explosion was an instantaneous event on August 4, 2020
+    complexity: Complexity
+        .moderate, // The incident involves multifaceted issues in governance, public safety, and societal impact, making it moderately complex
+    severity: Severity
+        .high, // High severity due to significant human loss, economic damage, and lasting political ramifications
 
     isLegalCase: true,
     isEthicalCase: true,
@@ -2417,7 +2405,6 @@ isCrisisCase: true,
     isCulturalCase: true,
     isCrisisCase: true,
   ),
-
   const CaseStudy(
     id: 'c67',
     categories: [
@@ -2425,7 +2412,8 @@ isCrisisCase: true,
       'HC', // History & Culture (secondary)
     ],
     title: 'The Oklahoma City Bombing',
-    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkYUNGUUoT5wIZMaVX3QJqVZLHtKu83lf2DQ&s',
+    imageUrl:
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkYUNGUUoT5wIZMaVX3QJqVZLHtKu83lf2DQ&s',
     keywords: [
       'Domestic Terrorism',
       'Murrah Federal Building',
@@ -2441,8 +2429,10 @@ isCrisisCase: true,
       'Today, the event remains a somber reminder of the dangers posed by extremist ideologies within a society and underscores the ongoing need for vigilance, unity, and effective policies to combat domestic terrorism.',
     ],
     duration: 0.002, // The event occurred on a single day (April 19, 1995)
-    complexity: Complexity.moderate, // The event is moderately complex with clear political, legal, and cultural ramifications
-    severity: Severity.high, // High severity due to significant loss of life and its enduring impact on national security and societal resilience
+    complexity: Complexity
+        .moderate, // The event is moderately complex with clear political, legal, and cultural ramifications
+    severity: Severity
+        .high, // High severity due to significant loss of life and its enduring impact on national security and societal resilience
 
     isLegalCase: true,
     isEthicalCase: true,
@@ -2452,8 +2442,6 @@ isCrisisCase: true,
     isCulturalCase: true,
     isCrisisCase: true,
   ),
-
-
   const CaseStudy(
     id: 'c68',
     categories: [
@@ -2461,7 +2449,8 @@ isCrisisCase: true,
       'HC', // History & Culture (secondary)
     ],
     title: 'The Fyre Festival Disaster',
-    imageUrl: 'https://i.cbc.ca/1.4090348.1493396216!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_940/fyre-festival-tweet.jpg',
+    imageUrl:
+        'https://i.cbc.ca/1.4090348.1493396216!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_940/fyre-festival-tweet.jpg',
     keywords: [
       'Fyre Festival',
       'Event Fraud',
@@ -2477,18 +2466,23 @@ isCrisisCase: true,
       'Today, the Fyre Festival disaster stands as a cautionary tale in the business world and popular culture, serving as a reminder of the critical importance of ethical practices, robust planning, and accountability in the face of digital marketing and luxury branding.',
     ],
     duration: 0.1, // The event collapsed within a few days in April 2017
-    complexity: Complexity.moderate, // The case involves multiple facets including business fraud, social media dynamics, and legal issues, making it moderately complex
-    severity: Severity.high, // High severity due to significant financial losses, reputational damage, and legal ramifications, though no loss of life occurred
+    complexity: Complexity
+        .moderate, // The case involves multiple facets including business fraud, social media dynamics, and legal issues, making it moderately complex
+    severity: Severity
+        .high, // High severity due to significant financial losses, reputational damage, and legal ramifications, though no loss of life occurred
 
-    isLegalCase: true,    // Involved extensive legal actions and criminal charges
-    isEthicalCase: true,  // Raised serious ethical concerns regarding misrepresentation and fraud
-    isBusinessCase: true, // Directly impacted the business and events industry, with long-term implications for corporate governance
-    isSocietalImpactCase: true, // Influenced public perception of influencer culture and modern marketing practices
+    isLegalCase: true, // Involved extensive legal actions and criminal charges
+    isEthicalCase:
+        true, // Raised serious ethical concerns regarding misrepresentation and fraud
+    isBusinessCase:
+        true, // Directly impacted the business and events industry, with long-term implications for corporate governance
+    isSocietalImpactCase:
+        true, // Influenced public perception of influencer culture and modern marketing practices
     isScientificCase: false,
-    isCulturalCase: true, // Became a cultural phenomenon and widely discussed in media and documentaries
+    isCulturalCase:
+        true, // Became a cultural phenomenon and widely discussed in media and documentaries
     isCrisisCase: true,
   ),
-
   const CaseStudy(
     id: 'c69',
     categories: [
@@ -2497,7 +2491,8 @@ isCrisisCase: true,
       'HM'
     ],
     title: 'The West Africa Ebola Outbreak',
-    imageUrl: 'https://d3i6fh83elv35t.cloudfront.net/newshour/app/uploads/2014/10/456999956-1024x702.jpg',
+    imageUrl:
+        'https://d3i6fh83elv35t.cloudfront.net/newshour/app/uploads/2014/10/456999956-1024x702.jpg',
     keywords: [
       'Ebola Outbreak',
       'West Africa',
@@ -2513,18 +2508,23 @@ isCrisisCase: true,
       'Beyond its immediate human and economic toll, the West Africa Ebola Outbreak spurred critical advancements in medical research, particularly in vaccine development and treatment protocols, which have since informed responses to subsequent epidemics. The outbreak’s legacy endures in global health policy reforms aimed at strengthening epidemic preparedness and response in low-resource settings.',
     ],
     duration: 3, // Approximately 2013 - 2016
-    complexity: Complexity.hard, // Involves multifaceted challenges in healthcare infrastructure, socio-cultural dynamics, and international coordination
-    severity: Severity.critical, // Critical severity due to high mortality, extensive disruption, and lasting impacts on affected societies
+    complexity: Complexity
+        .hard, // Involves multifaceted challenges in healthcare infrastructure, socio-cultural dynamics, and international coordination
+    severity: Severity
+        .critical, // Critical severity due to high mortality, extensive disruption, and lasting impacts on affected societies
 
     isLegalCase: false,
-    isEthicalCase: true,  // Raised ethical issues regarding global health resource allocation and response equity
+    isEthicalCase:
+        true, // Raised ethical issues regarding global health resource allocation and response equity
     isBusinessCase: false,
-    isSocietalImpactCase: true, // Major disruption to communities and long-term socio-economic consequences
-    isScientificCase: true, // Stimulated significant scientific research and accelerated vaccine development
-    isCulturalCase: true, // Altered traditional practices and had profound cultural impacts in the affected regions
+    isSocietalImpactCase:
+        true, // Major disruption to communities and long-term socio-economic consequences
+    isScientificCase:
+        true, // Stimulated significant scientific research and accelerated vaccine development
+    isCulturalCase:
+        true, // Altered traditional practices and had profound cultural impacts in the affected regions
     isCrisisCase: true,
   ),
-
   const CaseStudy(
     id: 'c70',
     categories: [
@@ -2533,7 +2533,8 @@ isCrisisCase: true,
       'TI'
     ],
     title: 'The Silicon Valley Bank Collapse',
-    imageUrl: 'https://akm-img-a-in.tosshub.com/businesstoday/images/story/202303/svb22232-sixteen_nine.jpg?size=948:533',
+    imageUrl:
+        'https://akm-img-a-in.tosshub.com/businesstoday/images/story/202303/svb22232-sixteen_nine.jpg?size=948:533',
     keywords: [
       'Silicon Valley Bank',
       'Bank Run',
@@ -2548,18 +2549,20 @@ isCrisisCase: true,
       'This event has since sparked widespread debates over the impact of monetary policy, regulatory oversight, and the need for diversification in banking portfolios—especially for institutions heavily linked to volatile sectors like technology. The Silicon Valley Bank collapse serves as a stark reminder of how rapidly changing economic conditions can expose underlying vulnerabilities in the financial system.',
     ],
     duration: 0.02, // The crisis unfolded over a few days in March 2023
-    complexity: Complexity.moderate, // Involves multiple economic and regulatory factors, making it moderately complex
-    severity: Severity.high, // High severity due to significant market repercussions and financial disruption, though without immediate catastrophic loss of life
+    complexity: Complexity
+        .moderate, // Involves multiple economic and regulatory factors, making it moderately complex
+    severity: Severity
+        .high, // High severity due to significant market repercussions and financial disruption, though without immediate catastrophic loss of life
 
-    isLegalCase: true,    // Led to legal scrutiny and regulatory actions
+    isLegalCase: true, // Led to legal scrutiny and regulatory actions
     isEthicalCase: false,
     isBusinessCase: true, // Direct impact on the tech and banking sectors
-    isSocietalImpactCase: true, // Broader implications on public confidence and economic stability
+    isSocietalImpactCase:
+        true, // Broader implications on public confidence and economic stability
     isScientificCase: false,
     isCulturalCase: false,
     isCrisisCase: true,
   ),
-
   const CaseStudy(
     id: 'c71',
     categories: [
@@ -2567,7 +2570,8 @@ isCrisisCase: true,
       'BS', // Business & Startups (secondary)
     ],
     title: 'The Collapse of FTX Crypto Exchange',
-    imageUrl: 'https://images.theconversation.com/files/495726/original/file-20221116-12-324kxc.jpg?ixlib=rb-4.1.0&rect=24%2C251%2C4812%2C2406&q=45&auto=format&w=1356&h=668&fit=crop',
+    imageUrl:
+        'https://images.theconversation.com/files/495726/original/file-20221116-12-324kxc.jpg?ixlib=rb-4.1.0&rect=24%2C251%2C4812%2C2406&q=45&auto=format&w=1356&h=668&fit=crop',
     keywords: [
       'FTX',
       'Crypto Collapse',
@@ -2583,8 +2587,10 @@ isCrisisCase: true,
       'Today, the FTX collapse serves as a stark reminder of the vulnerabilities inherent in emerging financial technologies and the potential consequences of unchecked corporate governance failures in the crypto industry.',
     ],
     duration: 0.05, // Crisis unfolded over a few days in November 2022
-    complexity: Complexity.hard, // The event involves multifaceted financial, technological, and legal aspects, making it hard to fully comprehend
-    severity: Severity.high, // High severity due to enormous financial losses, market disruption, and long-term regulatory and legal ramifications
+    complexity: Complexity
+        .hard, // The event involves multifaceted financial, technological, and legal aspects, making it hard to fully comprehend
+    severity: Severity
+        .high, // High severity due to enormous financial losses, market disruption, and long-term regulatory and legal ramifications
 
     isLegalCase: true,
     isEthicalCase: true,
@@ -2594,7 +2600,6 @@ isCrisisCase: true,
     isCulturalCase: false,
     isCrisisCase: false,
   ),
-
   const CaseStudy(
     id: 'c72',
     categories: [
@@ -2602,7 +2607,8 @@ isCrisisCase: true,
       //'PG', // Politics & Governance (secondary)
     ],
     title: 'The Sony Pictures Hack',
-    imageUrl: 'https://platform.vox.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/15810614/hacking-sony.0.1546214858.png?quality=90&strip=all&crop=0%2C15.095986038394%2C100%2C69.808027923211&w=1200',
+    imageUrl:
+        'https://platform.vox.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/15810614/hacking-sony.0.1546214858.png?quality=90&strip=all&crop=0%2C15.095986038394%2C100%2C69.808027923211&w=1200',
     keywords: [
       'Cyberattack',
       'Data Breach',
@@ -2618,8 +2624,10 @@ isCrisisCase: true,
       'In the aftermath, legal and political debates ensued regarding cyberwarfare, state-sponsored hacking, and the balance between national security and corporate transparency. The Sony Pictures hack remains a landmark case that continues to influence global cybersecurity policies and international relations in the digital age.',
     ],
     duration: 0.02, // The crisis unfolded over a few days in November 2014
-    complexity: Complexity.moderate, // Involves multifaceted technological, legal, and political dimensions that are moderately complex
-    severity: Severity.high, // High severity due to significant financial losses, international political repercussions, and lasting impacts on cybersecurity practices
+    complexity: Complexity
+        .moderate, // Involves multifaceted technological, legal, and political dimensions that are moderately complex
+    severity: Severity
+        .high, // High severity due to significant financial losses, international political repercussions, and lasting impacts on cybersecurity practices
 
     isLegalCase: true,
     isEthicalCase: true,
@@ -2629,7 +2637,6 @@ isCrisisCase: true,
     isCulturalCase: true,
     isCrisisCase: false,
   ),
-
   const CaseStudy(
     id: 'c73',
     categories: [
@@ -2637,7 +2644,8 @@ isCrisisCase: true,
       'HC', // History & Culture (secondary)
     ],
     title: 'The 2021 Myanmar Military Coup',
-    imageUrl: 'https://cdn.britannica.com/97/263897-050-21B241DA/Myanmar-February-2021-military-coup-Numbers-of-people-gather-to-protest-against-a-military-coup-in-Mandalay-Myanmar-February-22-2021-Coup-detat.jpg',
+    imageUrl:
+        'https://cdn.britannica.com/97/263897-050-21B241DA/Myanmar-February-2021-military-coup-Numbers-of-people-gather-to-protest-against-a-military-coup-in-Mandalay-Myanmar-February-22-2021-Coup-detat.jpg',
     keywords: [
       'Myanmar Coup',
       'Military Takeover',
@@ -2652,9 +2660,12 @@ isCrisisCase: true,
       'Internationally, the coup sparked condemnation and led to the imposition of targeted sanctions by Western nations and regional bodies. Ongoing debates center on the legality of the military takeover, the ethical implications of suppressing democratic freedoms, and the long-term impact on Myanmar’s cultural and social fabric.',
       'As resistance efforts continue—including the emergence of a parallel government and armed insurgencies—the 2021 Myanmar Military Coup remains a pivotal moment in Southeast Asian history, symbolizing both the resilience of the populace and the challenges of restoring democratic governance in the face of authoritarian power.',
     ],
-    duration: 1, // The coup began in February 2021 and its effects continue to evolve
-    complexity: Complexity.hard, // Involves multifaceted political, social, and humanitarian dimensions
-    severity: Severity.critical, // Critical severity due to extensive human rights abuses, political instability, and long-term societal impact
+    duration:
+        1, // The coup began in February 2021 and its effects continue to evolve
+    complexity: Complexity
+        .hard, // Involves multifaceted political, social, and humanitarian dimensions
+    severity: Severity
+        .critical, // Critical severity due to extensive human rights abuses, political instability, and long-term societal impact
 
     isLegalCase: true,
     isEthicalCase: true,
@@ -2664,7 +2675,6 @@ isCrisisCase: true,
     isCulturalCase: true,
     isCrisisCase: true,
   ),
-
   const CaseStudy(
     id: 'c74',
     categories: [
@@ -2672,7 +2682,8 @@ isCrisisCase: true,
       'HC', // History & Culture (secondary)
     ],
     title: 'The U.S. Withdrawal from Afghanistan (2021)',
-    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqqIeMKsRA7zPQzyFKi5yQ8YEUHtPrZ2TLGA&s',
+    imageUrl:
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqqIeMKsRA7zPQzyFKi5yQ8YEUHtPrZ2TLGA&s',
     keywords: [
       'Afghanistan',
       'U.S. Withdrawal',
@@ -2687,8 +2698,10 @@ isCrisisCase: true,
       'The legacy of the U.S. withdrawal from Afghanistan is marked by both immediate tragedy and long-term consequences: the rapid Taliban takeover, ongoing insecurity, and a deep-seated crisis of confidence in international military commitments. It remains a pivotal moment in modern history that continues to influence policy discussions on military intervention, humanitarian responsibility, and global security.',
     ],
     duration: 0.2, // The key events unfolded over a few weeks in August 2021
-    complexity: Complexity.hard, // Involves multifaceted political, humanitarian, and strategic challenges
-    severity: Severity.critical, // Critical severity due to massive humanitarian impact and profound geopolitical ramifications
+    complexity: Complexity
+        .hard, // Involves multifaceted political, humanitarian, and strategic challenges
+    severity: Severity
+        .critical, // Critical severity due to massive humanitarian impact and profound geopolitical ramifications
 
     isLegalCase: false,
     isEthicalCase: true,
@@ -2698,7 +2711,6 @@ isCrisisCase: true,
     isCulturalCase: true,
     isCrisisCase: true,
   ),
-
   const CaseStudy(
     id: 'c75',
     categories: [
@@ -2707,7 +2719,8 @@ isCrisisCase: true,
       'ES'
     ],
     title: 'The 2010 Chilean Mining Accident',
-    imageUrl: 'https://cloudinary.hbs.edu/hbsit/image/fetch/q_auto,c_fill,ar_572:382,g_auto/f_webp/https%3A%2F%2Fimages.ctfassets.net%2Fbeh2ph2tgbqk%2F2u4NMKkpbnCy0bNjV5Wjqi%2F90783bb2206cd55223dc1460b269e303%2Fmine-disaster.png',
+    imageUrl:
+        'https://cloudinary.hbs.edu/hbsit/image/fetch/q_auto,c_fill,ar_572:382,g_auto/f_webp/https%3A%2F%2Fimages.ctfassets.net%2Fbeh2ph2tgbqk%2F2u4NMKkpbnCy0bNjV5Wjqi%2F90783bb2206cd55223dc1460b269e303%2Fmine-disaster.png',
     keywords: [
       'Chilean Mining Accident',
       '33 Miners',
@@ -2722,19 +2735,24 @@ isCrisisCase: true,
       'In the aftermath, the incident led to sweeping reforms in mining safety regulations and emergency response protocols, both in Chile and internationally. It raised profound questions about worker safety, corporate responsibility, and the importance of international cooperation during crises. The rescue has since become a powerful cultural symbol of resilience and human ingenuity in the face of adversity.',
     ],
     duration: 0.19, // Approximately 69 days, expressed as roughly 0.19 years
-    complexity: Complexity.moderate, // Moderately complex due to the engineering challenges and coordinated rescue efforts
-    severity: Severity.high, // High severity given the life-threatening nature of the incident and its profound impact on safety protocols
+    complexity: Complexity
+        .moderate, // Moderately complex due to the engineering challenges and coordinated rescue efforts
+    severity: Severity
+        .high, // High severity given the life-threatening nature of the incident and its profound impact on safety protocols
 
-    isLegalCase: true,    // Prompted legal and regulatory investigations into mining safety practices
-    isEthicalCase: true,  // Raised critical ethical issues regarding worker safety and corporate responsibility
+    isLegalCase:
+        true, // Prompted legal and regulatory investigations into mining safety practices
+    isEthicalCase:
+        true, // Raised critical ethical issues regarding worker safety and corporate responsibility
     isBusinessCase: false,
-    isSocietalImpactCase: true, // Had a significant global societal impact and inspired widespread international solidarity
-    isScientificCase: true, // Involved extensive scientific and engineering innovation for the rescue operation
-    isCulturalCase: true,   // Became a cultural phenomenon and enduring symbol of hope and resilience
+    isSocietalImpactCase:
+        true, // Had a significant global societal impact and inspired widespread international solidarity
+    isScientificCase:
+        true, // Involved extensive scientific and engineering innovation for the rescue operation
+    isCulturalCase:
+        true, // Became a cultural phenomenon and enduring symbol of hope and resilience
     isCrisisCase: true,
   ),
-
-
   const CaseStudy(
     id: 'c76',
     categories: [
@@ -2742,7 +2760,8 @@ isCrisisCase: true,
       'HC', // History & Culture (secondary)
     ],
     title: 'The Charlie Hebdo Attack',
-    imageUrl: 'https://c.files.bbci.co.uk/3C5A/production/_116105451_gettyimages-1078753054.jpg',
+    imageUrl:
+        'https://c.files.bbci.co.uk/3C5A/production/_116105451_gettyimages-1078753054.jpg',
     keywords: [
       'Charlie Hebdo',
       'Terrorism',
@@ -2757,8 +2776,10 @@ isCrisisCase: true,
       'The Charlie Hebdo attack has since become a defining moment in contemporary history, symbolizing both the vulnerability of free expression in the face of extremism and the resilience of democratic values. It continues to influence policy debates, cultural discussions, and the global fight against terrorism.',
     ],
     duration: 0.002, // The event occurred on a single day (January 7, 2015)
-    complexity: Complexity.moderate, // Involves moderately complex political, ethical, and cultural dimensions
-    severity: Severity.high, // High severity due to significant loss of life and lasting global impact on discourse about free speech and terrorism
+    complexity: Complexity
+        .moderate, // Involves moderately complex political, ethical, and cultural dimensions
+    severity: Severity
+        .high, // High severity due to significant loss of life and lasting global impact on discourse about free speech and terrorism
 
     isLegalCase: true,
     isEthicalCase: true,
@@ -2768,14 +2789,14 @@ isCrisisCase: true,
     isCulturalCase: true,
     isCrisisCase: true,
   ),
-
   const CaseStudy(
     id: 'c77',
     categories: [
       'EL', // Education & Learning (primary)
     ],
     title: 'The Rise of MOOCs: Transforming Global Education',
-    imageUrl: 'https://media.licdn.com/dms/image/v2/D5612AQFM_cINh_1mbA/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1716218768857?e=2147483647&v=beta&t=su9IJqhFyKe-iXsxkF5a2sWkMGaBWMe9zzY76OKnSIw',
+    imageUrl:
+        'https://media.licdn.com/dms/image/v2/D5612AQFM_cINh_1mbA/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1716218768857?e=2147483647&v=beta&t=su9IJqhFyKe-iXsxkF5a2sWkMGaBWMe9zzY76OKnSIw',
     keywords: [
       'MOOCs',
       'Online Learning',
@@ -2792,8 +2813,10 @@ isCrisisCase: true,
       'Today, MOOCs remain at the forefront of educational innovation, symbolizing both the potential and challenges of digital learning in the 21st century. Their ongoing evolution continues to shape global academic landscapes and set new benchmarks for educational accessibility and quality.',
     ],
     duration: 10, // Approximately 2012 to present (ongoing impact)
-    complexity: Complexity.moderate, // Moderately complex due to multifaceted changes in educational delivery and business models
-    severity: Severity.medium, // Medium severity given their transformative impact on education without catastrophic consequences
+    complexity: Complexity
+        .moderate, // Moderately complex due to multifaceted changes in educational delivery and business models
+    severity: Severity
+        .medium, // Medium severity given their transformative impact on education without catastrophic consequences
 
     isLegalCase: false,
     isEthicalCase: false,
@@ -2803,15 +2826,14 @@ isCrisisCase: true,
     isCulturalCase: true,
     isCrisisCase: false,
   ),
-
-
   const CaseStudy(
     id: 'c78',
     categories: [
       'EL', // Education & Learning (primary)
     ],
     title: 'The Global Shift to Remote Learning During COVID-19',
-    imageUrl: 'https://assets.weforum.org/article/image/responsive_large_yMTDCpnSgHybsTgsvcOM7okUFY-QnelVfa_c9bj5ql0.JPG',
+    imageUrl:
+        'https://assets.weforum.org/article/image/responsive_large_yMTDCpnSgHybsTgsvcOM7okUFY-QnelVfa_c9bj5ql0.JPG',
     keywords: [
       'Remote Learning',
       'Online Education',
@@ -2826,18 +2848,22 @@ isCrisisCase: true,
       'Moreover, the move to online education has influenced policy discussions on the future of learning, prompting debates about the role of traditional schooling versus digital platforms, and raising questions about educational equity, student engagement, and assessment methods in a virtual environment. The legacy of this transformation continues to shape global educational practices and strategic planning for future disruptions.',
     ],
     duration: 2, // Approximately 2020 - 2022 (ongoing impact)
-    complexity: Complexity.moderate, // Moderately complex due to the interplay of technological, pedagogical, and equity challenges
-    severity: Severity.medium, // Medium severity, reflecting significant educational disruption and long-term societal impact without immediate catastrophic consequences
+    complexity: Complexity
+        .moderate, // Moderately complex due to the interplay of technological, pedagogical, and equity challenges
+    severity: Severity
+        .medium, // Medium severity, reflecting significant educational disruption and long-term societal impact without immediate catastrophic consequences
 
     isLegalCase: false,
-    isEthicalCase: true,    // Raised ethical issues around digital equity and access to quality education
-    isBusinessCase: true,   // Impacted EdTech industries and spurred new business models in online education
+    isEthicalCase:
+        true, // Raised ethical issues around digital equity and access to quality education
+    isBusinessCase:
+        true, // Impacted EdTech industries and spurred new business models in online education
     isSocietalImpactCase: true,
     isScientificCase: false,
-    isCulturalCase: true,   // Influenced cultural perceptions of education and learning environments
+    isCulturalCase:
+        true, // Influenced cultural perceptions of education and learning environments
     isCrisisCase: true,
   ),
-
   const CaseStudy(
     id: 'c79',
     categories: [
@@ -2845,7 +2871,8 @@ isCrisisCase: true,
       'HC', // History & Culture (secondary)
     ],
     title: 'The Finnish Education System Reform',
-    imageUrl: 'https://akm-img-a-in.tosshub.com/indiatoday/images/story/202304/education-sixteen_nine.jpeg?VersionId=2ZJTw9nd.FezBxiL3JjlB4NesX68xKsG',
+    imageUrl:
+        'https://akm-img-a-in.tosshub.com/indiatoday/images/story/202304/education-sixteen_nine.jpeg?VersionId=2ZJTw9nd.FezBxiL3JjlB4NesX68xKsG',
     keywords: [
       'Finnish Education',
       'Education Reform',
@@ -2859,26 +2886,32 @@ isCrisisCase: true,
       'Equity is at the core of Finland’s educational philosophy. The government ensures that all students, regardless of socio-economic background, have access to high-quality education. Comprehensive welfare support—including free meals, school materials, and healthcare—helps level the playing field and promotes social cohesion.',
       'The success of the Finnish education reform has not only produced impressive academic outcomes but has also influenced global discussions on educational best practices. Other countries looking to improve their education systems often look to Finland as a benchmark for fostering both excellence and equity in education.',
     ],
-    duration: 5, // Reflects the ongoing evolution and sustained impact over the past five decades
-    complexity: Complexity.simple, // Considered relatively simple and intuitive in design compared to more rigid standardized systems
-    severity: Severity.medium, // Medium severity as the reforms significantly impacted society without catastrophic consequences
+    duration:
+        5, // Reflects the ongoing evolution and sustained impact over the past five decades
+    complexity: Complexity
+        .simple, // Considered relatively simple and intuitive in design compared to more rigid standardized systems
+    severity: Severity
+        .medium, // Medium severity as the reforms significantly impacted society without catastrophic consequences
 
     isLegalCase: false,
-    isEthicalCase: true,    // Promotes equal access to quality education and raises ethical standards
+    isEthicalCase:
+        true, // Promotes equal access to quality education and raises ethical standards
     isBusinessCase: false,
-    isSocietalImpactCase: true, // Major influence on societal values and global education practices
+    isSocietalImpactCase:
+        true, // Major influence on societal values and global education practices
     isScientificCase: false,
-    isCulturalCase: true,   // Has reshaped cultural perceptions of education and social welfare
+    isCulturalCase:
+        true, // Has reshaped cultural perceptions of education and social welfare
     isCrisisCase: false,
   ),
-
   const CaseStudy(
     id: 'c80',
     categories: [
       'EL', // Education & Learning (primary)
     ],
     title: 'One Laptop per Child Initiative',
-    imageUrl: 'https://larrycuban.wordpress.com/wp-content/uploads/2018/04/olpc-2-1.jpg?w=584',
+    imageUrl:
+        'https://larrycuban.wordpress.com/wp-content/uploads/2018/04/olpc-2-1.jpg?w=584',
     keywords: [
       'One Laptop per Child',
       'Digital Learning',
@@ -2893,18 +2926,21 @@ isCrisisCase: true,
       'Nevertheless, the legacy of OLPC endures as it sparked a global dialogue on the role of technology in education, influenced subsequent initiatives in the digital learning space, and underscored the critical importance of equitable access to educational resources. The project continues to be studied as a bold experiment in how technology can empower communities, even as its outcomes highlight the complexities of educational reform in diverse socio-economic contexts.',
     ],
     duration: 10, // Approximate active phase from 2005 to 2015
-    complexity: Complexity.moderate, // Moderately complex due to its multifaceted educational and logistical challenges
-    severity: Severity.medium, // Medium severity reflects significant impact on education without catastrophic consequences
+    complexity: Complexity
+        .moderate, // Moderately complex due to its multifaceted educational and logistical challenges
+    severity: Severity
+        .medium, // Medium severity reflects significant impact on education without catastrophic consequences
 
     isLegalCase: false,
-    isEthicalCase: true,    // Raises ethical considerations regarding educational equity and digital divide issues
+    isEthicalCase:
+        true, // Raises ethical considerations regarding educational equity and digital divide issues
     isBusinessCase: false,
-    isSocietalImpactCase: true, // Influenced global discussions on education and technology access
+    isSocietalImpactCase:
+        true, // Influenced global discussions on education and technology access
     isScientificCase: false,
     isCulturalCase: false,
     isCrisisCase: false,
   ),
-
   const CaseStudy(
     id: 'c81',
     categories: [
@@ -2913,7 +2949,8 @@ isCrisisCase: true,
       'BS'
     ],
     title: 'The Rise of Khan Academy: Revolutionizing Free Education',
-    imageUrl: 'https://static.startuptalky.com/2022/09/khan-academy-logo-startuptalky--2-.jpg',
+    imageUrl:
+        'https://static.startuptalky.com/2022/09/khan-academy-logo-startuptalky--2-.jpg',
     keywords: [
       'Khan Academy',
       'Online Learning',
@@ -2928,18 +2965,22 @@ isCrisisCase: true,
       'Despite challenges such as ensuring sustained engagement, integrating with formal education systems, and addressing the digital divide, Khan Academy continues to innovate and expand its offerings. Its enduring legacy highlights the transformative power of technology in education and serves as a benchmark for the potential of digital platforms to foster lifelong learning and equitable access to knowledge.',
     ],
     duration: 14, // Approximately 2008 to present (ongoing impact)
-    complexity: Complexity.moderate, // Moderately complex due to the integration of technology and educational pedagogy, yet straightforward in concept
-    severity: Severity.medium, // Medium severity given its significant positive impact on education without catastrophic consequences
+    complexity: Complexity
+        .moderate, // Moderately complex due to the integration of technology and educational pedagogy, yet straightforward in concept
+    severity: Severity
+        .medium, // Medium severity given its significant positive impact on education without catastrophic consequences
 
     isLegalCase: false,
-    isEthicalCase: true,    // Promotes ethical access to education and addresses the digital divide
+    isEthicalCase:
+        true, // Promotes ethical access to education and addresses the digital divide
     isBusinessCase: false,
-    isSocietalImpactCase: true, // Profoundly impacted global education and cultural perceptions of learning
+    isSocietalImpactCase:
+        true, // Profoundly impacted global education and cultural perceptions of learning
     isScientificCase: false,
-    isCulturalCase: true,   // Has become a cultural icon in the realm of education reform and digital learning innovation
+    isCulturalCase:
+        true, // Has become a cultural icon in the realm of education reform and digital learning innovation
     isCrisisCase: false,
   ),
-
   const CaseStudy(
     id: 'c82',
     categories: [
@@ -2947,7 +2988,8 @@ isCrisisCase: true,
       'BS',
     ],
     title: 'The Rise of Duolingo: Gamifying Language Learning',
-    imageUrl: 'https://academichelp.net/wp-content/uploads/2023/07/The-Rise-and-Rule-of-Duolingo-in-the-Language-Learning-Realm.jpg',
+    imageUrl:
+        'https://academichelp.net/wp-content/uploads/2023/07/The-Rise-and-Rule-of-Duolingo-in-the-Language-Learning-Realm.jpg',
     keywords: [
       'Duolingo',
       'Language Learning',
@@ -2962,18 +3004,22 @@ isCrisisCase: true,
       'Today, Duolingo stands as a landmark in educational innovation, continuously evolving with advances in machine learning and user experience design. Its impact on global language acquisition and digital literacy underscores the transformative potential of technology in education.',
     ],
     duration: 11, // Approximately 2011 to present (ongoing impact)
-    complexity: Complexity.simple, // The platform’s approach is intuitive and user-friendly, making it simple in concept
-    severity: Severity.medium, // Medium severity reflects significant educational impact without catastrophic consequences
+    complexity: Complexity
+        .simple, // The platform’s approach is intuitive and user-friendly, making it simple in concept
+    severity: Severity
+        .medium, // Medium severity reflects significant educational impact without catastrophic consequences
 
     isLegalCase: false,
-    isEthicalCase: true,    // Promotes equitable access to language education and digital literacy
-    isBusinessCase: true,   // A notable business success in the EdTech sector
-    isSocietalImpactCase: true, // Has broadly influenced how people learn languages and engage with digital education tools
+    isEthicalCase:
+        true, // Promotes equitable access to language education and digital literacy
+    isBusinessCase: true, // A notable business success in the EdTech sector
+    isSocietalImpactCase:
+        true, // Has broadly influenced how people learn languages and engage with digital education tools
     isScientificCase: false,
-    isCulturalCase: true,   // Facilitates cultural exchange and global communication
+    isCulturalCase:
+        true, // Facilitates cultural exchange and global communication
     isCrisisCase: false,
   ),
-
   const CaseStudy(
     id: 'c83',
     categories: [
@@ -2981,7 +3027,8 @@ isCrisisCase: true,
       'BS', // Business & Startups (secondary)
     ],
     title: 'The Rise of BYJU\'s: India\'s EdTech Giant',
-    imageUrl: 'https://bsmedia.business-standard.com/_media/bs/img/article/2024-08/09/full/1723224639-5178.jpg?im=FeatureCrop,size=(826,465)', // Replace with an actual image URL if available
+    imageUrl:
+        'https://bsmedia.business-standard.com/_media/bs/img/article/2024-08/09/full/1723224639-5178.jpg?im=FeatureCrop,size=(826,465)', // Replace with an actual image URL if available
     keywords: [
       'BYJU\'s',
       'EdTech',
@@ -2996,16 +3043,370 @@ isCrisisCase: true,
       'Despite facing challenges such as market competition and regulatory scrutiny, BYJU\'s continues to evolve through strategic acquisitions and the expansion of its course offerings. Its success story stands as a beacon of entrepreneurial innovation, demonstrating how technology can democratize access to quality education and transform societal learning paradigms.',
     ],
     duration: 12, // Approximately 2011 to present (ongoing impact)
-    complexity: Complexity.moderate, // Moderately complex due to the integration of technology, pedagogy, and business strategy
-    severity: Severity.medium, // Medium severity reflects its transformative impact on education and the economy without catastrophic consequences
+    complexity: Complexity
+        .moderate, // Moderately complex due to the integration of technology, pedagogy, and business strategy
+    severity: Severity
+        .medium, // Medium severity reflects its transformative impact on education and the economy without catastrophic consequences
 
     isLegalCase: false,
-    isEthicalCase: true,    // Promotes equitable access to education while raising discussions on digital equity
-    isBusinessCase: true,   // A landmark business success in the EdTech sector
-    isSocietalImpactCase: true, // Significantly influenced educational practices and access globally
+    isEthicalCase:
+        true, // Promotes equitable access to education while raising discussions on digital equity
+    isBusinessCase: true, // A landmark business success in the EdTech sector
+    isSocietalImpactCase:
+        true, // Significantly influenced educational practices and access globally
     isScientificCase: false,
-    isCulturalCase: true,   // Shaped cultural perceptions of learning and digital education in India and beyond
+    isCulturalCase:
+        true, // Shaped cultural perceptions of learning and digital education in India and beyond
     isCrisisCase: false,
+  ),
+
+
+  const CaseStudy(
+    id: 'c84',
+    categories: [
+      'EL', // Education & Learning (primary)
+      'BS', // Business & Startups (secondary)
+    ],
+    title: 'The Rise of Coursera: Pioneering MOOCs',
+    imageUrl:
+        'https://static01.nyt.com/images/2020/05/20/business/VIRUS-MOOCS1/merlin_172473702_79fc669f-247a-4260-b67c-a1e4fac274ee-articleLarge.jpg?quality=75&auto=webp&disable=upscale',
+    keywords: [
+      'Coursera',
+      'MOOCs',
+      'Online Learning',
+      'Digital Education',
+      'Certification',
+    ],
+    caseStudy: [
+      'Founded in 2012 by Stanford professors Andrew Ng and Daphne Koller, Coursera emerged as one of the pioneering platforms for Massive Open Online Courses (MOOCs), with the mission of democratizing access to world-class education. By partnering with top universities and organizations around the globe, Coursera quickly expanded its offerings to include individual courses, professional certificates, and full degree programs.',
+      'Leveraging cutting-edge technology, the platform delivers high-quality video lectures, interactive assignments, and peer-reviewed assessments, enabling learners from diverse backgrounds to study at their own pace. Its freemium model—providing free access to course materials with optional paid certifications—has redefined how educational content is distributed and monetized in the digital age.',
+      'The success of Coursera has had a profound impact on global education, compelling traditional institutions to adopt online learning strategies and embrace digital transformation. It has also played a critical role in workforce development by offering targeted courses in emerging fields like data science, artificial intelligence, and digital marketing, thus equipping millions with essential modern skills.',
+      'Today, Coursera stands as a landmark in digital education, symbolizing the transformative power of technology to break down barriers and promote lifelong learning. Its innovative approach continues to influence educational policies, business models, and cultural attitudes toward learning worldwide.',
+    ],
+    duration: 10, // Approximately 2012 to present (ongoing impact)
+    complexity: Complexity
+        .moderate, // Moderately complex due to the integration of technology and pedagogical innovation
+    severity: Severity
+        .medium, // Medium severity reflecting its transformative impact on education without catastrophic consequences
+
+    isLegalCase: false,
+    isEthicalCase:
+        true, // Promotes equitable access to education and addresses digital equity
+    isBusinessCase:
+        true, // Represents a significant business model and disruption in the EdTech sector
+    isSocietalImpactCase:
+        true, // Has significantly influenced global education practices and workforce development
+    isScientificCase: false,
+    isCulturalCase:
+        true, // Influences cultural norms around education and lifelong learning
+    isCrisisCase: false,
+  ),
+
+
+  const CaseStudy(
+    id: 'c85',
+    categories: [
+      'EL', // Education & Learning (primary)
+      'BS', // Business & Startups (secondary)
+    ],
+    title: 'The Rise of Udacity: Pioneering Nanodegree Programs',
+    imageUrl:
+        'https://media.assettype.com/analyticsinsight%2F2024-10-03%2Fma50e9kq%2FUdacity%25E2%2580%2599s-Nanodegrees-Are-They-Worth-the-Investment.jpg?w=480&auto=format%2Ccompress&fit=max',
+    keywords: [
+      'Udacity',
+      'Nanodegree',
+      'Online Education',
+      'Technical Skills',
+      'EdTech',
+    ],
+    caseStudy: [
+      'Founded in 2012 by industry pioneers including Sebastian Thrun, Udacity emerged as a transformative force in online education by pioneering Nanodegree programs focused on in-demand technical skills such as artificial intelligence, data science, programming, and robotics. Leveraging strategic partnerships with major tech companies like Google, AT&T, and IBM, Udacity designed its courses to meet the dynamic demands of the digital economy.',
+      'The Nanodegree model combined rigorous, project-based learning with personalized mentorship and real-world applications, offering learners a practical, career-oriented alternative to traditional degree programs. This innovative approach not only helped bridge the technical skills gap but also set new standards for online education by emphasizing measurable outcomes and industry relevance.',
+      'Udacity’s breakthrough has attracted millions of students worldwide and played a crucial role in democratizing access to high-quality technical education. Its freemium model—providing free course content with the option to earn premium, industry-recognized credentials—has spurred substantial investment in the EdTech sector and influenced the development of similar platforms globally.',
+      'Today, Udacity continues to expand its course offerings and refine its educational model in collaboration with global technology leaders. Its success has had a lasting impact on how professional education is delivered, reshaping workforce development and contributing to broader societal shifts toward continuous learning and digital literacy.',
+    ],
+    duration: 11, // Approximately 2012 to present (ongoing impact)
+    complexity: Complexity
+        .moderate, // Moderately complex due to its integration of advanced technology and innovative educational methodologies
+    severity: Severity
+        .medium, // Medium severity reflecting transformative impact on education and workforce development without catastrophic consequences
+
+    isLegalCase: false,
+    isEthicalCase:
+        true, // Promotes equitable access to quality technical education and lifelong learning
+    isBusinessCase:
+        true, // A landmark business innovation in the EdTech sector with significant market influence
+    isSocietalImpactCase:
+        true, // Has contributed to global digital literacy and reshaped workforce development
+    isScientificCase: false,
+    isCulturalCase:
+        true, // Influences cultural attitudes towards self-improvement and technological proficiency
+    isCrisisCase: false,
+  ),
+
+
+  const CaseStudy(
+    id: 'c86',
+    categories: [
+      'HC', // History & Culture (primary)
+      //'PG', // Politics & Governance (secondary)
+    ],
+    title: 'The Kalinga War and Its Transformative Impact on Ancient India',
+    imageUrl:
+        'https://theindosphere.com/wp-content/uploads/2024/09/DALL%C2%B7E-2024-09-22-00.09.39-A-wide-angle-scene-of-the-Kurukshetra-War-from-the-Mahabharata-featuring-two-massive-armies-clashing-on-a-vast-battlefield.-On-one-side-are-the-Panda.webp', // Example image URL; replace if needed
+    keywords: [
+      'Kalinga War',
+      'Ashoka',
+      'Ancient India',
+      'Buddhism',
+      'Transformation',
+    ],
+    caseStudy: [
+      'Fought around 261 BCE, the Kalinga War stands as one of the most significant conflicts in ancient India. The Mauryan Empire, under Emperor Ashoka, waged a ferocious battle against the independent state of Kalinga—a war marked by extraordinary brutality and heavy casualties. The widespread devastation and immense human suffering observed during the conflict left a deep mark on Ashoka’s conscience.',
+      'In the aftermath of the war, Ashoka experienced a profound transformation. Stricken by remorse over the enormous loss of life, he renounced the violent methods that had brought him to power and embraced the principles of non-violence and Buddhist philosophy. This pivotal change led him to champion peace, religious tolerance, and social welfare, efforts that were meticulously recorded in his edicts carved on pillars and rocks throughout his empire.',
+      'The Kalinga War not only consolidated Mauryan control over a vast territory but also catalyzed a cultural and ethical renaissance in the region. Ashoka’s subsequent policies and his patronage of Buddhism helped spread the religion far beyond India’s borders, influencing art, literature, and governance across Asia. The enduring legacy of this conflict is reflected in how it reshaped the moral and political landscape of ancient India, setting a benchmark for enlightened leadership and ethical governance.',
+    ],
+    duration:
+        0.001, // The war itself was relatively short, though its impacts have been long-lasting
+    complexity: Complexity
+        .moderate, // Moderately complex due to the interplay between military strategy, political power, and subsequent cultural transformation
+    severity: Severity
+        .high, // High severity given the massive loss of life and profound long-term societal and cultural impacts
+
+    isLegalCase: false,
+    isEthicalCase:
+        true, // Raises ethical questions about the costs of war and the moral implications of leadership
+    isBusinessCase: false,
+    isSocietalImpactCase:
+        true, // Profound societal impact through the spread of Buddhism and reformed governance
+    isScientificCase: false,
+    isCulturalCase:
+        true, // Significant cultural ramifications evident in art, literature, and historical records
+    isCrisisCase: true,
+  ),
+  const CaseStudy(
+    id: 'c87',
+    categories: [
+      'HC', // History & Culture (primary)
+      //'PG', // Politics & Governance (secondary)
+    ],
+    title: 'The Third Battle of Panipat',
+    imageUrl:
+        'https://www.sscadda.com/wp-content/uploads/multisite/sites/2/2023/08/31163244/Third-Battle-of-Panipat-01.png',
+    keywords: [
+      'Third Battle of Panipat',
+      'Maratha Empire',
+      'Ahmad Shah Durrani',
+      'Military Conflict',
+      '18th Century India',
+    ],
+    caseStudy: [
+      'Fought on January 14, 1761, the Third Battle of Panipat remains one of the largest and bloodiest battles in 18th-century India. This epic confrontation saw the Maratha Empire clash with the invading forces of Ahmad Shah Durrani, also known as Ahmad Shah Abdali, whose ambition was to expand his dominion into the Indian subcontinent.',
+      'The battle was characterized by intense combat, intricate military strategies, and devastating losses on both sides. Despite the Marathas’ numerical strength and fierce resolve, the battle turned catastrophic as the well-organized and battle-hardened Afghan forces gained the upper hand. Contemporary estimates suggest that hundreds of thousands perished, leaving a permanent scar on the region’s history.',
+      'In its wake, the battle led to a significant power vacuum in North India, severely weakening the Maratha confederacy and paving the way for subsequent political upheavals—including the eventual rise of British colonial power. The enormous loss of life and the strategic shift it induced have rendered the Third Battle of Panipat a pivotal event in the annals of Indian history.',
+      'The enduring legacy of this conflict is reflected in its profound cultural and political ramifications, serving as a stark reminder of the devastating human cost of war and the complex interplay of ambition, power, and fate in shaping historical outcomes.',
+    ],
+    duration:
+        0.002, // A single day battle (~1 day out of 365 days, expressed in years)
+    complexity: Complexity
+        .hard, // Involves complex military strategies and far-reaching political consequences
+    severity: Severity
+        .high, // High severity due to massive casualties and long-term impact on regional power dynamics
+
+    isLegalCase: false,
+    isEthicalCase:
+        false, // Raises ethical questions about the human cost of war
+    isBusinessCase: false,
+    isSocietalImpactCase:
+        true, // Profound impact on the social and political fabric of the region
+    isScientificCase: false,
+    isCulturalCase:
+        true, // Left a lasting imprint on Indian historical and cultural narratives
+    isCrisisCase: true,
+  ),
+  const CaseStudy(
+    id: 'c88',
+    categories: [
+      'HC', // History & Culture (primary)
+      //'PG', // Politics & Governance (secondary)
+    ],
+    title: 'The Battle of Hydaspes: Alexander vs. King Porus',
+    imageUrl:
+        'https://salute.co.in/wp-content/uploads/2020/11/painting-1024x631.jpg', // Example image; replace with a more specific one if available
+    keywords: [
+      'Battle of Hydaspes',
+      'Alexander the Great',
+      'King Porus',
+      'Ancient India',
+      'Military Strategy',
+    ],
+    caseStudy: [
+      'Fought in 326 BCE near the Hydaspes River (present-day Jhelum in Pakistan), the Battle of Hydaspes stands as one of the most celebrated and strategically complex engagements in ancient military history. In this epic clash, Alexander the Great’s Macedonian forces faced King Porus of the Paurava kingdom, whose valor and tactical acumen left a lasting impression on the conqueror.',
+      'The battle was marked by the effective use of war elephants by Porus, which initially posed a significant challenge to Alexander’s phalanx formations. Despite these obstacles and the difficult terrain posed by the river, Alexander’s tactical ingenuity and disciplined troops managed to outflank the enemy. The fierce combat showcased not only the brutality of ancient warfare but also the high level of military innovation and strategic planning prevalent at the time.',
+      'After a hard-fought victory, Alexander was reportedly impressed by Porus’s courage and leadership. Instead of exacting harsh retribution, he reinstated Porus as a regional ruler, allowing him to govern his territory as a loyal ally—a decision that had a lasting influence on the administration of conquered territories and set a precedent for integrating local governance with imperial rule.',
+      'The Battle of Hydaspes had far-reaching cultural and political ramifications. It not only expanded Alexander’s empire but also demonstrated the potential for cultural synthesis between Greek and Indian civilizations. The encounter influenced subsequent military tactics and continues to be studied as a prime example of the complex interplay between valor, strategy, and diplomacy in ancient warfare.',
+    ],
+    duration:
+        0.002, // The battle was fought in a single day (expressed in years)
+    complexity: Complexity
+        .moderate, // Moderately complex due to strategic intricacies and varied battlefield dynamics
+    severity: Severity
+        .high, // High severity given the scale of combat and significant historical ramifications
+
+    isLegalCase: false,
+    isEthicalCase: false,
+    isBusinessCase: false,
+    isSocietalImpactCase:
+        true, // Had lasting impact on regional governance and cultural exchanges
+    isScientificCase: false,
+    isCulturalCase:
+        true, // Influenced art, literature, and historical narratives in both Western and Eastern cultures
+    isCrisisCase: true,
+  ),
+
+
+  const CaseStudy(
+    id: 'c89',
+    categories: [
+      'HC', // History & Culture (primary)
+      //'PG', // Politics & Governance (secondary)
+    ],
+    title: 'The Battle of Plassey: A Turning Point in Colonial India',
+    imageUrl:
+        'https://www.adda247.com/jobs/wp-content/uploads/sites/4/2024/07/09173817/Battle-of-Plassey.png', // Example image URL; replace if needed
+    keywords: [
+      'Battle of Plassey',
+      'British East India Company',
+      'Siraj ud-Daulah',
+      'Colonial Rule',
+      'India',
+    ],
+    caseStudy: [
+      'Fought on June 23, 1757, the Battle of Plassey stands as one of the most pivotal events in Indian history. In this decisive confrontation, the forces of the British East India Company, under the leadership of Robert Clive, clashed with the army of Nawab Siraj ud-Daulah of Bengal. The battle was characterized by strategic alliances and covert tactics, including betrayal by some of the Nawab’s key commanders.',
+      'The outcome of the battle was a resounding victory for the British, which not only weakened the power of the Nawab but also laid the foundation for British dominance in India. The success at Plassey enabled the East India Company to gain control over vast regions of the subcontinent, fundamentally altering the political and economic landscape of India.',
+      'This watershed moment led to the gradual expansion of British colonial rule, triggering far-reaching cultural, social, and administrative changes that would shape India for centuries to come. The battle’s legacy is evident in the profound transformation of governance in India, the restructuring of its economy, and the deep-rooted cultural shifts that followed the onset of colonialism.',
+      'The Battle of Plassey remains a subject of extensive study, symbolizing both the power of strategic military alliances and the dramatic shifts in power that can alter the course of history. Its reverberations are still felt today in the collective memory of the region, serving as a reminder of the complex interplay between military conflict and societal transformation.',
+    ],
+    duration:
+        0.002, // The battle was fought in a single day (~1 day expressed in years)
+    complexity: Complexity
+        .moderate, // Moderately complex due to the interplay of military tactics, political intrigue, and long-term consequences
+    severity: Severity
+        .high, // High severity due to its profound historical impact and the dramatic shift in power dynamics
+
+    isLegalCase: false,
+    isEthicalCase:
+        true, // Raises ethical questions about colonial exploitation and the human cost of imperial ambition
+    isBusinessCase: false,
+    isSocietalImpactCase:
+        true, // Profound societal impact, marking the beginning of centuries-long colonial rule in India
+    isScientificCase: false,
+    isCulturalCase:
+        true, // Influenced cultural narratives, literature, and art about colonialism in India
+    isCrisisCase: true,
+  ),
+
+  const CaseStudy(
+    id: 'c90',
+    categories: [
+      'HC', // History & Culture (primary)
+      //'PG', // Politics & Governance (secondary)
+    ],
+    title: 'The Battle of Haldighati: Valor and Resistance',
+    imageUrl: 'https://pragyata.com/wp-content/uploads/2020/08/Chronicles-of-Valour-The-Battle-of-Haldighati.jpg',
+    keywords: [
+      'Battle of Haldighati',
+      'Maharana Pratap',
+      'Rajput Valor',
+      'Mughal Empire',
+      'Medieval India',
+    ],
+    caseStudy: [
+      'Fought on June 18, 1576, the Battle of Haldighati stands as one of the most celebrated conflicts in Indian history, symbolizing the fierce resistance of the Rajputs against the expanding Mughal Empire. In this dramatic confrontation, Maharana Pratap of Mewar led his valorous troops against the well-equipped forces of the Mughal general Raja Man Singh I, who was in the service of Emperor Akbar.',
+      'The battle was waged in the rugged terrain of Haldighati, where the harsh landscape played a crucial role in shaping the tactics of both sides. Despite being outnumbered, Maharana Pratap’s forces employed guerilla warfare and leveraged their intimate knowledge of the terrain to counter the Mughal advantage. The fierce and costly battle did not result in a clear tactical victory for either side, but it came to epitomize the spirit of defiance and sacrifice that would inspire generations.',
+      'Although the Mughal army eventually gained a strategic upper hand, the battle’s true legacy lies in its cultural and historical significance. It has been immortalized in Indian folklore, literature, and art as a symbol of unyielding resistance and the enduring pride of the Rajput community. The Battle of Haldighati continues to serve as a potent reminder of the human cost of war and the complex interplay of honor, strategy, and destiny in shaping historical events.',
+    ],
+    duration: 0.002, // The battle was fought in a single day (~1 day expressed in years)
+    complexity: Complexity.moderate, // Moderately complex due to intricate military tactics and historical nuances
+    severity: Severity.high, // High severity due to its profound cultural impact and significant historical consequences
+
+    isLegalCase: false,
+    isEthicalCase: false,
+    isBusinessCase: false,
+    isSocietalImpactCase: true, // Left a lasting impact on regional society and national identity
+    isScientificCase: false,
+    isCulturalCase: true, // Profound influence on cultural narratives and historical memory
+    isCrisisCase: true,
+  ),
+
+
+  const CaseStudy(
+    id: 'c91',
+    categories: [
+      'EL', // Education & Learning (primary)
+      'HC', // History & Culture (secondary)
+    ],
+    title: 'The Destruction of Nalanda University: A Lost Beacon of Ancient Learning',
+    imageUrl: 'https://indroyc.com/wp-content/uploads/2024/06/nalanda-university.jpeg?w=1200', // Example image URL; replace if needed
+    keywords: [
+      'Nalanda University',
+      'Ancient Education',
+      'Destruction',
+      'Buddhist Learning',
+      'Indian Heritage',
+    ],
+    caseStudy: [
+      'Founded around the 5th century CE, Nalanda University in ancient India was a globally renowned center of learning that attracted scholars from across Asia. With its vast libraries and exceptional curriculum in subjects ranging from philosophy and medicine to mathematics and astronomy, Nalanda represented the pinnacle of ancient educational and cultural achievement.',
+      'However, in the late 12th century—around 1193 AD—the university was brutally attacked and destroyed by the invading forces of Bakhtiyar Khilji. This violent onslaught led to the annihilation of countless priceless manuscripts and irreparable damage to the institution’s infrastructure, effectively ending centuries of scholarly pursuit at Nalanda.',
+      'The destruction of Nalanda not only marked a tragic loss of knowledge and cultural heritage but also signaled a major turning point in the intellectual history of the Indian subcontinent. The collapse of this great center of learning contributed to the decline of Buddhist influence in the region and had profound, lasting impacts on educational traditions and cultural memory in Asia.',
+      'Today, the ruins of Nalanda University stand as a somber reminder of the vulnerability of cultural and educational institutions in times of conflict, and its legacy continues to inspire efforts to preserve and revive ancient knowledge in the modern era.',
+    ],
+    duration: 0.25, // The destructive event occurred over a short period (approximately 1 day, expressed in years)
+    complexity: Complexity.moderate, // Moderately complex due to the interplay of military conquest, cultural loss, and educational decline
+    severity: Severity.high, // High severity given the irreversible loss of intellectual heritage and profound societal impact
+
+    isLegalCase: false,
+    isEthicalCase: true,    // Raises ethical questions about the destruction of cultural heritage and loss of knowledge
+    isBusinessCase: false,
+    isSocietalImpactCase: true, // Significant societal impact through the long-term decline in educational and cultural development
+    isScientificCase: false,
+    isCulturalCase: true,   // Deeply influenced cultural narratives and historical consciousness in India and beyond
+    isCrisisCase: true,
+  ),
+
+
+  const CaseStudy(
+    id: 'c92',
+    categories: [
+      'HC', // History & Culture (primary)
+      'PG', // Politics & Governance (secondary)
+    ],
+    title: 'The Invasions of Mahmud of Ghazni and Impact on Indian Culture',
+    imageUrl: 'https://www.cheggindia.com/wp-content/uploads/2023/12/mahmud-of-ghazni.png', // Example image URL; please replace with a preferred source if necessary
+    keywords: [
+      'Mahmud of Ghazni',
+      'Temple Destruction',
+      'Indian Culture',
+      'Invasion Impact',
+      'Cultural Heritage Loss',
+    ],
+    caseStudy: [
+      'In the early 11th century, Mahmud of Ghazni, a prominent ruler from the Ghaznavid dynasty, led several military campaigns into the Indian subcontinent. Historical accounts document that during these invasions, numerous Hindu temples and centers of learning were attacked and destroyed. One of the most frequently cited examples is the destruction of the Somnath Temple in Gujarat in 1026 AD, an event that has come to symbolize the profound cultural and religious upheavals of that era.',
+      'The immediate effects of these invasions included the loss of priceless architectural masterpieces, ancient manuscripts, and religious artifacts—elements that were integral to the cultural and spiritual fabric of the region. The destruction contributed to significant disruptions in local socio-political structures and economies, and it is often described as having a long-term negative impact on indigenous cultural development.',
+      'However, modern scholarship also emphasizes that the historical impact of these invasions is multifaceted. While there was undeniable cultural loss and hardship, some historians argue that the subsequent periods witnessed a complex process of cultural synthesis. This blending of influences eventually contributed to the rich, diverse tapestry of later Indian culture. Nonetheless, the negative impacts—especially the immediate and irreversible loss of cultural heritage—remain a critical aspect of the historical narrative.',
+      'This case study serves as an example of how military conquests can lead to profound and lasting changes in cultural and educational landscapes. It continues to be the subject of extensive academic research and debate, reflecting on the ethical and societal consequences of historical conflicts.',
+    ],
+    duration: 27, // The specific events (e.g., the destruction of Somnath) occurred over a short period (roughly one day)
+    complexity: Complexity.moderate, // Moderately complex due to diverse historical interpretations and the multifaceted nature of cultural change
+    severity: Severity.high, // High severity given the extensive loss of cultural heritage and its enduring impact on societal development
+
+    isLegalCase: false,
+    isEthicalCase: true,    // Raises important ethical considerations regarding the destruction of cultural heritage
+    isBusinessCase: false,
+    isSocietalImpactCase: true, // Profound societal impact through the disruption of cultural and religious traditions
+    isScientificCase: false,
+    isCulturalCase: true,   // Deeply influenced cultural narratives and historical memory in the region
+    isCrisisCase: true,
   ),
 
 
