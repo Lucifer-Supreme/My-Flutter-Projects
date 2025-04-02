@@ -2665,5 +2665,348 @@ isCrisisCase: true,
     isCrisisCase: true,
   ),
 
+  const CaseStudy(
+    id: 'c74',
+    categories: [
+      'PG', // Politics & Governance (primary)
+      'HC', // History & Culture (secondary)
+    ],
+    title: 'The U.S. Withdrawal from Afghanistan (2021)',
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqqIeMKsRA7zPQzyFKi5yQ8YEUHtPrZ2TLGA&s',
+    keywords: [
+      'Afghanistan',
+      'U.S. Withdrawal',
+      'Taliban Takeover',
+      'Kabul Airport Chaos',
+      'Political Crisis',
+    ],
+    caseStudy: [
+      'In August 2021, the United States completed its military withdrawal from Afghanistan after nearly two decades of involvement that began in the aftermath of 9/11. The rapid pullout led to the swift collapse of the Afghan government and security forces, enabling the Taliban to seize control of the country in a matter of weeks.',
+      'The withdrawal triggered chaotic scenes at Kabul’s Hamid Karzai International Airport, where thousands of desperate Afghans attempted to flee the country amid widespread fear of the Taliban’s return. The abrupt power vacuum and lack of a robust contingency plan resulted in significant human suffering, mass displacement, and a severe humanitarian crisis.',
+      'Internationally, the event sparked intense debate and criticism over U.S. foreign policy, highlighting strategic missteps and the ethical implications of ending a long-term military engagement without securing a stable transition. The withdrawal has since reshaped global geopolitical dynamics, raising questions about the future of intervention strategies and the responsibilities of major powers in conflict resolution.',
+      'The legacy of the U.S. withdrawal from Afghanistan is marked by both immediate tragedy and long-term consequences: the rapid Taliban takeover, ongoing insecurity, and a deep-seated crisis of confidence in international military commitments. It remains a pivotal moment in modern history that continues to influence policy discussions on military intervention, humanitarian responsibility, and global security.',
+    ],
+    duration: 0.2, // The key events unfolded over a few weeks in August 2021
+    complexity: Complexity.hard, // Involves multifaceted political, humanitarian, and strategic challenges
+    severity: Severity.critical, // Critical severity due to massive humanitarian impact and profound geopolitical ramifications
+
+    isLegalCase: false,
+    isEthicalCase: true,
+    isBusinessCase: false,
+    isSocietalImpactCase: true,
+    isScientificCase: false,
+    isCulturalCase: true,
+    isCrisisCase: true,
+  ),
+
+  const CaseStudy(
+    id: 'c75',
+    categories: [
+      'HC', // History & Culture (primary)
+      'PG', // Politics & Governance (secondary, if necessary)
+      'ES'
+    ],
+    title: 'The 2010 Chilean Mining Accident',
+    imageUrl: 'https://cloudinary.hbs.edu/hbsit/image/fetch/q_auto,c_fill,ar_572:382,g_auto/f_webp/https%3A%2F%2Fimages.ctfassets.net%2Fbeh2ph2tgbqk%2F2u4NMKkpbnCy0bNjV5Wjqi%2F90783bb2206cd55223dc1460b269e303%2Fmine-disaster.png',
+    keywords: [
+      'Chilean Mining Accident',
+      '33 Miners',
+      'Rescue Operation',
+      'San José Mine',
+      'Global Solidarity',
+    ],
+    caseStudy: [
+      'In August 2010, a catastrophic rockfall at the San José copper-gold mine near Copiapó, Chile, trapped 33 miners in an underground labyrinth for a staggering 69 days. With access cut off and conditions deteriorating, the miners faced extreme darkness, limited food and water, and uncertain prospects of rescue.',
+      'After 17 days, rescuers located the miners, igniting one of the most remarkable rescue operations in modern history. International teams of engineers, drilling experts, and emergency responders collaborated to design and deploy a specialized rescue capsule named “Fénix.” This meticulously coordinated effort involved overcoming immense technical challenges in an unstable underground environment.',
+      'On October 13, 2010, the world watched in awe as all 33 miners were brought safely to the surface in a dramatic and emotionally charged rescue that lasted several hours. The successful operation not only saved lives but also symbolized global hope and solidarity, inspiring widespread media coverage and public admiration.',
+      'In the aftermath, the incident led to sweeping reforms in mining safety regulations and emergency response protocols, both in Chile and internationally. It raised profound questions about worker safety, corporate responsibility, and the importance of international cooperation during crises. The rescue has since become a powerful cultural symbol of resilience and human ingenuity in the face of adversity.',
+    ],
+    duration: 0.19, // Approximately 69 days, expressed as roughly 0.19 years
+    complexity: Complexity.moderate, // Moderately complex due to the engineering challenges and coordinated rescue efforts
+    severity: Severity.high, // High severity given the life-threatening nature of the incident and its profound impact on safety protocols
+
+    isLegalCase: true,    // Prompted legal and regulatory investigations into mining safety practices
+    isEthicalCase: true,  // Raised critical ethical issues regarding worker safety and corporate responsibility
+    isBusinessCase: false,
+    isSocietalImpactCase: true, // Had a significant global societal impact and inspired widespread international solidarity
+    isScientificCase: true, // Involved extensive scientific and engineering innovation for the rescue operation
+    isCulturalCase: true,   // Became a cultural phenomenon and enduring symbol of hope and resilience
+    isCrisisCase: true,
+  ),
+
+
+  const CaseStudy(
+    id: 'c76',
+    categories: [
+      'PG', // Politics & Governance (primary)
+      'HC', // History & Culture (secondary)
+    ],
+    title: 'The Charlie Hebdo Attack',
+    imageUrl: 'https://c.files.bbci.co.uk/3C5A/production/_116105451_gettyimages-1078753054.jpg',
+    keywords: [
+      'Charlie Hebdo',
+      'Terrorism',
+      'Freedom of Speech',
+      'Mass Shooting',
+      'Islamic Extremism',
+    ],
+    caseStudy: [
+      'On January 7, 2015, a coordinated terrorist attack targeted the offices of the French satirical magazine Charlie Hebdo in Paris. Two gunmen, armed with assault rifles and wearing tactical gear, stormed the premises and opened fire, killing 12 individuals including prominent cartoonists, journalists, and police officers, while injuring many others.',
+      'The attackers claimed their motive was retaliation for Charlie Hebdo’s controversial depictions of the Prophet Muhammad, a stance that sparked a heated global debate about the limits of free expression versus respect for religious beliefs. The brutal nature of the attack shocked not only France but the entire world, leading to an outpouring of solidarity for the victims and a renewed commitment to protecting freedom of speech.',
+      'In the aftermath, the French government, along with international partners, intensified counterterrorism measures and increased security protocols to prevent further such attacks. The incident also fueled discussions in media and academia on the role of satire in a democratic society, the ethical implications of provocative art, and the challenges of balancing national security with civil liberties.',
+      'The Charlie Hebdo attack has since become a defining moment in contemporary history, symbolizing both the vulnerability of free expression in the face of extremism and the resilience of democratic values. It continues to influence policy debates, cultural discussions, and the global fight against terrorism.',
+    ],
+    duration: 0.002, // The event occurred on a single day (January 7, 2015)
+    complexity: Complexity.moderate, // Involves moderately complex political, ethical, and cultural dimensions
+    severity: Severity.high, // High severity due to significant loss of life and lasting global impact on discourse about free speech and terrorism
+
+    isLegalCase: true,
+    isEthicalCase: true,
+    isBusinessCase: false,
+    isSocietalImpactCase: true,
+    isScientificCase: false,
+    isCulturalCase: true,
+    isCrisisCase: true,
+  ),
+
+  const CaseStudy(
+    id: 'c77',
+    categories: [
+      'EL', // Education & Learning (primary)
+    ],
+    title: 'The Rise of MOOCs: Transforming Global Education',
+    imageUrl: 'https://media.licdn.com/dms/image/v2/D5612AQFM_cINh_1mbA/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1716218768857?e=2147483647&v=beta&t=su9IJqhFyKe-iXsxkF5a2sWkMGaBWMe9zzY76OKnSIw',
+    keywords: [
+      'MOOCs',
+      'Online Learning',
+      'Digital Education',
+      'Coursera',
+      'edX',
+      'Accessibility',
+    ],
+    caseStudy: [
+      'Around 2012, Massive Open Online Courses (MOOCs) emerged as a revolutionary innovation in education. Platforms such as Coursera, edX, and Udacity were launched with the ambitious goal of democratizing education by providing free or low-cost access to courses from top universities, enabling learners worldwide to engage with high-quality content irrespective of their geographical or financial limitations.',
+      'MOOCs quickly gained global traction, attracting millions of students and professionals seeking lifelong learning opportunities and career advancement. They broke down traditional barriers to education, offering diverse subjects ranging from computer science and engineering to humanities and business. This new model not only broadened access but also forced conventional academic institutions to rethink their approaches, leading many to integrate online components into their curricula.',
+      'Despite their transformative potential, MOOCs encountered several challenges. Issues such as low course completion rates, difficulties in ensuring deep engagement, accreditation uncertainties, and questions regarding the sustainability of free models emerged as significant hurdles. In response, platforms began to innovate by incorporating interactive elements, offering paid certifications, and establishing partnerships with accredited institutions to enhance credibility and learner outcomes.',
+      'The evolution of MOOCs has had a profound impact on global education. They have spurred a broader acceptance of online learning, accelerated the development of hybrid learning models—especially highlighted during the COVID-19 pandemic—and fostered a vibrant ecosystem where digital education continuously evolves. MOOCs have not only changed how knowledge is disseminated and consumed but have also empowered millions by providing skills and learning opportunities that were once out of reach.',
+      'Today, MOOCs remain at the forefront of educational innovation, symbolizing both the potential and challenges of digital learning in the 21st century. Their ongoing evolution continues to shape global academic landscapes and set new benchmarks for educational accessibility and quality.',
+    ],
+    duration: 10, // Approximately 2012 to present (ongoing impact)
+    complexity: Complexity.moderate, // Moderately complex due to multifaceted changes in educational delivery and business models
+    severity: Severity.medium, // Medium severity given their transformative impact on education without catastrophic consequences
+
+    isLegalCase: false,
+    isEthicalCase: false,
+    isBusinessCase: true,
+    isSocietalImpactCase: true,
+    isScientificCase: false,
+    isCulturalCase: true,
+    isCrisisCase: false,
+  ),
+
+
+  const CaseStudy(
+    id: 'c78',
+    categories: [
+      'EL', // Education & Learning (primary)
+    ],
+    title: 'The Global Shift to Remote Learning During COVID-19',
+    imageUrl: 'https://assets.weforum.org/article/image/responsive_large_yMTDCpnSgHybsTgsvcOM7okUFY-QnelVfa_c9bj5ql0.JPG',
+    keywords: [
+      'Remote Learning',
+      'Online Education',
+      'COVID-19',
+      'Distance Education',
+      'Digital Transformation',
+    ],
+    caseStudy: [
+      'In early 2020, the onset of the COVID-19 pandemic forced a sudden and unprecedented global shift from traditional classroom-based education to remote learning. Governments worldwide imposed lockdowns and school closures, compelling educational institutions—from primary schools to universities—to pivot to online platforms almost overnight.',
+      'This rapid transition exposed significant challenges, including limited access to technology for many students, disparities in digital connectivity, and the need for educators to quickly adapt to virtual teaching methods. Despite these obstacles, schools and universities invested heavily in digital tools, online learning management systems, and teacher training to maintain educational continuity.',
+      'The shift to remote learning not only redefined the delivery of education but also sparked innovative approaches such as blended learning models, interactive virtual classrooms, and the use of artificial intelligence to personalize learning experiences. Although the initial phase was marked by widespread disruption and uncertainty, the crisis accelerated long-term digital transformation in education and highlighted the importance of digital literacy and equitable access to technology.',
+      'Moreover, the move to online education has influenced policy discussions on the future of learning, prompting debates about the role of traditional schooling versus digital platforms, and raising questions about educational equity, student engagement, and assessment methods in a virtual environment. The legacy of this transformation continues to shape global educational practices and strategic planning for future disruptions.',
+    ],
+    duration: 2, // Approximately 2020 - 2022 (ongoing impact)
+    complexity: Complexity.moderate, // Moderately complex due to the interplay of technological, pedagogical, and equity challenges
+    severity: Severity.medium, // Medium severity, reflecting significant educational disruption and long-term societal impact without immediate catastrophic consequences
+
+    isLegalCase: false,
+    isEthicalCase: true,    // Raised ethical issues around digital equity and access to quality education
+    isBusinessCase: true,   // Impacted EdTech industries and spurred new business models in online education
+    isSocietalImpactCase: true,
+    isScientificCase: false,
+    isCulturalCase: true,   // Influenced cultural perceptions of education and learning environments
+    isCrisisCase: true,
+  ),
+
+  const CaseStudy(
+    id: 'c79',
+    categories: [
+      'EL', // Education & Learning (primary)
+      'HC', // History & Culture (secondary)
+    ],
+    title: 'The Finnish Education System Reform',
+    imageUrl: 'https://akm-img-a-in.tosshub.com/indiatoday/images/story/202304/education-sixteen_nine.jpeg?VersionId=2ZJTw9nd.FezBxiL3JjlB4NesX68xKsG',
+    keywords: [
+      'Finnish Education',
+      'Education Reform',
+      'Teacher Training',
+      'Equity',
+      'PISA Excellence',
+    ],
+    caseStudy: [
+      'Over the past several decades, Finland has transformed its education system into one of the world’s most successful and equitable models. Beginning in the 1970s, a series of reforms focused on investing heavily in teacher training, reducing class sizes, and creating a student-centered learning environment. Finnish educators are required to hold master’s degrees, ensuring that teaching is regarded as a highly respected profession.',
+      'The Finnish model minimizes standardized testing and instead emphasizes continuous assessment, creativity, and critical thinking. The curriculum is designed to balance academic subjects with arts, physical education, and life skills, fostering a holistic development for students. This approach has led to consistent high rankings in international assessments such as the Programme for International Student Assessment (PISA).',
+      'Equity is at the core of Finland’s educational philosophy. The government ensures that all students, regardless of socio-economic background, have access to high-quality education. Comprehensive welfare support—including free meals, school materials, and healthcare—helps level the playing field and promotes social cohesion.',
+      'The success of the Finnish education reform has not only produced impressive academic outcomes but has also influenced global discussions on educational best practices. Other countries looking to improve their education systems often look to Finland as a benchmark for fostering both excellence and equity in education.',
+    ],
+    duration: 5, // Reflects the ongoing evolution and sustained impact over the past five decades
+    complexity: Complexity.simple, // Considered relatively simple and intuitive in design compared to more rigid standardized systems
+    severity: Severity.medium, // Medium severity as the reforms significantly impacted society without catastrophic consequences
+
+    isLegalCase: false,
+    isEthicalCase: true,    // Promotes equal access to quality education and raises ethical standards
+    isBusinessCase: false,
+    isSocietalImpactCase: true, // Major influence on societal values and global education practices
+    isScientificCase: false,
+    isCulturalCase: true,   // Has reshaped cultural perceptions of education and social welfare
+    isCrisisCase: false,
+  ),
+
+  const CaseStudy(
+    id: 'c80',
+    categories: [
+      'EL', // Education & Learning (primary)
+    ],
+    title: 'One Laptop per Child Initiative',
+    imageUrl: 'https://larrycuban.wordpress.com/wp-content/uploads/2018/04/olpc-2-1.jpg?w=584',
+    keywords: [
+      'One Laptop per Child',
+      'Digital Learning',
+      'Educational Technology',
+      'Low-Cost Laptops',
+      'Developing Countries',
+    ],
+    caseStudy: [
+      'Launched in 2005 by the MIT Media Lab and led by visionary Nicholas Negroponte, the One Laptop per Child (OLPC) initiative set out to revolutionize education in developing countries by providing children with durable, low-cost laptops. The flagship device, known as the XO laptop, was designed to be rugged, energy-efficient, and user-friendly, tailored to harsh environments and limited infrastructure.',
+      'The program aimed to empower children by giving them access to digital resources, interactive learning materials, and global information networks—transforming traditional classroom settings into dynamic, technology-enhanced learning environments. OLPC received widespread global attention and significant investment, inspiring a wave of educational technology innovations and policy discussions on digital equity.',
+      'Despite the initial optimism, OLPC faced numerous challenges. Issues such as inconsistent infrastructure, cultural and language barriers, and difficulties in integrating the technology effectively into existing educational systems hindered its impact. Over time, criticisms emerged regarding the sustainability of the project and whether access to technology alone could address deeper educational disparities.',
+      'Nevertheless, the legacy of OLPC endures as it sparked a global dialogue on the role of technology in education, influenced subsequent initiatives in the digital learning space, and underscored the critical importance of equitable access to educational resources. The project continues to be studied as a bold experiment in how technology can empower communities, even as its outcomes highlight the complexities of educational reform in diverse socio-economic contexts.',
+    ],
+    duration: 10, // Approximate active phase from 2005 to 2015
+    complexity: Complexity.moderate, // Moderately complex due to its multifaceted educational and logistical challenges
+    severity: Severity.medium, // Medium severity reflects significant impact on education without catastrophic consequences
+
+    isLegalCase: false,
+    isEthicalCase: true,    // Raises ethical considerations regarding educational equity and digital divide issues
+    isBusinessCase: false,
+    isSocietalImpactCase: true, // Influenced global discussions on education and technology access
+    isScientificCase: false,
+    isCulturalCase: false,
+    isCrisisCase: false,
+  ),
+
+  const CaseStudy(
+    id: 'c81',
+    categories: [
+      'EL', // Education & Learning (primary)
+      'HC', // History & Culture (secondary)
+      'BS'
+    ],
+    title: 'The Rise of Khan Academy: Revolutionizing Free Education',
+    imageUrl: 'https://static.startuptalky.com/2022/09/khan-academy-logo-startuptalky--2-.jpg',
+    keywords: [
+      'Khan Academy',
+      'Online Learning',
+      'Free Education',
+      'EdTech',
+      'Digital Learning Revolution',
+    ],
+    caseStudy: [
+      'Founded in 2008 by Salman Khan, Khan Academy began as a modest effort to tutor his cousins through simple YouTube videos. Quickly recognizing the potential of digital platforms to democratize education, Khan transformed his initiative into a comprehensive, non-profit online learning platform. Today, Khan Academy offers thousands of free lessons covering subjects from mathematics and science to history and economics, serving millions of learners worldwide.',
+      'Khan Academy’s innovative model disrupted traditional education by leveraging interactive video lessons, personalized learning dashboards, and practice exercises to help students learn at their own pace. This open-access approach broke down geographical and economic barriers, enabling students from all corners of the world to access quality educational content that was previously out of reach.',
+      'The platform’s success has had a profound cultural impact—it not only reshaped how knowledge is delivered and consumed but also sparked a global movement towards digital education. Educational institutions, policymakers, and other EdTech companies have since drawn inspiration from Khan Academy’s model, contributing to widespread curricular reforms and new approaches to teaching and learning.',
+      'Despite challenges such as ensuring sustained engagement, integrating with formal education systems, and addressing the digital divide, Khan Academy continues to innovate and expand its offerings. Its enduring legacy highlights the transformative power of technology in education and serves as a benchmark for the potential of digital platforms to foster lifelong learning and equitable access to knowledge.',
+    ],
+    duration: 14, // Approximately 2008 to present (ongoing impact)
+    complexity: Complexity.moderate, // Moderately complex due to the integration of technology and educational pedagogy, yet straightforward in concept
+    severity: Severity.medium, // Medium severity given its significant positive impact on education without catastrophic consequences
+
+    isLegalCase: false,
+    isEthicalCase: true,    // Promotes ethical access to education and addresses the digital divide
+    isBusinessCase: false,
+    isSocietalImpactCase: true, // Profoundly impacted global education and cultural perceptions of learning
+    isScientificCase: false,
+    isCulturalCase: true,   // Has become a cultural icon in the realm of education reform and digital learning innovation
+    isCrisisCase: false,
+  ),
+
+  const CaseStudy(
+    id: 'c82',
+    categories: [
+      'EL', // Education & Learning (primary)
+      'BS',
+    ],
+    title: 'The Rise of Duolingo: Gamifying Language Learning',
+    imageUrl: 'https://academichelp.net/wp-content/uploads/2023/07/The-Rise-and-Rule-of-Duolingo-in-the-Language-Learning-Realm.jpg',
+    keywords: [
+      'Duolingo',
+      'Language Learning',
+      'Gamification',
+      'EdTech',
+      'Mobile Learning',
+    ],
+    caseStudy: [
+      'Founded in 2011 by Luis von Ahn and Severin Hacker, Duolingo quickly emerged as one of the world’s most popular language learning platforms. By integrating gamification elements such as points, levels, and rewards into its lesson structure, Duolingo transformed traditional language education into an engaging, interactive experience accessible to anyone with an internet connection.',
+      'Offering courses in over 30 languages, Duolingo employs an adaptive learning algorithm that tailors lessons to individual proficiency levels, reinforcing weaker areas and celebrating progress. Its freemium model—providing core content for free while offering premium features for a fee—has democratized language education and set new standards in the EdTech industry.',
+      'The platform’s innovative approach not only makes learning fun but also effective, as evidenced by its widespread adoption among millions of users globally. Duolingo’s success has spurred a broader cultural shift toward mobile and self-paced learning, influencing how educational content is delivered and consumed in the digital age.',
+      'Today, Duolingo stands as a landmark in educational innovation, continuously evolving with advances in machine learning and user experience design. Its impact on global language acquisition and digital literacy underscores the transformative potential of technology in education.',
+    ],
+    duration: 11, // Approximately 2011 to present (ongoing impact)
+    complexity: Complexity.simple, // The platform’s approach is intuitive and user-friendly, making it simple in concept
+    severity: Severity.medium, // Medium severity reflects significant educational impact without catastrophic consequences
+
+    isLegalCase: false,
+    isEthicalCase: true,    // Promotes equitable access to language education and digital literacy
+    isBusinessCase: true,   // A notable business success in the EdTech sector
+    isSocietalImpactCase: true, // Has broadly influenced how people learn languages and engage with digital education tools
+    isScientificCase: false,
+    isCulturalCase: true,   // Facilitates cultural exchange and global communication
+    isCrisisCase: false,
+  ),
+
+  const CaseStudy(
+    id: 'c83',
+    categories: [
+      'EL', // Education & Learning (primary)
+      'BS', // Business & Startups (secondary)
+    ],
+    title: 'The Rise of BYJU\'s: India\'s EdTech Giant',
+    imageUrl: 'https://bsmedia.business-standard.com/_media/bs/img/article/2024-08/09/full/1723224639-5178.jpg?im=FeatureCrop,size=(826,465)', // Replace with an actual image URL if available
+    keywords: [
+      'BYJU\'s',
+      'EdTech',
+      'Digital Learning',
+      'Online Education',
+      'India',
+    ],
+    caseStudy: [
+      'Founded in 2011 by Byju Raveendran, BYJU\'s began as a modest offline coaching initiative and rapidly transformed into one of the world\'s leading educational technology companies. By harnessing the power of interactive video lessons, gamified learning, and personalized instruction, BYJU\'s reimagined traditional education and made high-quality learning accessible to millions of students, particularly in India.',
+      'The platform offers a comprehensive range of courses tailored for K–12 education as well as competitive exam preparation, utilizing adaptive learning algorithms that provide real-time feedback to learners. Its innovative freemium model, complemented by premium subscription services, has attracted vast numbers of users and significant venture capital, propelling the company to a valuation exceeding \$20 billion at its peak.',
+      'BYJU\'s rapid expansion disrupted conventional tutoring and classroom models, setting new benchmarks in the global EdTech industry. The company’s success has driven digital education adoption in emerging markets, inspiring policy shifts and spurring the development of innovative educational tools worldwide.',
+      'Despite facing challenges such as market competition and regulatory scrutiny, BYJU\'s continues to evolve through strategic acquisitions and the expansion of its course offerings. Its success story stands as a beacon of entrepreneurial innovation, demonstrating how technology can democratize access to quality education and transform societal learning paradigms.',
+    ],
+    duration: 12, // Approximately 2011 to present (ongoing impact)
+    complexity: Complexity.moderate, // Moderately complex due to the integration of technology, pedagogy, and business strategy
+    severity: Severity.medium, // Medium severity reflects its transformative impact on education and the economy without catastrophic consequences
+
+    isLegalCase: false,
+    isEthicalCase: true,    // Promotes equitable access to education while raising discussions on digital equity
+    isBusinessCase: true,   // A landmark business success in the EdTech sector
+    isSocietalImpactCase: true, // Significantly influenced educational practices and access globally
+    isScientificCase: false,
+    isCulturalCase: true,   // Shaped cultural perceptions of learning and digital education in India and beyond
+    isCrisisCase: false,
+  ),
+
 
 ];
